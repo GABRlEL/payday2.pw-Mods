@@ -1,0 +1,14 @@
+{
+	"name" : "Unlock All Raid Jobs - PBC",
+	"description" : "Unlocks all raid side jobs for free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/raidjobstweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
