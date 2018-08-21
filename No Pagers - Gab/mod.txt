@@ -1,0 +1,14 @@
+{
+	"name" : "No Pagers - Gab",
+	"description" : "Disables all pagers",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/charactertweakdata.lua",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

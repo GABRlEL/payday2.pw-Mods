@@ -1,0 +1,14 @@
+{
+	"name" : "Instant Auto Respawn on Mayhem - Gab",
+	"description" : "Makes you instantly respawn on Mayhem",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

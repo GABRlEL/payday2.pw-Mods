@@ -1,0 +1,14 @@
+{
+	"name" : "Unlimited following hostages - Gab",
+	"description" : "Makes you able to guide more than 1 hostage",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

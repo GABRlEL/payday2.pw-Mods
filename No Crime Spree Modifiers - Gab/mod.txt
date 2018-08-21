@@ -1,0 +1,14 @@
+{
+	"name" : "No Crime Spree Modifiers - Gab",
+	"description" : "Makes you not get any modifiers in Crime Spree anymore",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

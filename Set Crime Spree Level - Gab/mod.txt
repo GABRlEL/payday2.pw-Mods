@@ -1,0 +1,14 @@
+{
+	"name" : "Set Crime Spree Level - Gab",
+	"description" : "Adds the Crime Spree Level 1k, 10k and 100k",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menu/crimespreecontractmenucomponent",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

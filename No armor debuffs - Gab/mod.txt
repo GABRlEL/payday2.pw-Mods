@@ -1,0 +1,14 @@
+{
+	"name" : "No armor debuffs - Gab",
+	"description" : "Lifts all armor debuffs to give you the best of both worlds",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

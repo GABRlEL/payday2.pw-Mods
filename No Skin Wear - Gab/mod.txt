@@ -1,0 +1,14 @@
+{
+	"name" : "No Skin Wear - Gab",
+	"description" : "Makes every skin look like mint",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/economytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

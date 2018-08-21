@@ -1,0 +1,14 @@
+{
+	"name" : "No Crime Spree Rewards - Gab",
+	"description" : "Incase you have a high crime spree but dont want any rewards",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

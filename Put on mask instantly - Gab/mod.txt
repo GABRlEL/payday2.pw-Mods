@@ -1,0 +1,14 @@
+{
+	"name" : "Put on mask instantly - Gab",
+	"description" : "Makes you put on your mask instantly",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,0 +1,14 @@
+{
+	"name" : "Instant Auto Respawn on Death Wish - Gab",
+	"description" : "Makes you instantly respawn on Death Wish",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

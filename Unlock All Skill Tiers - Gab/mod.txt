@@ -1,0 +1,14 @@
+{
+	"name" : "Unlock All Skill Tiers - Gab",
+	"description" : "Unlocks all Skill Tiers",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/skilltreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

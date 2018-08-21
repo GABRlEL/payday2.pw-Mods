@@ -1,0 +1,14 @@
+{
+	"name" : "One Hit Mutator - Gab",
+	"description" : "One Hit Mutator - Replaces Enemy Health Mutator",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/mutators/mutatorenemyhealth",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

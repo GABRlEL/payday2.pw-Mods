@@ -1,0 +1,19 @@
+{
+	"name" : "Perk Deck Points Giver - Gab",
+	"description" : "Gives you enough Perk Deck Points for all decks",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"keybinds" : [
+	{
+		"keybind_id" : "gibmaher",
+		"name" : "gibmaher",
+		"description" : "uff ya copy paste",
+		"script_path" : "paste.lua",
+		"run_in_menu" : true,
+		"run_in_game" : true,
+		"localized" : false
+	}
+]
+	
+}

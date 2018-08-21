@@ -1,0 +1,14 @@
+{
+	"name" : "Crime Spree Adder - Gab",
+	"description" : "Adds 10k per won Crime Spree heist",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

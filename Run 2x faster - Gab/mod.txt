@@ -1,0 +1,14 @@
+{
+	"name" : "Run 2x faster - Gab",
+	"description" : "Run 2x faster and improve ironsight, in-air and climbing movement - infinite stamina included!",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,0 +1,14 @@
+{
+	"name" : "Dont lose Crime Spree on Crash - Gab",
+	"description" : "Dont lose Crime Spree on Crash",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

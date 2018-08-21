@@ -1,0 +1,14 @@
+{
+	"name" : "Free Crime Spree Assets - Gab",
+	"description" : "Makes all Crime Spree Assets free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

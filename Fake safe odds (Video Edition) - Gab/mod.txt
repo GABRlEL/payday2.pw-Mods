@@ -1,0 +1,14 @@
+{
+	"name" : "Safe Crash Fix",
+	"description" : "Fixes safe opening crashes introduced by update 166.1",
+	"author" : "James Wilkinson",
+	"contact" : "jw@jameswilko.com",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/economytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

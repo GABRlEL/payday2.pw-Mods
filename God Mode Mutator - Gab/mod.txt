@@ -1,0 +1,14 @@
+{
+	"name" : "God Mode Mutator - Gab",
+	"description" : "God Mode Mutator - Replaces Enemy Damage Mutator",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/mutators/mutatorenemydamage",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

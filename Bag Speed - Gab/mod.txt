@@ -1,0 +1,14 @@
+{
+	"name" : "Bag Speed - Gab",
+	"description" : "Makes the game think that all bags are light coke",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/carrytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

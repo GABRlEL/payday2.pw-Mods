@@ -1,0 +1,14 @@
+{
+	"name" : "Trash Turrets - Gab",
+	"description" : "Makes all turrets trash",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/weapontweakdata",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

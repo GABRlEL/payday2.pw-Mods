@@ -1,0 +1,14 @@
+{
+	"name" : "Free Safehouse Room Upgrades - Gab",
+	"description" : "Makes every safehouse room upgrade free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/customsafehousetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

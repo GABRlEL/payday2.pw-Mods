@@ -1,0 +1,14 @@
+{
+	"name" : "Free Skill Sets - Gab",
+	"description" : "Makes all skill sets free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

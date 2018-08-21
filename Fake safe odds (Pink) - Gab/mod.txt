@@ -1,0 +1,14 @@
+{
+	"name" : "Fake safe odds (Pink) - Gab",
+	"description" : "Makes you only miss pink items",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/economytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

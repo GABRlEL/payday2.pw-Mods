@@ -1,0 +1,14 @@
+{
+	"name" : "Infinite Cable Tie Slots - Gab",
+	"description" : "Gives you infinite cable ties",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/equipmentstweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

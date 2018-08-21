@@ -1,0 +1,14 @@
+{
+	"name" : "Anti Modding Detection - Gab",
+	"description" : "Spoofs you not having mods installed",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menumanager",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

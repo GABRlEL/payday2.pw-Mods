@@ -1,0 +1,14 @@
+{
+	"name" : "Infinite Cable Tie Slots - Gab",
+	"description" : "Allows you to carry infinite cable ties with you",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/equipmentstweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

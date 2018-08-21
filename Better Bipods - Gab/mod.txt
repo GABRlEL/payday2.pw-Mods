@@ -1,0 +1,14 @@
+{
+	"name" : "Better Bipods - Gab",
+	"description" : "Allows you to freely look around and instantly use bipods",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/weapontweakdata",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

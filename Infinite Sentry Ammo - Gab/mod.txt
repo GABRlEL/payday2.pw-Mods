@@ -1,0 +1,14 @@
+{
+	"name" : "Infinite Sentry Ammo - Gab",
+	"description" : "Makes your sentries get infinite ammo",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

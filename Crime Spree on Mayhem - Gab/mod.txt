@@ -1,0 +1,14 @@
+{
+	"name" : "Crime Spree on Mayhem - Gab",
+	"description" : "Sets the Crime Spree difficulty to Mayhem",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menu/crimespreecontractmenucomponent",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

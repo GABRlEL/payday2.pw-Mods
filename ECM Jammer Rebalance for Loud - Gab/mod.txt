@@ -1,0 +1,14 @@
+{
+	"name" : "ECM Jammer Rebalance for Loud - Gab",
+	"description" : "Makes ECM Jammer and their feedback useful in loud. The Jack of all trades skill is recommended.",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

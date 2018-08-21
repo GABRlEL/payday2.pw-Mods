@@ -1,0 +1,14 @@
+{
+	"name" : "Crime Spree on Normal - Gab",
+	"description" : "Sets the Crime Spree difficulty to Normal",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menu/crimespreecontractmenucomponent",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

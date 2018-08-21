@@ -1,0 +1,14 @@
+{
+	"name" : "OP Crime Spree Rewards - Gab",
+	"description" : "Makes your rewards absurdly high",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

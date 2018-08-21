@@ -1,0 +1,22 @@
+{
+	"name" : "Custom Perk Decks - Gab",
+	"description" : "Adds the Gab and derDude Perk Deck",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"version" : "rev3",
+	"hooks" : [	
+	{ 	
+		"hook_id" : "lib/tweak_data/skilltreetweakdata",
+		"script_path" : "distro.lua"
+	},
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "perkdecks.lua"
+	},
+	{ 	
+		"hook_id" : "lib/managers/localizationmanager",
+		"script_path" : "loc_EN.lua"
+	}
+]
+
+}

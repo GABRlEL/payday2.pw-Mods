@@ -1,0 +1,14 @@
+{
+	"name" : "No Special Enemies - Gab",
+	"description" : "No Special Enemies and enemies don't climb anymore",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/groupaitweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,0 +1,14 @@
+{
+	"name" : "Free contracts - Gab",
+	"description" : "Makes every contract free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/moneymanager",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

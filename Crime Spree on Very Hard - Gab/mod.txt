@@ -1,0 +1,14 @@
+{
+	"name" : "Crime Spree on Very Hard - Gab",
+	"description" : "Sets the Crime Spree difficulty to Very Hard",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menu/crimespreecontractmenucomponent",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

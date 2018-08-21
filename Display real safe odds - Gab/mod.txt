@@ -1,0 +1,14 @@
+{
+	"name" : "Display real safe odds - Gab",
+	"description" : "The items rolling are using the (almost) real case odds instead of fake ones - No legendary misses as they crash, so legendary odds have been balanced on all others",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/economytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

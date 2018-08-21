@@ -1,0 +1,14 @@
+{
+	"name" : "Free Infamy Skills - Gab",
+	"description" : "Makes all infamy skills free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/infamytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

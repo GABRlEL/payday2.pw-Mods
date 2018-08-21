@@ -1,0 +1,14 @@
+{
+	"name" : "Invulnerable Sentries - Gab",
+	"description" : "Makes your sentries invulnerable",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

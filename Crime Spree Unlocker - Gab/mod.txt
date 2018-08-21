@@ -1,0 +1,14 @@
+{
+	"name" : "Crime Spree Unlocker - Gab",
+	"description" : "Unlocks Crime Spree for all levels",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menu/crimespreecontractmenucomponent",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

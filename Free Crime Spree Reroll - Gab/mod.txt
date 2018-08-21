@@ -1,0 +1,14 @@
+{
+	"name" : "Free Crime Spree Reroll - Gab",
+	"description" : "Reroll your crime spree heists for free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

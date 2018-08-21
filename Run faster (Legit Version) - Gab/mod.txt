@@ -1,0 +1,14 @@
+{
+	"name" : "Run faster (Legit Version) - Gab",
+	"description" : "Run faster (Legit Version) - infinite stamina included!",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
