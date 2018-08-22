@@ -1,0 +1,14 @@
+{
+	"name" : "Remove timers - Gab",
+	"description" : "Removes many of the timers",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/interactiontweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
