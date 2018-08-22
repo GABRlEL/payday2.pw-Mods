@@ -1,0 +1,14 @@
+{
+	"name" : "Add 10 gage packages on every difficulty - Gab",
+	"description" : "Adds 10 gage packages on every difficulty",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/gageassignmenttweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

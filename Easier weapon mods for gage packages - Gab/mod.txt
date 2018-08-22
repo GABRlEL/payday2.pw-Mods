@@ -1,0 +1,14 @@
+{
+	"name" : "Easier weapon mods for gage packages - Gab",
+	"description" : "Gives you a weapon mod for every gage package you collect",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/gageassignmenttweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
