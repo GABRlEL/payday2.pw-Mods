@@ -1,6 +1,6 @@
 {
 	"name" : "Instant Win - Gab",
-	"description" : "Keybind-Mod to instantly win the heist",
+	"description" : "Keybind-Mod to instantly win the heist - This will prevent XP gain",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"keybinds" : [

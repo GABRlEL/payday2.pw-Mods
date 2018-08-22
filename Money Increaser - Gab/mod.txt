@@ -1,6 +1,6 @@
 {
 	"name" : "Money Increaser - Gab",
-	"description" : "Equip the combat medic skill to increase your recieved cash",
+	"description" : "Equip the combat medic skill to increase your recieved cash - complete the heist in Stealth!",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 
