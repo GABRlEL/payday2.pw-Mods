@@ -1,0 +1,14 @@
+{
+	"name" : "Instant Equip Deployment - Gab",
+	"description" : "Makes you instantly deploy every equipment",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/equipmentstweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
