@@ -1,6 +1,6 @@
 {
-	"name" : "Undestructable vehicles - Gab",
-	"description" : "Makes your vehicles undestructable",
+	"name" : "Indestructible vehicles - Gab",
+	"description" : "Makes your vehicles indestructible",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 
