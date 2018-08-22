@@ -1,0 +1,14 @@
+{
+	"name" : "Wipe Money - Gab",
+	"description" : "Sell a weapon to wipe your cash",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
