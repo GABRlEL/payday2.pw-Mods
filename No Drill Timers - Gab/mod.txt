@@ -1,0 +1,14 @@
+{
+	"name" : "No Drill Timers - Gab",
+	"description" : "Removes drill timers",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/missiondoortweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

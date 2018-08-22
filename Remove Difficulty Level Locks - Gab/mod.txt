@@ -1,0 +1,14 @@
+{
+	"name" : "Remove Difficulty Level Locks - Gab",
+	"description" : "Removes difficulty level locks - Not compatible with Free Offshore PAYDAY, use that mod instead, as it combines both features",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/tweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

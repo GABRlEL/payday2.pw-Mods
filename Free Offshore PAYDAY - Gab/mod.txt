@@ -1,0 +1,14 @@
+{
+	"name" : "Free Offshore PAYDAY - Gab",
+	"description" : "Makes offshore PAYDAY free and remove difficulty level locks",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/tweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,0 +1,14 @@
+{
+	"name" : "Undestructable vehicles - Gab",
+	"description" : "Makes your vehicles undestructable",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/vehicletweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

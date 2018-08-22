@@ -1,0 +1,14 @@
+{
+	"name" : "No slow motion - Gab",
+	"description" : "Removes all slow motion effects",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/timespeedeffecttweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
