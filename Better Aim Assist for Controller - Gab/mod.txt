@@ -1,0 +1,14 @@
+{
+	"name" : "Better Aim Assist for Controller - Gab",
+	"description" : "Improves the Aim Assist for Controller Players",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/inputtweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
