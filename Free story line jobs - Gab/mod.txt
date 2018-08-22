@@ -1,0 +1,14 @@
+{
+	"name" : "Free story line jobs - Gab",
+	"description" : "Reach level 25 to complete the entire story for free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/storymissionstweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,0 +1,14 @@
+{
+	"name" : "No rename limit - Gab",
+	"description" : "Removes the limit of renaming weapons, skill sets and much more",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/guitweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

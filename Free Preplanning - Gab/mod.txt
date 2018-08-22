@@ -1,0 +1,14 @@
+{
+	"name" : "Free Preplanning - Gab",
+	"description" : "Free and unlimited preplanning",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

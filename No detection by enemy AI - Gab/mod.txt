@@ -1,0 +1,14 @@
+{
+	"name" : "No detection by enemy AI - Gab",
+	"description" : "No enemy will detected you",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/attentiontweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
