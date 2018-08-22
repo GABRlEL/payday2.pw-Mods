@@ -1,6 +1,6 @@
 {
 	"name" : "OP vehicles - Gab",
-	"description" : "Makes your vehicles undestructable & makes infinite bags fit into the vehicle",
+	"description" : "Makes your vehicles indestructible & makes infinite bags fit into the vehicle",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 
