@@ -1,6 +1,6 @@
 {
-	"name" : "Free Infamy Skills - Gab",
-	"description" : "Makes all infamy skills free",
+	"name" : "Free Infamy Skills (Compatibility Version) - Gab",
+	"description" : "Makes all infamy skills free - Compatibility Version, might cause or fix problems",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 
