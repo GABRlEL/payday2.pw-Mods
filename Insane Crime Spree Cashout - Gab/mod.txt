@@ -1,0 +1,14 @@
+{
+	"name" : "Insane Crime Spree Cashout - Gab",
+	"description" : "Changes your crime spree to a crime spree with insane cashout on save file load",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/crimespreemanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
