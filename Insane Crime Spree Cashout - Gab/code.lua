@@ -1,4 +1,7 @@
+local old_icsc1_init = CrimeSpreeManager.load
+
 function CrimeSpreeManager:load(data, version)
+	old_icsc1_init(self, data, version)
 	local save_data = data.crime_spree or {}
 	save_data.highest_level = save_data.highest_level or data.highest_level
 
@@ -27,6 +30,4 @@ function CrimeSpreeManager:load(data, version)
 
 		self._global.cleared = true
 	end
-
-	self._global.highest_level = save_data.highest_level or 0
 end

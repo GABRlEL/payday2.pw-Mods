@@ -1,0 +1,14 @@
+{
+	"name" : "Wipe Crime Spree Winning Spree - Gab",
+	"description" : "Changes your highest crime spree winning spree to 0 on save file load",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/crimespreemanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
