@@ -8,5 +8,7 @@ Many of these mods are **very** simple and I urge you to try modding yourself. A
 For more information, visit [payday2.pw](https://payday2.pw).
 The website [payday2.pw](https://payday2.pw) is an [open-source project](https://github.com/p410n3/payday2.pw) by [p410n3](https://github.com/p410n3).
 
-Copyright 2018 - Gab.
+**Project temporarily halted due to no public Lua dump being available**
+
+2018 - Gab.
 https://opensource.org/licenses/MIT
