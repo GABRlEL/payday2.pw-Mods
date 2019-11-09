@@ -1,0 +1,15 @@
+{
+	"name" : "God Mode (Armor) + No armor debuffs - Gab",
+	"description" : "Armor-based God Mode and lifts all armor debuffs to give you the best of both worlds",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

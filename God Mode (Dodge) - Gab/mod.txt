@@ -1,0 +1,15 @@
+{
+	"name" : "God Mode (Dodge) - Gab",
+	"description" : "Dodge-based God Mode",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/upgradestweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
