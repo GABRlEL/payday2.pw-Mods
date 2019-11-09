@@ -3,6 +3,7 @@
 	"description" : "Makes all infamy skills free - Compatibility Version, might cause or fix problems",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

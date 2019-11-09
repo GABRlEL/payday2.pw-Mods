@@ -3,6 +3,7 @@
 	"description" : "Dont lose Crime Spree on Crash",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

@@ -3,6 +3,7 @@
 	"description" : "God Mode Mutator - Replaces Enemy Damage Mutator",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

@@ -1,8 +1,9 @@
 {
 	"name" : "No Crime Spree Rewards - Gab",
-	"description" : "Incase you have a high crime spree but dont want any rewards",
+	"description" : "In case you have a high crime spree but dont want any rewards",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

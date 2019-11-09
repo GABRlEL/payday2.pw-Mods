@@ -3,6 +3,7 @@
 	"description" : "Improves the Aim Assist for Controller Players",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

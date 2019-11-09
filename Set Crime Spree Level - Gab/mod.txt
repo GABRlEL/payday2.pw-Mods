@@ -3,6 +3,7 @@
 	"description" : "Adds the Crime Spree Level 1k, 10k and 100k",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

@@ -3,6 +3,7 @@
 	"description" : "Makes you able to guide more than 1 hostage",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

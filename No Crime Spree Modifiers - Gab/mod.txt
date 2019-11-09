@@ -3,6 +3,7 @@
 	"description" : "Makes you not get any modifiers in Crime Spree anymore",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

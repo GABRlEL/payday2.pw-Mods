@@ -3,6 +3,7 @@
 	"description" : "Run faster (Legit Version) - infinite stamina included!",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

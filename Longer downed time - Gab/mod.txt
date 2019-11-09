@@ -1,6 +1,6 @@
 {
-	"name" : "Instant Auto Respawn on Overkill - Gab",
-	"description" : "Makes you instantly respawn on Overkill",
+	"name" : "Longer downed time - Gab",
+	"description" : "Makes you able to be revived for 60 seconds instead of 30",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

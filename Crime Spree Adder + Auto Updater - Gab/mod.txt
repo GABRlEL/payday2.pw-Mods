@@ -3,6 +3,7 @@
 	"description" : "Adds 10k per won Crime Spree heist - This version includes automatic updates",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

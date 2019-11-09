@@ -3,6 +3,8 @@
 	"description" : "Keybind-Mod to instantly win the heist - This will prevent XP gain",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+	
 	"keybinds" : [
 	{
 		"keybind_id" : "instantwinnignog",

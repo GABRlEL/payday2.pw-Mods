@@ -3,6 +3,7 @@
 	"description" : "Adds the Gab and derDude Perk Deck",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 	"version" : "rev1",
 	"hooks" : [	
 	{ 	

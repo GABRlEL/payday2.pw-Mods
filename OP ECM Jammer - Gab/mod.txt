@@ -1,8 +1,9 @@
 {
-	"name" : "Infinite ECM duration - Gab",
-	"description" : "Adds infinite ECM duration",
+	"name" : "OP ECM Jammer - Gab",
+	"description" : "Buffs all ECM Jammer stats drastically",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

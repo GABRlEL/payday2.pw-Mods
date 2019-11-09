@@ -3,6 +3,7 @@
 	"description" : "Adds 20 gage packages on every difficulty - MIGHT CRASH",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

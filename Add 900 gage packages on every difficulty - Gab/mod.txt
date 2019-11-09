@@ -1,6 +1,6 @@
 {
-	"name" : "Easier weapon mods for gage packages - Gab",
-	"description" : "Gives you a weapon mod for every gage package you collect",
+	"name" : "Add 900 gage packages on every difficulty - Gab",
+	"description" : "Adds 900 gage packages on every difficulty - MIGHT CRASH",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

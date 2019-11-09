@@ -3,6 +3,7 @@
 	"description" : "Allows achievements while using mutators and disables all penalties",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

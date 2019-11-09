@@ -3,6 +3,7 @@
 	"description" : "Sets the Crime Spree difficulty to Normal",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

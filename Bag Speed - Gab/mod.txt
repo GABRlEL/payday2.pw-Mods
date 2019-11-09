@@ -3,6 +3,7 @@
 	"description" : "Makes the game think that all bags are light coke",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	

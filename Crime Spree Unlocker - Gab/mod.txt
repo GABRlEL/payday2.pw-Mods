@@ -3,6 +3,7 @@
 	"description" : "Unlocks Crime Spree for all levels",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	
