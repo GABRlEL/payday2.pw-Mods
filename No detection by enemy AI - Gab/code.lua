@@ -56,7 +56,7 @@ function AttentionTweakData:_init_player()
 		uncover_range = 150,
 		turn_around_range = 250,
 		notice_requires_FOV = true,
-		verification_interval = 99.02,
+		verification_interval = 99,
 		release_delay = 0.0001
 	}
 	self.settings.pl_mask_off_foe_non_combatant = {
@@ -126,7 +126,7 @@ function AttentionTweakData:_init_player()
 		uncover_range = 200,
 		notice_requires_FOV = true,
 		notice_clbk = "clbk_attention_notice_sneak",
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001
 	}
 	self.settings.pl_mask_on_foe_non_combatant_whisper_mode_stand = {
@@ -135,7 +135,7 @@ function AttentionTweakData:_init_player()
 		notice_delay_mul = 1.5,
 		notice_requires_FOV = true,
 		notice_clbk = "clbk_attention_notice_sneak",
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "non_combatant"
 	}
@@ -148,7 +148,7 @@ function AttentionTweakData:_init_player()
 		uncover_range = 200,
 		notice_requires_FOV = true,
 		notice_clbk = "clbk_attention_notice_sneak",
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001
 	}
 	self.settings.pl_mask_on_foe_non_combatant_whisper_mode_crouch = {
@@ -159,7 +159,7 @@ function AttentionTweakData:_init_player()
 		uncover_range = 200,
 		notice_requires_FOV = true,
 		notice_clbk = "clbk_attention_notice_sneak",
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001
 	}
 	self.settings.pl_friend_combatant_cbt = {
@@ -186,7 +186,7 @@ function AttentionTweakData:_init_player()
 		notice_delay_mul = 1.5,
 		release_delay = 0.0001,
 		notice_requires_FOV = true,
-		verification_interval = 99.1,
+		verification_interval = 99,
 		relation = "friend",
 		filter = "non_combatant"
 	}
@@ -196,7 +196,7 @@ function AttentionTweakData:_init_player()
 		notice_delay_mul = 2,
 		release_delay = 0.0001,
 		notice_requires_FOV = true,
-		verification_interval = 99.1,
+		verification_interval = 99,
 		relation = "foe",
 		filter = "combatant"
 	}
@@ -217,7 +217,7 @@ function AttentionTweakData:_init_player()
 		notice_delay_mul = 2.5,
 		notice_requires_FOV = true,
 		notice_clbk = "clbk_attention_notice_sneak",
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "non_combatant"
 	}
@@ -269,7 +269,7 @@ function AttentionTweakData:_init_team_AI()
 		filter = "all",
 		uncover_range = 400,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		weight_mul = 0.5
 	}
@@ -301,7 +301,7 @@ function AttentionTweakData:_init_civilian()
 		uncover_range = 300,
 		notice_requires_FOV = true,
 		notice_clbk = "clbk_attention_notice_corpse",
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		duration = {
 			3,
@@ -316,7 +316,7 @@ function AttentionTweakData:_init_civilian()
 		filter = "murderer",
 		uncover_range = 300,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		weight_mul = 0.75
 	}
@@ -326,7 +326,7 @@ function AttentionTweakData:_init_civilian()
 		notice_delay_mul = 0.05,
 		max_range = 2500,
 		notice_requires_FOV = true,
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "all"
 	}
@@ -335,7 +335,7 @@ function AttentionTweakData:_init_civilian()
 		reaction = "REACT_SCARED",
 		notice_delay_mul = 0.05,
 		notice_requires_FOV = true,
-		verification_interval = 99.1,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "all",
 		duration = {
@@ -372,7 +372,7 @@ function AttentionTweakData:_init_enemy()
 		relation = "foe",
 		filter = "combatant",
 		notice_requires_FOV = false,
-		verification_interval = 99.75,
+		verification_interval = 99,
 		release_delay = 0.0001
 	}
 	self.settings.enemy_law_corpse_sneak = self.settings.civ_enemy_corpse_sneak
@@ -382,7 +382,7 @@ function AttentionTweakData:_init_enemy()
 		reaction = "REACT_CHECK",
 		notice_delay_mul = 0.1,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "combatant",
 		duration = {
@@ -398,7 +398,7 @@ function AttentionTweakData:_init_enemy()
 		filter = "combatant",
 		uncover_range = 300,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001
 	}
 	self.settings.enemy_civ_cbt = {
@@ -408,7 +408,7 @@ function AttentionTweakData:_init_enemy()
 		filter = "non_combatant",
 		uncover_range = 300,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		duration = {
 			1.5,
@@ -422,7 +422,7 @@ function AttentionTweakData:_init_custom()
 	self.settings.custom_void = {
 		max_range = 2000,
 		reaction = "REACT_IDLE",
-		verification_interval = 990,
+		verification_interval = 99,
 		release_delay = 0.00010,
 		filter = "none"
 	}
@@ -446,7 +446,7 @@ function AttentionTweakData:_init_custom()
 		max_range = 20000,
 		reaction = "REACT_COMBAT",
 		notice_requires_FOV = false,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "criminal"
 	}
@@ -454,7 +454,7 @@ function AttentionTweakData:_init_custom()
 		max_range = 10000,
 		reaction = "REACT_SHOOT",
 		notice_requires_FOV = false,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "criminal"
 	}
@@ -462,7 +462,7 @@ function AttentionTweakData:_init_custom()
 		max_range = 10000,
 		reaction = "REACT_SHOOT",
 		notice_requires_FOV = false,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "criminal",
 		duration = {
@@ -474,7 +474,7 @@ function AttentionTweakData:_init_custom()
 		max_range = 10000,
 		reaction = "REACT_AIM",
 		notice_requires_FOV = false,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "criminal"
 	}
@@ -663,7 +663,7 @@ function AttentionTweakData:_init_custom()
 		reaction = "REACT_CURIOUS",
 		notice_delay_mul = 0.2,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "all_enemy",
 		duration = {
@@ -678,7 +678,7 @@ function AttentionTweakData:_init_custom()
 		filter = "all_enemy",
 		uncover_range = 100,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		duration = {
 			3,
@@ -695,7 +695,7 @@ function AttentionTweakData:_init_drill()
 		notice_requires_FOV = false,
 		uncover_range = 200,
 		max_range = 2300,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "civilians_enemies"
 	}
@@ -705,7 +705,7 @@ function AttentionTweakData:_init_drill()
 		notice_requires_FOV = true,
 		uncover_range = 200,
 		max_range = 2200,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "civilians_enemies"
 	}
@@ -717,7 +717,7 @@ function AttentionTweakData:_init_sentry_gun()
 		uncover_range = 300,
 		reaction = "REACT_COMBAT",
 		release_delay = 0.0001,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		relation = "foe",
 		filter = "combatant"
 	}
@@ -726,7 +726,7 @@ function AttentionTweakData:_init_sentry_gun()
 		reaction = "REACT_COMBAT",
 		release_delay = 0.0001,
 		weight_mul = 0.2,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		relation = "foe",
 		filter = "combatant"
 	}
@@ -740,7 +740,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		uncover_range = 200,
 		suspicion_range = 800,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -750,7 +750,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		uncover_range = 200,
 		suspicion_range = 800,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "civilians_enemies"
 	}
@@ -758,7 +758,7 @@ function AttentionTweakData:_init_prop()
 		uncover_range = 500,
 		reaction = "REACT_AIM",
 		notice_requires_FOV = true,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "civilians_enemies"
 	}
@@ -767,7 +767,7 @@ function AttentionTweakData:_init_prop()
 		reaction = "REACT_AIM",
 		notice_requires_FOV = true,
 		max_range = 700,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "all_enemy"
 	}
@@ -775,7 +775,7 @@ function AttentionTweakData:_init_prop()
 		uncover_range = 500,
 		reaction = "REACT_AIM",
 		notice_requires_FOV = true,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "all_enemy"
 	}
@@ -785,7 +785,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		max_range = 1200,
 		suspicion_range = 1000,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -793,7 +793,7 @@ function AttentionTweakData:_init_prop()
 		uncover_range = 300,
 		reaction = "REACT_SCARED",
 		notice_requires_FOV = true,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -801,7 +801,7 @@ function AttentionTweakData:_init_prop()
 		uncover_range = 200,
 		reaction = "REACT_CURIOUS",
 		notice_requires_FOV = true,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "civilians_enemies"
 	}
@@ -811,7 +811,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		max_range = 1200,
 		suspicion_range = 1000,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -821,7 +821,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		max_range = 1200,
 		suspicion_range = 1000,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -831,7 +831,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		max_range = 1200,
 		suspicion_range = 1000,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -841,7 +841,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		max_range = 600,
 		suspicion_range = 500,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "law_enforcer"
 	}
@@ -853,7 +853,7 @@ function AttentionTweakData:_init_prop()
 		filter = "all",
 		uncover_range = 1200,
 		notice_requires_FOV = true,
-		verification_interval = 99.5,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		weight_mul = 0.4
 	}
@@ -863,7 +863,7 @@ function AttentionTweakData:_init_prop()
 		notice_requires_FOV = true,
 		max_range = 1500,
 		suspicion_range = 1200,
-		verification_interval = 99.4,
+		verification_interval = 99,
 		release_delay = 0.0001,
 		filter = "civilians_enemies"
 	}

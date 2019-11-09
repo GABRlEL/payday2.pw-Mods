@@ -56,6 +56,20 @@ self.specials = {
 			text_id = "hud_int_equipment_pickup_keycard",
 			icon = "equipment_bank_manager_key"
 		},
+		president_key = {
+			sync_possession = true,
+			action_message = "bank_manager_key_obtained",
+			transfer_quantity = 4,
+			text_id = "hud_int_equipment_pickup_presidential_keycard",
+			icon = "equipment_bank_manager_key"
+		},
+		mayan_gold_bar = {
+			sync_possession = true,
+			action_message = "mayan_gold",
+			transfer_quantity = 4,
+			text_id = "hud_int_equipment_mayan_gold_bar",
+			icon = "equipment_mayan_gold"
+		},
 		help_keycard = {
 			sync_possession = true,
 			action_message = "bank_manager_key_obtained",
@@ -70,7 +84,7 @@ self.specials = {
 		},
 		keychain = {
 			sync_possession = true,
-			icon = "equipment_generic_key",
+			icon = "equipment_key_chain",
 			text_id = "hud_int_equipment_pickup_keychain"
 		},
 		chavez_key = {
@@ -237,7 +251,7 @@ self.specials = {
 		},
 		circle_cutter = {
 			quantity = 1,
-			transfer_quantity = 3,
+			transfer_quantity = 4,
 			sync_possession = true,
 			text_id = "hud_equipment_circle_cutter",
 			max_quantity = 3,

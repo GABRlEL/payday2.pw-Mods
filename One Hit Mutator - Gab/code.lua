@@ -7,7 +7,10 @@ MutatorEnemyHealth.reductions = {
 	money = 0,
 	exp = 0
 }
-MutatorEnemyHealth.categories = {"enemies"}
+MutatorEnemyHealth.disables_achievements = false
+MutatorEnemyHealth.categories = {
+	"enemies"
+}
 MutatorEnemyHealth.icon_coords = {
 	4,
 	1

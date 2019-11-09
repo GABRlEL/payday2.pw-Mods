@@ -25,7 +25,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "thermite",
 		equipment_consume = true,
 		interact_distance = 300,
-		timer = 0
+		timer = 0.01
 	}
 	self.thermite_not_consume = deep_clone(self.thermite)
 	self.thermite_not_consume.equipment_consume = false
@@ -44,7 +44,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "gas",
 		equipment_consume = true,
 		interact_distance = 300,
-		timer = 0
+		timer = 0.01
 	}
 	self.train_car = {
 		icon = "develop",
@@ -75,7 +75,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_crowbar",
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_crowbar",
 		sound_interupt = "bar_crowbar_cancel",
@@ -87,7 +87,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_crowbar2",
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "und_crowbar_trunk",
 		sound_interupt = "und_crowbar_trunk_cancel",
@@ -98,7 +98,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_crowbar_breach",
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_crowbar_open_metal",
 		sound_interupt = "bar_crowbar_open_metal_cancel",
@@ -109,27 +109,27 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_add_blade",
 		equipment_text_id = "hud_equipment_no_saw_blade",
 		special_equipment = "saw_blade",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		equipment_consume = true
 	}
 	self.saw_blade = {
 		text_id = "hud_int_hold_take_blade",
 		action_text_id = "hud_action_taking_saw_blade",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment_block = "saw_blade"
 	}
 	self.open_slash_close_sec_box = {
 		text_id = "hud_int_hold_open_slash_close_sec_box",
 		action_text_id = "hud_action_opening_slash_closing_sec_box",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.activate_camera = {
 		text_id = "hud_int_hold_activate_camera",
 		action_text_id = "hud_action_activating_camera",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.requires_ecm_jammer_double = {
@@ -138,7 +138,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_use_ecm_jammer",
 		required_deployable = "ecm_jammer",
 		deployable_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished",
@@ -151,7 +151,7 @@ function InteractionTweakData:init(tweak_data)
 	self.requires_ecm_jammer = deep_clone(self.requires_ecm_jammer_double)
 	self.requires_ecm_jammer.axis = "y"
 	self.requires_ecm_jammer_atm = deep_clone(self.requires_ecm_jammer)
-	self.requires_ecm_jammer_atm.timer = 0
+	self.requires_ecm_jammer_atm.timer = 0.01
 	self.requires_ecm_jammer_atm.requires_upgrade = {
 		upgrade = "affects_cameras",
 		category = "ecm_jammer"
@@ -163,12 +163,12 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "blood_sample",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.secret_stash_limo_roof_crowbar = {
 		icon = "develop",
 		text_id = "debug_interact_hold_to_breach",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "und_limo_chassis_open",
 		sound_interupt = "und_limo_chassis_open_stop",
@@ -180,7 +180,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_crowbar",
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_crowbar_open_metal",
 		sound_interupt = "bar_crowbar_open_metal_cancel",
@@ -211,7 +211,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "acid",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_methlab_bubbling",
 		sound_start = "liquid_pour",
 		sound_interupt = "liquid_pour_stop",
@@ -224,7 +224,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "caustic_soda",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_methlab_caustic_cooler",
 		sound_start = "liquid_pour",
 		sound_interupt = "liquid_pour_stop",
@@ -237,7 +237,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "hydrogen_chloride",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_methlab_gas_to_salt",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -250,7 +250,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "liquid_meth",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_methlab_drying_meth",
 		sound_start = "liquid_pour",
 		sound_interupt = "liquid_pour_stop",
@@ -286,7 +286,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_elevator",
 		text_id = "hud_int_use_computer",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.elevator_button_roof = {
 		icon = "interaction_elevator",
@@ -331,7 +331,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_take_weapons",
 		action_text_id = "hud_action_taking_weapons",
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		interact_distance = 120
 	}
@@ -339,7 +339,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_take_weapons",
 		action_text_id = "hud_action_taking_weapons",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		interact_distance = 150
 	}
@@ -350,7 +350,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_pick_lock",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 100,
 		requires_upgrade = {
 			upgrade = "pick_lock_easy",
@@ -377,7 +377,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_pick_lock",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		upgrade_timer_multipliers = {
 			{
 				upgrade = "pick_lock_easy_speed_multiplier",
@@ -400,7 +400,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_pick_lock",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		requires_upgrade = {
 			upgrade = "pick_lock_hard",
 			category = "player"
@@ -416,7 +416,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_pick_lock",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_picking_lock",
 		upgrade_timer_multipliers = {
 			{
@@ -435,7 +435,7 @@ function InteractionTweakData:init(tweak_data)
 		is_lockpicking = true
 	}
 	self.pick_lock_deposit_transport = deep_clone(self.pick_lock_hard_no_skill)
-	self.pick_lock_deposit_transport.timer = 0
+	self.pick_lock_deposit_transport.timer = 0.01
 	self.pick_lock_deposit_transport.axis = "y"
 	self.pick_lock_deposit_transport.interact_distance = 80
 	self.pick_lock_deposit_transport.is_lockpicking = true
@@ -444,7 +444,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_try_keys",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_try_keys",
 		interact_distance = 100,
 		sound_start = "bar_unlock_grate_door",
@@ -470,7 +470,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "blood_sample_verified",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "y"
 	}
 	self.hospital_phone = {
@@ -482,42 +482,42 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_hospital_security_cable",
 		icon = "interaction_wirecutter",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 75
 	}
 	self.hospital_security_cable_red = {
 		text_id = "hud_int_hold_cut_wire_red",
 		icon = "interaction_wirecutter",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 75
 	}
 	self.hospital_security_cable_blue = {
 		text_id = "hud_int_hold_cut_wire_blue",
 		icon = "interaction_wirecutter",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 75
 	}
 	self.hospital_security_cable_green = {
 		text_id = "hud_int_hold_cut_wire_green",
 		icon = "interaction_wirecutter",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 75
 	}
 	self.hospital_security_cable_yellow = {
 		text_id = "hud_int_hold_cut_wire_yellow",
 		icon = "interaction_wirecutter",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 75
 	}
 	self.hospital_veil = {
 		icon = "equipment_vial",
 		text_id = "debug_interact_hospital_veil_hold",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hospital_veil_take = {
 		icon = "equipment_vial",
@@ -528,14 +528,14 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_sentrygun",
 		text_id = "debug_interact_hospital_sentry",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.drill = {
 		icon = "equipment_drill",
 		contour = "interactable_icon",
 		text_id = "hud_int_equipment_drill",
 		equipment_text_id = "hud_int_equipment_no_drill",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_drill",
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
@@ -547,7 +547,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_drill",
 		contour = "upgradable",
 		text_id = "hud_int_equipment_drill_upgrade",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -556,7 +556,7 @@ function InteractionTweakData:init(tweak_data)
 	self.drill_jammed = {
 		icon = "equipment_drill",
 		text_id = "hud_int_equipment_drill_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -572,7 +572,7 @@ function InteractionTweakData:init(tweak_data)
 		contour = "interactable_icon",
 		text_id = "hud_int_equipment_lance",
 		equipment_text_id = "hud_int_equipment_no_lance",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_lance",
 		sound_start = "bar_thermal_lance_apply",
 		sound_interupt = "bar_thermal_lance_apply_cancel",
@@ -583,7 +583,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_drill",
 		text_id = "hud_int_equipment_lance",
 		equipment_text_id = "hud_int_equipment_no_lance",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_lance",
 		sound_start = "bar_thermal_lance_apply",
 		sound_interupt = "bar_thermal_lance_apply_cancel",
@@ -593,7 +593,7 @@ function InteractionTweakData:init(tweak_data)
 	self.lance_jammed = {
 		icon = "equipment_drill",
 		text_id = "hud_int_equipment_lance_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_thermal_lance_fix",
 		sound_interupt = "bar_thermal_lance_fix_cancel",
 		sound_done = "bar_thermal_lance_fix_finished",
@@ -608,7 +608,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_drill",
 		contour = "upgradable",
 		text_id = "hud_int_equipment_lance_upgrade",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -619,7 +619,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_glass_cutter",
 		equipment_text_id = "debug_interact_equipment_glass_cutter",
 		special_equipment = "glass_cutter",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_glass_cutter",
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
@@ -628,7 +628,7 @@ function InteractionTweakData:init(tweak_data)
 	self.glass_cutter_jammed = {
 		icon = "equipment_cutter",
 		text_id = "debug_interact_cutter_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -637,7 +637,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hack_ipad = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_hack_ipad",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -646,7 +646,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hack_ipad_jammed = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_hack_ipad_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished"
@@ -654,7 +654,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hack_suburbia = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_hack_ipad",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished",
@@ -664,7 +664,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hack_suburbia_outline = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_hack_ipad",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished",
@@ -673,7 +673,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hack_suburbia_jammed = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_hack_ipad_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -687,7 +687,7 @@ function InteractionTweakData:init(tweak_data)
 	self.security_station = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_security_station",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -700,7 +700,7 @@ function InteractionTweakData:init(tweak_data)
 	self.security_station_keyboard = {
 		icon = "interaction_keyboard",
 		text_id = "debug_interact_security_station",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		interact_distance = 150,
@@ -711,7 +711,7 @@ function InteractionTweakData:init(tweak_data)
 	self.big_computer_hackable = {
 		icon = "interaction_keyboard",
 		text_id = "hud_int_big_computer_hackable",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		interact_distance = 200,
 		sound_start = "bar_keyboard",
@@ -721,7 +721,7 @@ function InteractionTweakData:init(tweak_data)
 	self.big_computer_hackable_axis = {
 		icon = "interaction_keyboard",
 		text_id = "hud_int_big_computer_hackable",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		interact_distance = 200,
@@ -732,7 +732,7 @@ function InteractionTweakData:init(tweak_data)
 	self.big_computer_not_hackable = {
 		icon = "interaction_keyboard",
 		text_id = "hud_int_big_computer_hackable",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		interact_distance = 200,
 		sound_start = "bar_keyboard",
@@ -744,7 +744,7 @@ function InteractionTweakData:init(tweak_data)
 	self.big_computer_server = {
 		icon = "interaction_keyboard",
 		text_id = "hud_int_big_computer_server",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		interact_distance = 150,
 		sound_start = "bar_keyboard",
@@ -754,7 +754,7 @@ function InteractionTweakData:init(tweak_data)
 	self.security_station_jammed = {
 		icon = "interaction_keyboard",
 		text_id = "debug_interact_security_station_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -764,7 +764,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_drill",
 		text_id = "debug_interact_drill",
 		equipment_text_id = "debug_interact_equipment_drill",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_drill",
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
@@ -774,7 +774,7 @@ function InteractionTweakData:init(tweak_data)
 	self.apartment_drill_jammed = {
 		icon = "equipment_drill",
 		text_id = "debug_interact_drill_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -785,7 +785,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_drill",
 		text_id = "debug_interact_drill",
 		equipment_text_id = "debug_interact_equipment_drill",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_drill",
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
@@ -795,7 +795,7 @@ function InteractionTweakData:init(tweak_data)
 	self.suburbia_drill_jammed = {
 		icon = "equipment_drill",
 		text_id = "debug_interact_drill_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -806,7 +806,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_drill",
 		text_id = "debug_interact_drill",
 		equipment_text_id = "debug_interact_equipment_drill",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "no_drill",
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
@@ -816,7 +816,7 @@ function InteractionTweakData:init(tweak_data)
 	self.goldheist_drill_jammed = {
 		icon = "equipment_drill",
 		text_id = "debug_interact_drill_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -827,14 +827,14 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_saw",
 		text_id = "debug_interact_hospital_saw_teddy",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hospital_saw = {
 		icon = "equipment_saw",
 		text_id = "debug_interact_saw",
 		equipment_text_id = "debug_interact_equipment_saw",
 		special_equipment = "saw",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -844,7 +844,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hospital_saw_jammed = {
 		icon = "equipment_saw",
 		text_id = "debug_interact_saw_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -859,7 +859,7 @@ function InteractionTweakData:init(tweak_data)
 	self.apartment_saw = {
 		icon = "equipment_saw",
 		text_id = "debug_interact_saw",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -869,7 +869,7 @@ function InteractionTweakData:init(tweak_data)
 	self.apartment_saw_jammed = {
 		icon = "equipment_saw",
 		text_id = "debug_interact_saw_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -884,7 +884,7 @@ function InteractionTweakData:init(tweak_data)
 	self.secret_stash_saw = {
 		icon = "equipment_saw",
 		text_id = "debug_interact_saw",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished",
@@ -894,7 +894,7 @@ function InteractionTweakData:init(tweak_data)
 	self.secret_stash_saw_jammed = {
 		icon = "equipment_saw",
 		text_id = "debug_interact_saw_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished",
@@ -912,7 +912,7 @@ function InteractionTweakData:init(tweak_data)
 		start_active = false,
 		interact_distance = 300,
 		axis = "z",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_helpup",
 		sound_interupt = "bar_helpup_cancel",
 		sound_done = "bar_helpup_finished",
@@ -936,7 +936,7 @@ function InteractionTweakData:init(tweak_data)
 		start_active = false,
 		interact_distance = 300,
 		no_contour = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_rescue",
 		sound_interupt = "bar_rescue_cancel",
 		sound_done = "bar_rescue_finished",
@@ -945,14 +945,14 @@ function InteractionTweakData:init(tweak_data)
 	self.hostage_skm = {
 		icon = "interaction_trade",
 		text_id = "debug_interact_trade_hostage_skm",
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_trading_hostage_skm"
 	}
 	self.hostage_trade = {
 		icon = "interaction_trade",
 		text_id = "debug_interact_trade",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		requires_upgrade = {
 			upgrade = "hostage_trade",
 			category = "player"
@@ -965,7 +965,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_trade",
 		text_id = "debug_interact_hostage_move",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_standing_up",
 		no_contour = true,
 		interaction_obj = Idstring("Spine")
@@ -974,7 +974,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_trade",
 		text_id = "debug_interact_hostage_stay",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_getting_down",
 		no_contour = true,
 		interaction_obj = Idstring("Spine2")
@@ -993,7 +993,7 @@ function InteractionTweakData:init(tweak_data)
 			upgrade = "can_reload",
 			category = "sentry_gun"
 		},
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "hint_reload_sentry",
 		sound_start = "bar_turret_ammo",
 		sound_interupt = "bar_turret_ammo_cancel",
@@ -1007,7 +1007,7 @@ function InteractionTweakData:init(tweak_data)
 			upgrade = "can_revive",
 			category = "sentry_gun"
 		},
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "hint_reload_sentry",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -1017,7 +1017,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.sentry_gun = {
 		icon = "equipment_ammo_bag",
-		timer = 0,
+		timer = 0.01,
 		text_id = "hud_interact_pickup_sentry_gun",
 		blocked_hint = "hint_reload_sentry",
 		sound_start = "bar_bag_generic",
@@ -1049,7 +1049,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_ammo_bag",
 		text_id = "debug_interact_bodybags_bag_take_bodybag",
 		contour = "deployable",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "full_bodybags",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -1060,7 +1060,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_ammo_bag",
 		text_id = "debug_interact_grenade_crate_take_grenades",
 		contour = "deployable",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "full_grenades",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -1071,7 +1071,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_ammo_bag",
 		text_id = "debug_interact_ammo_bag_take_ammo",
 		contour = "deployable",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "full_ammo",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -1086,7 +1086,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_doctor_bag",
 		text_id = "debug_interact_doctor_bag_heal",
 		contour = "deployable",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "full_health",
 		sound_start = "bar_helpup",
 		sound_interupt = "bar_helpup_cancel",
@@ -1120,7 +1120,7 @@ function InteractionTweakData:init(tweak_data)
 				category = "player"
 			}
 		},
-		timer = 0,
+		timer = 0.01,
 		no_contour = true,
 		force_update_position = true
 	}
@@ -1128,7 +1128,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "laptop_objective",
 		start_active = false,
 		text_id = "debug_interact_laptop_objective",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished",
@@ -1148,7 +1148,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "debug_interact_apartment_helicopter",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 350
 	}
 	self.test_interactive_door = {
@@ -1171,7 +1171,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "debug_interact_temp_interact_box",
 		sound_event = "ammo_bag_drop",
-		timer = 0
+		timer = 0.01
 	}
 	self.requires_cable_ties = {
 		icon = "develop",
@@ -1180,7 +1180,7 @@ function InteractionTweakData:init(tweak_data)
 		sound_event = "ammo_bag_drop",
 		special_equipment = "cable_tie",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		requires_upgrade = {
 			upgrade = "can_cable_tie_doors",
 			category = "cable_tie"
@@ -1213,12 +1213,12 @@ function InteractionTweakData:init(tweak_data)
 	self.driving_drive = {
 		icon = "develop",
 		text_id = "hud_int_driving_drive",
-		timer = 0
+		timer = 0.01
 	}
 	self.interaction_ball = {
 		icon = "develop",
 		text_id = "debug_interact_interaction_ball",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "cft_hose_loop",
 		sound_interupt = "cft_hose_cancel",
 		sound_done = "cft_hose_end"
@@ -1226,7 +1226,7 @@ function InteractionTweakData:init(tweak_data)
 	self.invisible_interaction_open = {
 		icon = "develop",
 		text_id = "hud_int_invisible_interaction_open",
-		timer = 0
+		timer = 0.01
 	}
 	self.invisible_interaction_open_axis = deep_clone(self.invisible_interaction_open)
 	self.invisible_interaction_open_axis.axis = "y"
@@ -1257,19 +1257,19 @@ function InteractionTweakData:init(tweak_data)
 	self.interact_gen_pku_loot_take = {
 		icon = "develop",
 		text_id = "debug_interact_gen_pku_loot_take",
-		timer = 0
+		timer = 0.01
 	}
 	self.water_tap = {
 		icon = "develop",
 		text_id = "debug_interact_water_tap",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y"
 	}
 	self.water_manhole = {
 		icon = "develop",
 		text_id = "debug_interact_water_tap",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "z",
 		interact_distance = 200
@@ -1277,7 +1277,7 @@ function InteractionTweakData:init(tweak_data)
 	self.sewer_manhole = {
 		icon = "develop",
 		text_id = "debug_interact_sewer_manhole",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		interact_distance = 200,
 		equipment_text_id = "debug_interact_equipment_crowbar"
@@ -1295,7 +1295,7 @@ function InteractionTweakData:init(tweak_data)
 		axis = "z"
 	}
 	self.hold_circuit_breaker = deep_clone(self.circuit_breaker)
-	self.hold_circuit_breaker.timer = 0
+	self.hold_circuit_breaker.timer = 0.01
 	self.hold_circuit_breaker.text_id = "hud_int_hold_turn_on_power"
 	self.hold_circuit_breaker.action_text_id = "hud_action_turning_on_power"
 	self.hold_circuit_breaker.axis = "y"
@@ -1304,7 +1304,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_transformer_box",
 		start_active = false,
 		axis = "y",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_power_box_loop",
 		sound_interupt = "bar_power_box_cancel",
 		sound_done = "bar_power_box_finished"
@@ -1320,7 +1320,7 @@ function InteractionTweakData:init(tweak_data)
 		contour = "interactable_icon",
 		text_id = "debug_interact_stash_planks",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		equipment_text_id = "debug_interact_equipment_stash_planks",
 		special_equipment = "planks",
 		equipment_consume = true,
@@ -1334,7 +1334,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_planks",
 		text_id = "debug_interact_stash_planks_pickup",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		special_equipment_block = "planks",
 		sound_start = "bar_pick_up_planks",
@@ -1345,7 +1345,7 @@ function InteractionTweakData:init(tweak_data)
 	self.stash_server = {
 		icon = "equipment_stash_server",
 		text_id = "debug_interact_stash_server",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "z",
 		equipment_text_id = "debug_interact_equipment_stash_server",
@@ -1355,7 +1355,7 @@ function InteractionTweakData:init(tweak_data)
 	self.stash_server_pickup = {
 		icon = "equipment_stash_server",
 		text_id = "hud_int_hold_take_hdd",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "z",
 		special_equipment_block = "server",
@@ -1365,7 +1365,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "debug_interact_move_bookshelf",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.tear_painting = {
 		icon = "develop",
@@ -1376,7 +1376,7 @@ function InteractionTweakData:init(tweak_data)
 	self.ejection_seat_interact = {
 		icon = "equipment_ejection_seat",
 		text_id = "debug_interact_temp_interact_box",
-		timer = 0
+		timer = 0.01
 	}
 	self.diamond_pickup = {
 		icon = "interaction_diamond",
@@ -1405,7 +1405,7 @@ function InteractionTweakData:init(tweak_data)
 	self.patientpaper_pickup = {
 		icon = "interaction_patientfile",
 		text_id = "debug_interact_patient_paper",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.diamond_case = {
@@ -1439,7 +1439,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "debug_interact_temp_interact_box",
 		sound_event = "ammo_bag_drop",
-		timer = 0
+		timer = 0.01
 	}
 	self.printing_plates = {
 		icon = "develop",
@@ -1448,7 +1448,7 @@ function InteractionTweakData:init(tweak_data)
 	self.c4 = {
 		icon = "equipment_c4",
 		text_id = "debug_interact_c4",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished",
@@ -1461,7 +1461,7 @@ function InteractionTweakData:init(tweak_data)
 	self.c4_diffusible = {
 		icon = "equipment_c4",
 		text_id = "debug_c4_diffusible",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished",
@@ -1470,7 +1470,7 @@ function InteractionTweakData:init(tweak_data)
 	self.open_trunk = {
 		icon = "develop",
 		text_id = "debug_interact_open_trunk",
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		action_text_id = "hud_action_opening_trunk"
 	}
@@ -1484,14 +1484,14 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_open_door",
 		text_id = "debug_interact_embassy_door",
 		interact_distance = 150,
-		timer = 0
+		timer = 0.01
 	}
 	self.c4_special = {
 		icon = "equipment_c4",
 		text_id = "debug_interact_c4",
 		equipment_text_id = "debug_interact_equipment_c4",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished",
@@ -1500,7 +1500,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.c4_bag = {
 		text_id = "debug_interact_c4_bag",
-		timer = 0,
+		timer = 0.01,
 		contour = "interactable",
 		axis = "z",
 		sound_start = "bar_bag_generic",
@@ -1511,7 +1511,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_money_wrap",
 		text_id = "debug_interact_money_wrap_take_money",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_taking_money",
 		blocked_hint = "carry_block",
 		sound_start = "bar_bag_money",
@@ -1522,7 +1522,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_money_wrap",
 		text_id = "debug_interact_money_wrap_take_money",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_taking_money",
 		blocked_hint = "carry_block",
 		sound_start = "bar_bag_money",
@@ -1536,7 +1536,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_money_wrap",
 		text_id = "debug_interact_money_printed_take_money",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_taking_money"
 	}
 	self.money_wrap_single_bundle = {
@@ -1559,7 +1559,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_gold",
 		text_id = "debug_interact_gold_pile_take_money",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_taking_gold",
 		blocked_hint = "carry_block"
 	}
@@ -1569,7 +1569,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_gold",
 		text_id = "debug_interact_gold_bag",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		special_equipment_block = "gold_bag_equip",
 		action_text_id = "hud_action_taking_gold"
 	}
@@ -1580,7 +1580,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "gold_bag_equip",
 		start_active = true,
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_event = "ammo_bag_drop",
 		axis = "x"
 	}
@@ -1592,7 +1592,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "cable_tie",
 		equipment_consume = true,
 		no_contour = true,
-		timer = 0,
+		timer = 0.01,
 		upgrade_timer_multiplier = {
 			upgrade = "interact_speed_multiplier",
 			category = "cable_tie"
@@ -1608,7 +1608,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_consume = true,
 		dont_need_equipment = true,
 		no_contour = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_cable_tying"
 	}
 	self.intimidate_with_contour = deep_clone(self.intimidate)
@@ -1624,7 +1624,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_hold_grab_the_bag",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		force_update_position = true,
 		action_text_id = "hud_action_grabbing_bag",
 		blocked_hint = "carry_block"
@@ -1633,7 +1633,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_hold_grab_the_painting",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		force_update_position = true,
 		action_text_id = "hud_action_grabbing_painting",
 		blocked_hint = "carry_block"
@@ -1642,7 +1642,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_disable_alarm_pager",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		force_update_position = true,
 		action_text_id = "hud_action_disabling_alarm_pager",
 		contour_preset = "generic_interactable",
@@ -1658,7 +1658,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_dispose_corpse",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		requires_upgrade = {
 			upgrade = "corpse_dispose",
 			category = "player"
@@ -1676,7 +1676,7 @@ function InteractionTweakData:init(tweak_data)
 		contour = "interactable_icon",
 		required_deployable = "trip_mine",
 		deployable_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished",
@@ -1691,7 +1691,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hostage_convert",
 		sound_event = "ammo_bag_drop",
 		blocked_hint = "convert_enemy_failed",
-		timer = 0,
+		timer = 0.01,
 		requires_upgrade = {
 			upgrade = "convert_enemies",
 			category = "player"
@@ -1712,7 +1712,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_cut_fence",
 		action_text_id = "hud_action_cutting_fence",
 		contour = "interactable_icon",
-		timer = 0,
+		timer = 0.01,
 		start_active = true,
 		sound_start = "bar_cut_fence",
 		sound_interupt = "bar_cut_fence_cancel",
@@ -1721,7 +1721,7 @@ function InteractionTweakData:init(tweak_data)
 	self.burning_money = {
 		text_id = "hud_int_hold_ignite_money",
 		action_text_id = "hud_action_igniting_money",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		interact_distance = 250
 	}
@@ -1730,7 +1730,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_painting",
 		start_active = false,
 		axis = "y",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_painting",
 		sound_interupt = "bar_steal_painting_cancel",
 		sound_done = "bar_steal_painting_finished",
@@ -1745,7 +1745,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_hack_numpad",
 		action_text_id = "hud_action_hacking_numpad",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.pickup_phone = {
 		text_id = "hud_int_pickup_phone",
@@ -1756,7 +1756,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_take_server = {
 		text_id = "hud_int_hold_take_server",
 		action_text_id = "hud_action_taking_server",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_circuit",
 		sound_interupt = "bar_steal_circuit_cancel",
 		sound_done = "bar_steal_circuit_finished"
@@ -1767,7 +1767,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_take_blueprints",
 		action_text_id = "hud_action_taking_blueprints",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_painting",
 		sound_interupt = "bar_steal_painting_cancel",
 		sound_done = "bar_steal_painting_finished"
@@ -1779,13 +1779,13 @@ function InteractionTweakData:init(tweak_data)
 	self.take_confidential_folder_event = {
 		text_id = "hud_int_take_confidential_folder_event",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_take_gas_can = {
 		text_id = "hud_int_hold_take_gas",
 		action_text_id = "hud_action_taking_gasoline",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		special_equipment_block = "gas"
 	}
 	self.gen_ladyjustice_statue = {text_id = "hud_int_ladyjustice_statue"}
@@ -1794,33 +1794,33 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_placing_gps_tracker",
 		contour = "interactable_icon",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200
 	}
 	self.keyboard_no_time = deep_clone(self.security_station_keyboard)
-	self.keyboard_no_time.timer = 0
+	self.keyboard_no_time.timer = 0.01
 	self.keyboard_eday_1 = deep_clone(self.security_station_keyboard)
-	self.keyboard_eday_1.timer = 0
+	self.keyboard_eday_1.timer = 0.01
 	self.keyboard_eday_1.text_id = "hud_int_keyboard_eday_1"
 	self.keyboard_eday_2 = deep_clone(self.security_station_keyboard)
-	self.keyboard_eday_2.timer = 0
+	self.keyboard_eday_2.timer = 0.01
 	self.keyboard_eday_2.text_id = "hud_int_keyboard_eday_2"
 	self.keyboard_hox_1 = deep_clone(self.security_station_keyboard)
-	self.keyboard_hox_1.timer = 0
+	self.keyboard_hox_1.timer = 0.01
 	self.keyboard_hox_1.text_id = "hud_int_keyboard_hox_1"
 	self.keyboard_hox_1.action_text_id = "hud_action_keyboard_hox_1"
 	self.hold_use_computer = {
 		start_active = false,
 		text_id = "hud_int_hold_use_computer",
 		action_text_id = "hud_action_using_computer",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		interact_distance = 100
 	}
 	self.use_server_device = {
 		text_id = "hud_int_hold_use_device",
 		action_text_id = "hud_action_using_device",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.iphone_answer = {
@@ -1835,7 +1835,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_steal_meth",
 		action_text_id = "hud_action_stealing_meth",
 		start_active = true,
-		timer = 0
+		timer = 0.01
 	}
 	self.pickup_keycard = {
 		text_id = "hud_int_pickup_keycard",
@@ -1850,14 +1850,14 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_invisible_interaction_open",
 		start_active = true,
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		axis = "x"
 	}
 	self.open_hatch_generic = {
 		text_id = "hud_int_invisible_interaction_open",
 		start_active = true,
 		interact_distance = 100,
-		timer = 0
+		timer = 0.01
 	}
 	self.money_luggage = deep_clone(self.money_wrap)
 	self.money_luggage.start_active = true
@@ -1866,7 +1866,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_pickup_lance",
 		action_text_id = "hud_action_grabbing_lance",
 		sound_event = "ammo_bag_drop",
-		timer = 0
+		timer = 0.01
 	}
 	self.barrier_numpad = {
 		text_id = "hud_int_barrier_numpad",
@@ -1891,7 +1891,7 @@ function InteractionTweakData:init(tweak_data)
 	self.open_slash_close_act = {
 		text_id = "hud_int_open_slash_close",
 		action_text_id = "hud_action_open_slash_close",
-		timer = 0,
+		timer = 0.01,
 		start_active = true
 	}
 	self.just_close = deep_clone(self.open_slash_close)
@@ -1900,7 +1900,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_raise_balloon",
 		action_text_id = "hud_action_raise_balloon",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_winch_box_start",
 		sound_interupt = "bar_winch_box_cancel",
 		sound_done = "bar_winch_box_finish"
@@ -1916,13 +1916,13 @@ function InteractionTweakData:init(tweak_data)
 	self.exit_to_crimenet = {
 		text_id = "hud_int_exit_to_crimenet",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.gage_assignment = {
 		icon = "develop",
 		text_id = "debug_interact_gage_assignment_take",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_taking_gage_assignment",
 		blocked_hint = "hint_gage_mods_dlc_block"
 	}
@@ -1931,7 +1931,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_reaktor",
 		blocked_hint = "carry_block",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		no_contour = true,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
@@ -1940,7 +1940,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_cocaine = {
 		text_id = "hud_int_hold_take_cocaine",
 		action_text_id = "hud_action_taking_cocaine",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
 		sound_done = "bar_bag_money_finished",
@@ -1949,7 +1949,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_artifact_statue = {
 		text_id = "hud_int_hold_take_artifact",
 		action_text_id = "hud_action_taking_artifact",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
@@ -1969,7 +1969,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_jewelry = {
 		text_id = "hud_int_hold_take_jewelry",
 		action_text_id = "hud_action_taking_jewelry",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_jewelry",
 		sound_interupt = "bar_bag_jewelry_cancel",
 		sound_done = "bar_bag_jewelry_finished",
@@ -1978,7 +1978,7 @@ function InteractionTweakData:init(tweak_data)
 	self.taking_meth = {
 		text_id = "hud_int_hold_take_meth",
 		action_text_id = "hud_action_taking_meth",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
 		sound_done = "bar_bag_money_finished",
@@ -2025,7 +2025,7 @@ function InteractionTweakData:init(tweak_data)
 	self.crate_loot = {
 		text_id = "hud_int_hold_crack_crate",
 		action_text_id = "hud_action_cracking_crate",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_open_crate",
 		sound_interupt = "bar_open_crate_cancel",
@@ -2041,7 +2041,7 @@ function InteractionTweakData:init(tweak_data)
 	self.weapon_case_not_active.start_active = false
 	self.crate_weapon_crowbar = deep_clone(self.weapon_case)
 	self.crate_weapon_crowbar.equipment_text_id = "debug_interact_equipment_crowbar"
-	self.crate_weapon_crowbar.timer = 0
+	self.crate_weapon_crowbar.timer = 0.01
 	self.crate_weapon_crowbar.start_active = false
 	self.crate_weapon_crowbar.special_equipment = "crowbar"
 	self.crate_weapon_crowbar.sound_start = "bar_crowbar_plastic"
@@ -2050,7 +2050,7 @@ function InteractionTweakData:init(tweak_data)
 	self.crate_loot_close = {
 		text_id = "hud_int_hold_close_crate",
 		action_text_id = "hud_action_closing_crate",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_close_crate",
 		sound_interupt = "bar_close_crate_cancel",
@@ -2062,7 +2062,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_disassemble_turret",
 		blocked_hint = "carry_block",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_circuit",
 		sound_interupt = "bar_steal_circuit_cancel",
 		sound_done = "bar_steal_circuit_finished"
@@ -2072,18 +2072,18 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_packing_shells",
 		blocked_hint = "carry_block",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.bank_note = {
 		text_id = "hud_int_bank_note",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.pickup_boards = {
 		text_id = "hud_int_hold_pickup_boards",
 		action_text_id = "hud_action_picking_up",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		special_equipment_block = "boards",
 		sound_start = "bar_pick_up_planks",
@@ -2095,7 +2095,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_stash_planks",
 		action_text_id = "hud_action_barricading",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		equipment_text_id = "hud_equipment_need_boards",
 		special_equipment = "boards",
 		equipment_consume = true,
@@ -2107,7 +2107,7 @@ function InteractionTweakData:init(tweak_data)
 	self.uload_database = {
 		text_id = "hud_int_hold_use_computer",
 		action_text_id = "hud_action_using_computer",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
@@ -2118,7 +2118,7 @@ function InteractionTweakData:init(tweak_data)
 	self.uload_database_jammed = {
 		text_id = "hud_int_hold_resume_upload",
 		action_text_id = "hud_action_resuming_upload",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished",
@@ -2126,14 +2126,14 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.votingmachine2 = {
 		text_id = "debug_interact_hack_ipad",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
 	}
 	self.votingmachine2_jammed = {
 		text_id = "debug_interact_hack_ipad_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -2144,7 +2144,7 @@ function InteractionTweakData:init(tweak_data)
 		start_active = true,
 		interact_distance = 150,
 		no_contour = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_tape_looping",
 		requires_upgrade = {
 			upgrade = "tape_loop_duration",
@@ -2166,7 +2166,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "c4",
 		equipment_consume = true,
 		axis = "z",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished"
@@ -2176,7 +2176,7 @@ function InteractionTweakData:init(tweak_data)
 	self.huge_lance = {
 		text_id = "hud_int_equipment_huge_lance",
 		action_text_id = "hud_action_placing_huge_lance",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_huge_lance_fix",
 		sound_interupt = "bar_huge_lance_fix_cancel",
 		sound_done = "bar_huge_lance_fix_finished"
@@ -2188,7 +2188,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_int_equipment_no_lance_part",
 		blocked_hint = "no_huge_lance",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_huge_lance_fix",
 		sound_interupt = "bar_huge_lance_fix_cancel",
 		sound_done = "bar_huge_lance_fix_finished"
@@ -2221,7 +2221,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "debug_interact_equipment_thermite",
 		equipment_consume = true,
 		contour = "interactable_icon",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished"
@@ -2230,7 +2230,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_ignite_thermite",
 		action_text_id = "hud_action_ignite_thermite",
 		contour = "interactable_icon",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_thermal_lance_fix",
 		sound_interupt = "bar_thermal_lance_fix_cancel",
 		sound_done = "bar_thermal_lance_fix_finished"
@@ -2243,7 +2243,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_consume = true,
 		start_active = false,
 		contour = "interactable_icon",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_thermal_lance_fix",
 		sound_interupt = "bar_thermal_lance_fix_cancel",
 		sound_done = "bar_thermal_lance_fix_finished"
@@ -2251,20 +2251,20 @@ function InteractionTweakData:init(tweak_data)
 	self.set_off_alarm = {
 		text_id = "hud_int_set_off_alarm",
 		action_text_id = "hud_action_setting_off_alarm",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_open_vault = {
 		text_id = "hud_int_hold_open_vault",
 		action_text_id = "hud_action_opening_vault",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		start_active = false
 	}
 	self.hold_open_vault_2s = {
 		text_id = "hud_int_hold_open_vault",
 		action_text_id = "hud_action_opening_vault",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		start_active = false
 	}
@@ -2273,7 +2273,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_bagging_sa_armor",
 		blocked_hint = "carry_block",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_armor",
 		sound_interupt = "bar_bag_armor_cancel",
 		sound_done = "bar_bag_armor_finished"
@@ -2285,7 +2285,7 @@ function InteractionTweakData:init(tweak_data)
 	self.enter_code = {
 		text_id = "hud_int_enter_code",
 		action_text_id = "hud_action_enter_code",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
@@ -2304,7 +2304,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "debug_interact_crowbar",
 		action_text_id = "hud_action_breaching_door",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_pry_open_elevator_door",
 		sound_interupt = "bar_pry_open_elevator_door_cancel",
 		sound_done = "bar_pry_open_elevator_door_finished"
@@ -2317,7 +2317,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_setup_zipline",
 		action_text_id = "hud_action_setting_zipline",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished"
@@ -2343,7 +2343,7 @@ function InteractionTweakData:init(tweak_data)
 			"barcode_isles_beach",
 			"barcode_opa_locka"
 		},
-		timer = 0
+		timer = 0.01
 	}
 	self.pku_barcode_brickell = deep_clone(self.pku_barcode_downtown)
 	self.pku_barcode_brickell.special_equipment_block = {
@@ -2392,7 +2392,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_barcode",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.read_barcode_brickell = {
 		text_id = "hud_int_hold_read_barcode",
@@ -2409,7 +2409,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_barcode",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.read_barcode_edgewater = {
 		text_id = "hud_int_hold_read_barcode",
@@ -2426,7 +2426,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_barcode",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.read_barcode_isles_beach = {
 		text_id = "hud_int_hold_read_barcode",
@@ -2443,7 +2443,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_barcode",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.read_barcode_opa_locka = {
 		text_id = "hud_int_hold_read_barcode",
@@ -2460,20 +2460,20 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_barcode",
 		equipment_consume = true,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.read_barcode_activate = {
 		text_id = "hud_int_hold_activate_reader",
 		action_text_id = "hud_action_activating_reader",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hlm_motor_start = {
 		text_id = "hud_int_hold_start_motor",
 		action_text_id = "hud_action_startig_motor",
 		start_active = false,
 		force_update_position = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_huge_lance_fix",
 		sound_interupt = "bar_huge_lance_fix_cancel",
 		sound_done = "bar_huge_lance_fix_finished"
@@ -2482,13 +2482,13 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_connect_equip",
 		action_text_id = "hud_action_connecting_equip",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hlm_roll_carpet = {
 		text_id = "hud_int_hold_roll_carpet",
 		action_text_id = "hud_action_rolling_carpet",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_roll_carpet",
 		sound_interupt = "bar_roll_carpet_cancel",
 		sound_done = "bar_roll_carpet_finished"
@@ -2497,18 +2497,18 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_pku_equipment",
 		action_text_id = "hud_action_grabbing_equipment",
 		sound_event = "ammo_bag_drop",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_pku_briefcase = {
 		text_id = "hud_int_hold_pku_briefcase",
 		sound_event = "ammo_bag_drop",
-		timer = 0
+		timer = 0.01
 	}
 	self.disarm_bomb = {
 		text_id = "hud_int_hold_disarm_bomb",
 		action_text_id = "hud_action_disarm_bomb",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.pku_take_mask = {
 		text_id = "hud_int_take_mask",
@@ -2518,7 +2518,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_activate_sprinklers",
 		action_text_id = "hud_action_activating_sprinklers",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_thermal_lance_apply",
 		sound_interupt = "bar_thermal_lance_apply_cancel",
 		sound_done = "bar_thermal_lance_apply_finished"
@@ -2527,19 +2527,19 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_open_circuitbreaker",
 		action_text_id = "hud_action_opening_circuitbreaker",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_remove_cover = {
 		text_id = "hud_int_hold_remove_cover",
 		action_text_id = "hud_action_removing_cover",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_cut_cable = {
 		text_id = "hud_int_hold_cut_cable",
 		action_text_id = "hud_action_cutting_cable",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_cut_fence",
 		sound_interupt = "bar_cut_fence_cancel",
 		sound_done = "bar_cut_fence_finished"
@@ -2550,7 +2550,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_first_aid_kit",
 		text_id = "debug_interact_doctor_bag_heal",
 		contour = "deployable",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "full_health",
 		sound_start = "bar_helpup",
 		sound_interupt = "bar_helpup_cancel",
@@ -2560,7 +2560,7 @@ function InteractionTweakData:init(tweak_data)
 	self.road_spikes = {
 		text_id = "hud_int_remove_stinger",
 		action_text_id = "hud_action_removing_stinger",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		sound_start = "bar_roadspike",
@@ -2570,7 +2570,7 @@ function InteractionTweakData:init(tweak_data)
 	self.grab_server = {
 		text_id = "hud_int_grab_server",
 		action_text_id = "hud_action_grab_server",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
 		sound_done = "bar_bag_money_finished"
@@ -2579,7 +2579,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_take_harddrive",
 		action_text_id = "hud_action_take_harddrive",
 		special_equipment_block = "harddrive",
-		timer = 0
+		timer = 0.01
 	}
 	self.place_harddrive = {
 		text_id = "hud_int_place_harddrive",
@@ -2587,12 +2587,12 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_harddrive",
 		special_equipment = "harddrive",
 		equipment_consume = true,
-		timer = 0
+		timer = 0.01
 	}
 	self.invisible_interaction_searching = {
 		text_id = "hud_int_search_files",
 		action_text_id = "hud_action_searching_files",
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		contour = "interactable_icon",
 		special_equipment_block = "files",
@@ -2605,7 +2605,7 @@ function InteractionTweakData:init(tweak_data)
 	self.invisible_interaction_gathering = {
 		text_id = "hud_int_hold_gather_evidence",
 		action_text_id = "hud_action_gathering_evidence",
-		timer = 0,
+		timer = 0.01,
 		special_equipment_block = "evidence",
 		start_active = false
 	}
@@ -2615,18 +2615,18 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_evidence",
 		special_equipment = "evidence",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.take_medical_supplies = {
 		text_id = "hud_int_take_supplies",
 		action_text_id = "hud_int_taking_supplies",
-		timer = 0
+		timer = 0.01
 	}
 	self.search_files_false = {
 		text_id = "hud_int_search_files",
 		action_text_id = "hud_action_searching_files",
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		contour = "interactable_icon",
 		interact_distance = 200,
@@ -2640,14 +2640,14 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_need_files",
 		special_equipment = "files",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		contour = "interactable_icon",
 		interact_distance = 200
 	}
 	self.hack_electric_box = {
 		text_id = "hud_int_hack_box",
 		action_text_id = "hud_action_hack_box",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y",
 		sound_start = "bar_hack_fuse_box",
@@ -2658,7 +2658,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_take_ticket",
 		action_text_id = "hud_action_take_ticket",
 		icon = "equipment_crowbar",
-		timer = 0,
+		timer = 0.01,
 		special_equipment_block = "ticket",
 		start_active = false,
 		sound_start = "bar_ticket",
@@ -2670,7 +2670,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_use_ticket",
 		equipment_text_id = "hud_equipment_use_ticket",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		special_equipment = "ticket",
 		sound_start = "bar_ticket",
 		sound_interupt = "bar_ticket_cancel",
@@ -2682,7 +2682,7 @@ function InteractionTweakData:init(tweak_data)
 		start_active = false,
 		force_update_position = true,
 		axis = "z",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 500,
 		sound_start = "bar_car_tap",
 		sound_interupt = "bar_car_tap_cancel",
@@ -2693,21 +2693,21 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_hacking_computer",
 		start_active = false,
 		axis = "z",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_approve_req = {
 		text_id = "hud_int_hold_approve_request",
 		action_text_id = "hud_action_approving_request",
 		start_active = false,
 		axis = "z",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_download_keys = {
 		text_id = "hud_int_hold_download_keys",
 		action_text_id = "hud_action_downloading_keys",
 		start_active = false,
 		axis = "z",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -2717,13 +2717,13 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_analyzing_evidence",
 		start_active = false,
 		axis = "z",
-		timer = 0
+		timer = 0.01
 	}
 	self.take_bridge = {
 		text_id = "hud_int_take_bridge",
 		action_text_id = "hud_action_take_bridge",
 		special_equipment_block = "bridge",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -2732,7 +2732,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_use_bridge",
 		equipment_text_id = "hud_equipment_use_bridge",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		special_equipment = "bridge",
 		interact_distance = 500,
 		start_active = false
@@ -2745,27 +2745,27 @@ function InteractionTweakData:init(tweak_data)
 		equipment_consume = true,
 		start_active = true,
 		axis = "y",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_close = {
 		text_id = "hud_int_invisible_interaction_close",
 		action_text_id = "hud_action_open_slash_close",
 		start_active = false,
 		axis = "y",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_open = {
 		text_id = "hud_int_invisible_interaction_open",
 		action_text_id = "hud_action_open_slash_close",
 		start_active = false,
 		axis = "y",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_move_car = {
 		text_id = "hud_int_hold_move_car",
 		action_text_id = "hud_action_moving_car",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		axis = "y",
 		sound_start = "bar_cop_car",
@@ -2775,7 +2775,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_remove_armor_plating = {
 		text_id = "hud_int_hold_remove_armor_plating",
 		action_text_id = "hud_action_removing_armor_plating",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_circuit",
 		sound_interupt = "bar_steal_circuit_cancel",
 		sound_done = "bar_steal_circuit_finished"
@@ -2786,7 +2786,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_sandwich = {
 		text_id = "hud_int_hold_take_sandwich",
 		action_text_id = "hud_action_taking_sandwich",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
 		sound_done = "bar_bag_money_finished",
@@ -2804,7 +2804,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_open_xmas_present",
 		action_text_id = "hud_action_opening_xmas_present",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_gift_box_open",
 		sound_interupt = "bar_gift_box_open_cancel",
 		sound_done = "bar_gift_box_open_finished"
@@ -2820,7 +2820,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_call_captain",
 		action_text_id = "hud_action_calling_captain",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 75
 	}
 	self.hold_pku_disassemble_cro_loot = {
@@ -2828,7 +2828,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_disassemble_cro_loot",
 		blocked_hint = "carry_block",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -2838,7 +2838,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_remove_ladder",
 		action_text_id = "hud_action_remove_ladder",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_done = "",
 		interact_distance = 150
 	}
@@ -2848,7 +2848,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_connect_hose",
 		start_active = false,
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_start = "bar_hose_ground_connect",
 		sound_interupt = "bar_hose_ground_connect_cancel",
@@ -2858,14 +2858,14 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_generator_start",
 		action_text_id = "hud_action_generator_start",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300
 	}
 	self.hold_open_bomb_case = {
 		text_id = "hud_int_hold_open_case",
 		action_text_id = "hud_action_int_hold_open_case",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 120,
 		axis = "x"
 	}
@@ -2879,13 +2879,13 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_open_cargo_door",
 		start_active = false,
 		interact_distance = 150,
-		timer = 0
+		timer = 0.01
 	}
 	self.close_train_cargo_door = {
 		text_id = "hud_int_close_cargo_door",
 		start_active = false,
 		interact_distance = 150,
-		timer = 0
+		timer = 0.01
 	}
 	self.take_chainsaw = {
 		text_id = "hud_int_take_chainsaw",
@@ -2898,7 +2898,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hint_no_chainsaw",
 		special_equipment = "chainsaw",
 		equipment_consume = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_chainsaw",
 		sound_interupt = "bar_chainsaw_cancel",
 		sound_done = "bar_chainsaw_finished"
@@ -2907,7 +2907,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_keyboard",
 		text_id = "hud_hack_ship_control",
 		action_text_id = "hud_hacking_ship_control",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		interact_distance = 150,
@@ -2919,7 +2919,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_keyboard",
 		text_id = "hud_move_ship_gps_coords",
 		action_text_id = "hud_moving_ship_gps_coords",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		interact_distance = 150,
@@ -2937,7 +2937,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.c4_x1_bag = {
 		text_id = "debug_interact_c4_bag",
-		timer = 0,
+		timer = 0.01,
 		contour = "interactable",
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
@@ -2946,7 +2946,7 @@ function InteractionTweakData:init(tweak_data)
 	self.cut_glass = {
 		text_id = "hud_int_cut_glass",
 		action_text_id = "hud_action_cut_glass",
-		timer = 0,
+		timer = 0.01,
 		contour = "interactable_icon",
 		axis = "y",
 		equipment_text_id = "hud_equipment_need_glass_cutter",
@@ -2958,13 +2958,13 @@ function InteractionTweakData:init(tweak_data)
 	self.mus_hold_open_display = {
 		text_id = "hud_int_hold_open_display",
 		action_text_id = "hud_action_open_display",
-		timer = 0
+		timer = 0.01
 	}
 	self.mus_take_diamond = {text_id = "debug_interact_diamond"}
 	self.rewire_electric_box = {
 		text_id = "hud_int_rewire_box",
 		action_text_id = "hud_action_rewire_box",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y",
 		sound_start = "bar_hack_fuse_box",
@@ -2974,7 +2974,7 @@ function InteractionTweakData:init(tweak_data)
 	self.timelock_hack = {
 		text_id = "hud_int_hack_timelock",
 		action_text_id = "hud_action_hack_timelock",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y",
 		sound_start = "bar_hack_fuse_box",
@@ -2984,7 +2984,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_unlock_car = {
 		text_id = "hud_int_hold_unlock_car",
 		action_text_id = "hud_unlocking_car",
-		timer = 0,
+		timer = 0.01,
 		equipment_text_id = "hud_equipment_need_car_keys",
 		special_equipment = "c_keys",
 		equipment_consume = true
@@ -2992,7 +2992,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_evidence_bag = {
 		text_id = "hud_int_hold_take_evidence",
 		action_text_id = "hud_action_taking_evidence_bag",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
@@ -3002,17 +3002,17 @@ function InteractionTweakData:init(tweak_data)
 	self.mcm_fbi_case = {
 		text_id = "hud_int_hold_open_case",
 		action_text_id = "hud_action_opening_case",
-		timer = 0
+		timer = 0.01
 	}
 	self.mcm_fbi_taperecorder = {
 		text_id = "hud_int_play_tape",
 		action_text_id = "hud_action_play_tape",
-		timer = 0
+		timer = 0.01
 	}
 	self.mcm_laptop = {
 		text_id = "hud_int_hack_laptop",
 		action_text_id = "hud_action_hack_laptop",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -3020,7 +3020,7 @@ function InteractionTweakData:init(tweak_data)
 	self.mcm_laptop_code = {
 		text_id = "hud_int_grab_code",
 		action_text_id = "hud_action_grab_code",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -3028,7 +3028,7 @@ function InteractionTweakData:init(tweak_data)
 	self.mcm_break_planks = {
 		text_id = "hud_int_break_planks",
 		action_text_id = "hud_action_break_planks",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_wood_fence_break",
 		sound_interupt = "bar_wood_fence_cancel",
 		sound_done = "bar_wood_fence_finnished"
@@ -3041,7 +3041,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_consume = true,
 		start_active = true,
 		axis = "y",
-		timer = 0
+		timer = 0.01
 	}
 	self.mcm_panicroom_keycard_2 = {
 		text_id = "hud_int_equipment_keycard",
@@ -3056,7 +3056,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_jamming_vent",
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		equipment_consume = true,
 		sound_start = "bar_fan_jam",
@@ -3066,7 +3066,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_warhead = {
 		text_id = "hud_int_hold_take_warhead",
 		action_text_id = "hud_action_taking_warhead",
-		timer = 0,
+		timer = 0.01,
 		start_active = true,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
@@ -3076,7 +3076,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_warhead_box = {
 		text_id = "hud_int_hold_open_case",
 		action_text_id = "hud_action_opening_case",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_open_warhead_box",
 		sound_interupt = "bar_open_warhead_box_cancel",
@@ -3085,13 +3085,13 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_circle_cutter = {
 		text_id = "hud_int_hold_take_circle_cutter",
 		action_text_id = "hud_action_taking_circle_cutter",
-		timer = 0,
+		timer = 0.01,
 		sound_done = "pick_up_crowbar"
 	}
 	self.hold_circle_cutter = {
 		text_id = "debug_interact_glass_cutter",
 		action_text_id = "hud_action_placing_cutter",
-		timer = 0,
+		timer = 0.01,
 		equipment_consume = true,
 		equipment_text_id = "hud_equipment_need_circle_cutter",
 		special_equipment = "circle_cutter",
@@ -3101,7 +3101,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.circle_cutter_jammed = {
 		text_id = "debug_interact_cutter_jammed",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished"
@@ -3109,20 +3109,20 @@ function InteractionTweakData:init(tweak_data)
 	self.answer_call = {
 		text_id = "hud_int_hold_answer_call",
 		action_text_id = "hud_action_answering_call",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_take_fire_extinguisher = {
 		text_id = "hud_int_hold_take_fire_extinguisher",
 		action_text_id = "hud_action_taking_fire_extinguisher",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment_block = "fire_extinguisher"
 	}
 	self.hold_extinguish_fire = {
 		text_id = "hud_int_hold_extinguish_fire",
 		action_text_id = "hud_action_extinguishing_fire",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		start_active = false,
 		equipment_consume = true,
@@ -3135,7 +3135,7 @@ function InteractionTweakData:init(tweak_data)
 	self.are_laptop = {
 		text_id = "hud_int_hold_place_laptop",
 		action_text_id = "hud_action_placeing_laptop",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -3144,7 +3144,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_search_c4",
 		action_text_id = "hud_action_searching_c4",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_gift_box_open",
 		sound_interupt = "bar_gift_box_open_cancel",
 		sound_done = "bar_gift_box_open_finished"
@@ -3173,7 +3173,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hack_skylight_barrier = {
 		text_id = "hud_hack_skylight_barrier",
 		action_text_id = "hud_action_hack_skylight_barrier",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y",
 		sound_start = "bar_hack_fuse_box",
@@ -3185,7 +3185,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_take_bottle",
 		icon = "equipment_bottle",
 		special_equipment_block = "bottle",
-		timer = 0
+		timer = 0.01
 	}
 	self.pour_spiked_drink = {
 		text_id = "hud_int_pour_drink",
@@ -3196,7 +3196,7 @@ function InteractionTweakData:init(tweak_data)
 	self.computer_blueprints = {
 		text_id = "hud_int_search_blueprints",
 		action_text_id = "hud_action_searching_blueprints",
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		contour = "interactable_icon",
 		interact_distance = 200,
@@ -3212,7 +3212,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hint_no_blueprints",
 		special_equipment = "blueprints",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_scan_documents",
 		sound_interupt = "bar_scan_documents_cancel",
 		sound_done = "bar_scan_documents_finished"
@@ -3221,7 +3221,7 @@ function InteractionTweakData:init(tweak_data)
 	self.cas_customer_database = {
 		text_id = "hud_check_customer_database",
 		action_text_id = "hud_action_cas_checking_customer_database",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		interact_distance = 150,
@@ -3232,7 +3232,7 @@ function InteractionTweakData:init(tweak_data)
 	self.disable_lasers = {
 		text_id = "hud_disable_lasers",
 		action_text_id = "hud_action_disabling_lasers",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		start_active = false,
 		interact_distance = 150,
@@ -3268,14 +3268,14 @@ function InteractionTweakData:init(tweak_data)
 	self.cas_open_briefcase = {
 		text_id = "hud_open_cas_briefcase",
 		action_text_id = "hud_opening_cas_briefcase",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		interact_distance = 150
 	}
 	self.cas_open_securityroom_door = {
 		text_id = "hud_open_cas_securityroom_door",
 		action_text_id = "hud_opening_cas_securityroom_door",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 80,
 		axis = "x"
 	}
@@ -3294,7 +3294,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_pick_lock",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		upgrade_timer_multipliers = {
 			{
 				upgrade = "pick_lock_easy_speed_multiplier",
@@ -3343,7 +3343,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_screw_down",
 		action_text_id = "hud_action_screwing_down",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_secure_winch",
 		sound_interupt = "bar_secure_winch_cancel",
@@ -3353,34 +3353,34 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_start_winch",
 		action_text_id = "hud_action_starting_winch",
 		interact_distance = 200,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.cas_take_hook = {
 		text_id = "hud_take_hook",
 		action_text_id = "hud_action_taking_hook",
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.cas_start_drill = {
 		text_id = "hud_start_drill",
 		action_text_id = "hud_action_starting_drill",
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.cas_stop_drill = {
 		text_id = "hud_stop_drill",
 		action_text_id = "hud_action_stoping_drill",
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.cas_take_empty_watertank = {
 		text_id = "hud_take_watertank",
 		action_text_id = "hud_action_taking_watertank",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 100,
 		start_active = false,
 		sound_start = "bar_replace_empty_watertank",
@@ -3390,7 +3390,7 @@ function InteractionTweakData:init(tweak_data)
 	self.cas_take_full_watertank = {
 		text_id = "hud_take_watertank",
 		action_text_id = "hud_action_taking_watertank",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_take_watertank",
@@ -3401,7 +3401,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_place_sleeping_gass",
 		action_text_id = "hud_action_placing_sleeping_gass",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		equipment_text_id = "hint_no_sleeping_gas",
 		special_equipment = "cas_sleeping_gas",
 		start_active = false,
@@ -3415,13 +3415,13 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_connect_cable",
 		action_text_id = "hud_action_connecting_cable",
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.cas_take_sleeping_gas = {
 		text_id = "hud_take_sleeping_gas",
 		action_text_id = "hud_action_taking_sleeping_gas",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		special_equipment_block = "cas_sleeping_gas",
 		start_active = false,
@@ -3448,7 +3448,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "cas_winch_hook",
 		start_active = false,
 		interact_distance = 200,
-		timer = 0,
+		timer = 0.01,
 		equipment_consume = true
 	}
 	self.cas_open_powerbox = {
@@ -3456,14 +3456,14 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_cas_opening_powerbox",
 		start_active = false,
 		interact_distance = 100,
-		timer = 0
+		timer = 0.01
 	}
 	self.cas_take_fireworks_bag = {
 		text_id = "hud_cas_take_fireworks_bag",
 		action_text_id = "hud_action_cas_taking_fireworks_bag",
 		blocked_hint = "carry_block",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel",
 		sound_done = "bar_bag_generic_finished"
@@ -3473,7 +3473,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_cas_igniting_fireworks",
 		start_active = false,
 		interact_distance = 200,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_light_fireworks",
 		sound_interupt = "bar_light_fireworks_cancel",
 		sound_done = "bar_light_fireworks_finished"
@@ -3493,7 +3493,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_fix_bfd_drill",
 		action_text_id = "hud_action_fixing_bfd_drill",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		equipment_text_id = "hint_no_bfd_tool",
 		special_equipment = "cas_bfd_tool",
 		start_active = false,
@@ -3532,7 +3532,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_play_slots",
 		action_text_id = "hud_action_playing_slots",
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		can_interact_in_civilian = true,
 		sound_done = "bar_slot_machine_pull_lever_finished",
@@ -3607,21 +3607,21 @@ function InteractionTweakData:init(tweak_data)
 	self.cas_take_unknown = {
 		text_id = "hud_take_???",
 		action_text_id = "hud_action_taking_???",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 100,
 		start_active = false
 	}
 	self.cas_unpack_turret = {
 		text_id = "hud_unpack_turret",
 		action_text_id = "hud_action_unpacking_turret",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
 	self.cas_open_guitar_case = {
 		text_id = "hud_cas_open_guitar_case",
 		action_text_id = "hud_action_cas_opening_guitar_case",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		start_active = false,
 		can_interact_only_in_civilian = true
@@ -3630,7 +3630,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_cas_take_gear",
 		action_text_id = "hud_action_cas_taking_gear",
 		contour = "deployable",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		start_active = false,
 		can_interact_only_in_civilian = true
@@ -3638,7 +3638,7 @@ function InteractionTweakData:init(tweak_data)
 	self.cas_security_door = {
 		text_id = "hud_cas_security_door",
 		action_text_id = "hud_action_cas_security_door",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		axis = "y"
@@ -3648,7 +3648,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "equipment_bank_manager_key",
 		text_id = "hud_int_pick_lock",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		requires_upgrade = {
 			upgrade = "pick_lock_hard",
 			category = "player"
@@ -3669,13 +3669,13 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_take_safe",
 		action_text_id = "hud_action_taking_safe",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "carry_block"
 	}
 	self.gen_pku_saw = {
 		text_id = "hud_int_hold_take_saw",
 		action_text_id = "hud_action_taking_saw",
-		timer = 0,
+		timer = 0.01,
 		special_equipment_block = "saw",
 		sound_done = "pick_up_crowbar"
 	}
@@ -3684,12 +3684,12 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_int_saw.special_equipment = "saw"
 	self.gen_int_saw.equipment_consume = true
 	self.gen_int_saw_jammed = deep_clone(self.apartment_saw_jammed)
-	self.gen_int_saw_jammed.timer = 0
+	self.gen_int_saw_jammed.timer = 0.01
 	self.gen_int_saw_upgrade = {
 		contour = "upgradable",
 		text_id = "hud_int_equipment_saw_upgrade",
 		action_text_id = "hud_action_upgrading_saw",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_drill_apply",
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished"
@@ -3698,7 +3698,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_hold_take_safe",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		force_update_position = true,
 		action_text_id = "hud_action_taking_safe",
 		blocked_hint = "carry_block"
@@ -3707,24 +3707,24 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_pku_knife",
 		action_text_id = "hud_action_pkuing_knife",
 		start_active = true,
-		timer = 0
+		timer = 0.01
 	}
 	self.c4_consume = deep_clone(self.c4_special)
 	self.c4_consume.special_equipment = "c4"
 	self.c4_consume.equipment_consume = true
 	self.gen_pku_thermite_timer = deep_clone(self.gen_pku_thermite)
-	self.gen_pku_thermite_timer.timer = 0
+	self.gen_pku_thermite_timer.timer = 0.01
 	self.gen_pku_thermite_timer.start_active = false
 	self.red_no_key = {
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		text_id = "hud_int_hold_open_vault",
 		action_text_id = "hud_action_opening_vault"
 	}
 	self.s_cube = {
 		text_id = "debug_interact_temp_interact_box",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		contour = "interactable_look_at"
 	}
 	self.red_open_shutters = {
@@ -3740,7 +3740,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_open_vent = {
 		text_id = "hud_int_hold_open_vent",
 		action_text_id = "hud_action_opening_vent",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		start_active = false
 	}
@@ -3756,7 +3756,7 @@ function InteractionTweakData:init(tweak_data)
 	self.din_crane_control = {
 		text_id = "hud_int_hold_start_crane",
 		action_text_id = "hud_action_starting_crane",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_crane_control_panel",
 		sound_interupt = "bar_crane_control_panel_cancel",
 		sound_done = "bar_crane_control_panel_finished"
@@ -3764,7 +3764,7 @@ function InteractionTweakData:init(tweak_data)
 	self.din_hold_ignite_trap = {
 		text_id = "hud_int_hold_ignite_trap",
 		action_text_id = "hud_action_igniting_trap",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		sound_start = "bar_thermal_lance_fix",
 		sound_interupt = "bar_thermal_lance_fix_cancel",
@@ -3774,21 +3774,21 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_take_pig",
 		action_text_id = "hud_action_taking_pig",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "carry_block"
 	}
 	self.pku_pills = {
 		text_id = "hud_int_hold_take_pills",
 		action_text_id = "hud_action_taking_pills",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "carry_block",
 		axis = "y"
 	}
 	self.taking_meth_huge = {
 		text_id = "hud_int_hold_take_meth",
 		action_text_id = "hud_action_taking_meth",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
@@ -3801,7 +3801,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_plant_breaching_charge",
 		action_text_id = "hud_action_planting_breaching_charge",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_plant_breaching_charges",
 		sound_interupt = "bar_plant_breaching_charge_cancel",
 		sound_done = "bar_plant_breaching_charge_finished"
@@ -3810,14 +3810,14 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_pku_breaching_charges",
 		action_text_id = "hud_action_taking_breaching_charges",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_unlock_display_ares = {
 		text_id = "hud_int_hold_unlock_display_ares",
 		action_text_id = "hud_action_unlocking",
 		start_active = false,
 		axis = "y",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_vault_touchscreen",
 		sound_interupt = "bar_vault_touchscreen_cancel",
 		sound_done = "bar_vault_touchscreen_finished"
@@ -3835,14 +3835,14 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_blow_torch = {
 		text_id = "hud_int_hold_take_blow_torch",
 		action_text_id = "hud_action_taking_blow_torch",
-		timer = 0,
+		timer = 0.01,
 		special_equipment_block = "blow_torch",
 		sound_done = "pick_up_crowbar"
 	}
 	self.hold_blow_torch = {
 		text_id = "hud_int_hold_cut",
 		action_text_id = "hud_action_cutting",
-		timer = 0,
+		timer = 0.01,
 		equipment_text_id = "hud_equipment_need_blow_torch",
 		special_equipment = "blow_torch",
 		sound_start = "bar_blowtorch",
@@ -3852,7 +3852,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_breaching_detonator = {
 		text_id = "hud_int_hold_place_breaching_detonator",
 		action_text_id = "hud_action_placing_breaching_detonator",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_plant_breaching_detonator",
 		sound_interupt = "bar_plant_breaching_detonator_cancel",
 		sound_done = "bar_plant_breaching_detonator_finished"
@@ -3860,7 +3860,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_breaching_detonator_rearm = {
 		text_id = "hud_int_hold_place_breaching_detonator_rearm",
 		action_text_id = "hud_action_placing_breaching_detonator_rearm",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_plant_breaching_detonator",
 		sound_interupt = "bar_plant_breaching_detonator_cancel",
 		sound_done = "bar_plant_breaching_detonator_finished"
@@ -3868,7 +3868,7 @@ function InteractionTweakData:init(tweak_data)
 	self.bry_pku_prototype = {
 		text_id = "hud_int_hold_take_prototype",
 		action_text_id = "hud_action_taking_prototype",
-		timer = 0,
+		timer = 0.01,
 		start_active = true,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
@@ -3882,7 +3882,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_grab_parachute",
 		action_text_id = "hud_action_grabbing_parachute",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_painting",
 		sound_interupt = "bar_steal_painting_cancel",
 		sound_done = "bar_steal_painting_finished",
@@ -3891,7 +3891,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_place_strap = {
 		text_id = "hud_int_hold_fasten_strap",
 		action_text_id = "hud_action_fastening_strap",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_attach_money_stack",
 		sound_interupt = "bar_attach_money_stack_cancel",
 		sound_done = "bar_attach_money_stack_finished"
@@ -3899,7 +3899,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_take_paper_roll = {
 		text_id = "hud_int_hold_take_paper_roll",
 		action_text_id = "hud_action_taking_paper_roll",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		blocked_hint = "carry_block",
 		sound_start = "bar_bag_money",
@@ -3909,7 +3909,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_take_counterfeit_money = {
 		text_id = "hud_int_hold_take_counterfeit_money",
 		action_text_id = "hud_action_taking_counterfeit_money",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		blocked_hint = "carry_block",
 		sound_start = "bar_bag_money",
@@ -3919,13 +3919,13 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_start_printer = {
 		text_id = "hud_int_hold_start_printer",
 		action_text_id = "hud_action_starting_printer",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_insert_printer_ink = {
 		text_id = "hud_int_hold_insert_printer_ink",
 		action_text_id = "hud_action_inserting_printer_ink",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment = "printer_ink",
 		equipment_text_id = "hud_equipment_need_printer_ink",
@@ -3946,7 +3946,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_insert_paper_roll = {
 		text_id = "hud_int_hold_insert_paper_roll",
 		action_text_id = "hud_action_inserting_paper_roll",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment = "paper_roll",
 		equipment_text_id = "hud_equipment_need_a_paper_roll",
@@ -3957,13 +3957,13 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.press_plates = {
 		text_id = "hud_int_take_plates",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment_block = "plates"
 	}
 	self.press_plates_invis = {
 		text_id = "hud_int_take_plates",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment_block = "plates",
 		sound_start = "bar_remove_printingplates",
@@ -3973,7 +3973,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_insert_plates = {
 		text_id = "hud_int_hold_insert_plates",
 		action_text_id = "hud_action_inserting_plates",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment = "plates",
 		equipment_text_id = "hud_equipment_need_plates",
@@ -3984,13 +3984,13 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.man_apply_tape = {
 		text_id = "hud_man_apply_tape",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
 	self.man_remove_bars = {
 		text_id = "an_remove_bars",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
@@ -3998,13 +3998,13 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_bag_present",
 		action_text_id = "hud_action_bagging_present",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "carry_block"
 	}
 	self.hold_grab_goat = {
 		text_id = "hud_int_hold_grab_goat",
 		sound_event = "ammo_bag_drop",
-		timer = 0,
+		timer = 0.01,
 		force_update_position = true,
 		start_active = false,
 		action_text_id = "hud_action_grabbing_goat",
@@ -4015,7 +4015,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_remove_debris = {
 		text_id = "hud_int_hold_remove_debris",
 		action_text_id = "hud_action_removing_debris",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_break_wood",
 		sound_interupt = "bar_break_wood_cancel",
 		sound_done = "bar_break_wood_end",
@@ -4025,7 +4025,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_cas_security_door",
 		equipment_text_id = "hud_action_cas_security_door",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_pick_lock",
 		sound_interupt = "bar_pick_lock_cancel",
 		sound_done = "bar_pick_lock_finished",
@@ -4037,7 +4037,7 @@ function InteractionTweakData:init(tweak_data)
 	self.drk_hold_hack_computer = {
 		text_id = "hud_int_big_computer_hackable",
 		action_text_id = "hud_action_hacking_computer",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		start_active = false,
 		sound_start = "bar_train_panel_hacking",
@@ -4046,7 +4046,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.hold_electric_lock = deep_clone(self.open_train_cargo_door)
 	self.hold_electric_lock.text_id = "hud_hint_requires_panel_access"
-	self.hold_electric_lock.timer = 0
+	self.hold_electric_lock.timer = 0.01
 	self.hold_electric_lock.equipment_text_id = "hud_hint_requires_panel_access"
 	self.hold_electric_lock.special_equipment = "saw_blade"
 	self.hold_pku_drk_bomb_part = deep_clone(self.hold_pku_disassemble_cro_loot)
@@ -4069,7 +4069,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_open_vent_dark = {
 		text_id = "hud_int_hold_open_vent",
 		action_text_id = "hud_action_opening_vent",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 120,
 		start_active = false,
 		sound_start = "bar_move_vent_panel",
@@ -4080,7 +4080,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_hold_remove_screw",
 		action_text_id = "hud_action_remove_screw",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_unscrew_vent",
 		sound_interupt = "bar_unscrew_vent_cancel",
@@ -4090,7 +4090,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_hold_start_scanning",
 		action_text_id = "hud_action_start_scanning",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		force_update_position = true,
 		sound_start = "bar_train_panel_hacking",
@@ -4111,7 +4111,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_removing_hand",
 		special_equipment_block = "hand",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_cut_off_arm",
 		sound_interupt = "bar_cut_off_arm_cancel",
@@ -4120,13 +4120,13 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_open_bomb_hatch = {
 		text_id = "hud_hold_open_bomb_hatch",
 		action_text_id = "hud_action_open_bomb_hatch",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_start_bomb_charge = {
 		text_id = "hud_hold_start_bomb_charge",
 		action_text_id = "hud_action_start_bomb_charge",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_start_emp",
 		sound_interupt = "bar_start_emp_cancel",
@@ -4135,7 +4135,7 @@ function InteractionTweakData:init(tweak_data)
 	self.gen_pku_body = {
 		text_id = "hud_int_hold_grab_body",
 		action_text_id = "hud_action_grabbing_body",
-		timer = 0,
+		timer = 0.01,
 		blocked_hint = "carry_block"
 	}
 	self.hold_fire_missile = {
@@ -4143,12 +4143,12 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_firing_missiles",
 		start_active = false,
 		axis = "z",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_turn_off_gas = {
 		text_id = "hud_hold_turn_of_gas",
 		action_text_id = "hud_action_turn_of_gas",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_twist_valve",
 		sound_interupt = "bar_twist_valve_cancel",
@@ -4156,7 +4156,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.hold_born_search_tools = {
 		text_id = "hud_int_hold_born_search_tools",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_search_toolbox",
@@ -4165,7 +4165,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.born_give_item = {
 		text_id = "hud_born_give_item",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		equipment_text_id = "hud_int_no_caustic_soda",
@@ -4176,7 +4176,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.hold_born_take_bike_part = {
 		text_id = "hud_int_hold_born_take_bike_part",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
@@ -4184,13 +4184,13 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_born_take_bike_part_y_axis.axis = "y"
 	self.hold_born_ride_the_bike = {
 		text_id = "hud_int_hold_born_ride_the_bike",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
 	self.hold_born_untie = {
 		text_id = "hud_int_hold_born_untie",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_untie_hostage",
@@ -4199,14 +4199,14 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.hold_born_soda = {
 		text_id = "hud_int_hold_born_soda",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_done = "bag_light_drop"
 	}
 	self.hold_born_receive_item_blow_torch = {
 		text_id = "hud_int_hold_born_receive_item_blow_torch",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		action_text_id = "hud_int_hold_born_receive_item_blow_torch",
@@ -4235,35 +4235,35 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.born_plug_in_powercord = {
 		text_id = "hud_born_plug_in_powercord",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_done = "insert_cable_gen"
 	}
 	self.hold_open_door = deep_clone(self.hold_open)
 	self.hold_open_door.action_text_id = "hud_action_opening"
-	self.hold_open_door.timer = 0
+	self.hold_open_door.timer = 0.01
 	self.hold_open_door.interact_distance = 250
 	self.hold_open_door_no_axis = {
 		text_id = "hud_int_invisible_interaction_open",
 		action_text_id = "hud_action_opening",
 		start_active = false,
 		interact_distance = 200,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_open_hatch = {
 		text_id = "hud_int_hold_open_hatch",
 		action_text_id = "hud_action_opening_hatch",
 		axis = "y",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_open_hatch = {
 		text_id = "hud_int_hold_open_hatch",
 		action_text_id = "hud_action_opening_hatch",
 		axis = "y",
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.ring_band = deep_clone(self.money_wrap_single_bundle)
 	self.ring_band.text_id = "hud_int_take"
@@ -4278,19 +4278,19 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_release_hatch = {
 		text_id = "hud_int_hold_release_hatch",
 		action_text_id = "hud_action_releasing_hatch",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_open_case = {
 		text_id = "hud_int_hold_open_case",
 		action_text_id = "hud_action_opening_case",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_take_helmet = {
 		text_id = "hud_int_hold_take_helmet",
 		action_text_id = "hud_action_taking_helmet",
-		timer = 0,
+		timer = 0.01,
 		start_active = true
 	}
 	self.press_pick_up = {
@@ -4372,7 +4372,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_hold_bet_slotmachine_chl",
 		action_text_id = "hud_action_playing_slots",
 		interact_distance = 100,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		can_interact_in_civilian = true,
 		sound_done = "bar_slot_machine_pull_lever_finished",
@@ -4380,7 +4380,7 @@ function InteractionTweakData:init(tweak_data)
 		sound_start = "bar_slot_machine_pull_lever"
 	}
 	self.talk_to_heister = {
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		max_interact_distance = 0,
 		icon = "develop",
@@ -4406,7 +4406,7 @@ function InteractionTweakData:init(tweak_data)
 	self.pku_scubagear_tank = {
 		text_id = "hud_int_hold_take_scubagear_tank_and_flippers",
 		action_text_id = "hud_action_taking_scubagear_tank_and_flippers",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 130,
 		start_active = false,
 		blocked_hint = "carry_block"
@@ -4414,7 +4414,7 @@ function InteractionTweakData:init(tweak_data)
 	self.pku_scubagear_vest = {
 		text_id = "hud_int_hold_take_scubagear_vest",
 		action_text_id = "hud_action_taking_scubagear_vest",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 130,
 		start_active = false,
 		blocked_hint = "carry_block"
@@ -4428,13 +4428,13 @@ function InteractionTweakData:init(tweak_data)
 	self.glc_hold_take_handcuffs = {
 		text_id = "hud_int_hold_take_handcuffs",
 		action_text_id = "hud_int_hold_action_take_handcuffs",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.pku_toothbrush = {
 		text_id = "hud_int_hold_take_toothbrush",
 		action_text_id = "hud_action_taking_toothbrush",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 130,
 		start_active = false,
 		blocked_hint = "carry_block"
@@ -4452,7 +4452,7 @@ function InteractionTweakData:init(tweak_data)
 	self.repair_wheel = {
 		text_id = "hud_int_hold_repair_wheel",
 		action_text_id = "hud_action_repair_wheel",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
@@ -4461,7 +4461,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_pull_switch = {
 		text_id = "hud_int_hold_pull_switch",
 		action_text_id = "hud_action_pulling_switch",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -4470,7 +4470,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_attach_magnet = {
 		text_id = "hud_int_hold_attach_magnet",
 		action_text_id = "hud_action_attaching_magnet",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		sound_start = "bar_attach_magnet",
 		sound_interupt = "bar_attach_magnet_cancel",
@@ -4479,7 +4479,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_open_coke_bag = {
 		text_id = "hud_int_hold_open_coke",
 		action_text_id = "hud_action_opening_coke",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_bag_generic",
@@ -4489,20 +4489,20 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_remove_bug = {
 		text_id = "hud_mil_hold_remove_bug",
 		action_text_id = "hud_action_removing_bug",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150
 	}
 	self.hold_open_lid = {
 		text_id = "hud_int_hold_open_lid",
 		action_text_id = "hud_action_opening_lid",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
 	self.hold_unfold_ladder = {
 		text_id = "hud_int_hold_unfold_ladder",
 		action_text_id = "hud_action_unfolding_ladder",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
@@ -4516,7 +4516,7 @@ function InteractionTweakData:init(tweak_data)
 	self.rewire_friend_fuse_box = {
 		text_id = "hud_int_hold_rewire_fuse_box",
 		action_text_id = "hud_action_rewire_fuse_box",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y",
 		sound_start = "bar_hack_fuse_box",
@@ -4526,14 +4526,14 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_phone_call_office = {
 		text_id = "hud_int_hold_phone_office",
 		action_text_id = "hud_action_hold_phone_office",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
 	self.friend_pku_yayo_cocaine = {
 		text_id = "hud_int_hold_take_yayo",
 		action_text_id = "hud_action_taking_yayo",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_bag_money",
 		sound_interupt = "bar_bag_money_cancel",
 		sound_done = "bar_bag_money_finished",
@@ -4543,7 +4543,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_hold_pick_up",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_picking_up",
 		blocked_hint = "hint_key_pickup"
 	}
@@ -4551,7 +4551,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "develop",
 		text_id = "hud_int_hold_pick_up",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_picking_up",
 		blocked_hint = "hint_case_pickup"
 	}
@@ -4559,52 +4559,52 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_open_shopping_bag",
 		action_text_id = "hud_action_opening_shopping_bag",
 		sound_done = "bar_open_shopping_bag_finish",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 210
 	}
 	self.hold_take_toy = {
 		text_id = "hud_int_hold_take_toy",
 		action_text_id = "hud_action_taking_toy",
-		timer = 0,
+		timer = 0.01,
 		sound_done = "bar_pick_up_tin_boy_finish",
 		interact_distance = 220
 	}
 	self.hold_take_wine = {
 		text_id = "hud_int_hold_take_wine",
 		action_text_id = "hud_action_taking_wine",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 220
 	}
 	self.hold_take_expensive_wine = {
 		text_id = "hud_int_hold_take_expensive_wine",
 		action_text_id = "hud_action_taking_expensive_wine",
 		sound_done = "bar_pick_up_box_wine_finish",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 220
 	}
 	self.hold_take_diamond_necklace = {
 		text_id = "hud_int_hold_take_necklace",
 		action_text_id = "hud_action_taking_necklace",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 220
 	}
 	self.hold_take_vr_headset = {
 		text_id = "hud_int_hold_take_vr_headset",
 		action_text_id = "hud_action_taking_vr_headset",
 		sound_done = "bar_pick_up_box_finish",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 220
 	}
 	self.hold_take_shoes = {
 		text_id = "hud_int_hold_take_shoes",
 		action_text_id = "hud_action_taking_shoes",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 220
 	}
 	self.hold_search_computer = {
 		text_id = "hud_int_hold_search_computer",
 		action_text_id = "hud_action_searching_computer",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished",
@@ -4612,7 +4612,7 @@ function InteractionTweakData:init(tweak_data)
 	}
 	self.hold_moon_untie = {
 		text_id = "hud_int_hold_born_untie",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_untie_hostage_02_loop",
@@ -4622,13 +4622,13 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_take_mask = {
 		text_id = "hud_int_hold_take_mask",
 		action_text_id = "hud_action_taking_mask",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200
 	}
 	self.hold_moon_attach_winch = {
 		text_id = "hud_int_hold_moon_attach_winch",
 		action_text_id = "hud_action_attaching_winch",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_connect_hook_loop",
@@ -4637,7 +4637,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_friend_attach_winch = {
 		text_id = "hud_int_hold_moon_attach_winch",
 		action_text_id = "hud_action_attaching_winch",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_friend_secure_winch",
@@ -4650,7 +4650,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_cigar_boxes = {
 		text_id = "hud_int_search_cigar_boxes",
 		action_text_id = "hud_action_searching_cigar_boxes",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_humidor_start",
@@ -4660,7 +4660,7 @@ function InteractionTweakData:init(tweak_data)
 		icon = "interaction_money_wrap",
 		text_id = "debug_interact_money_wrap_take_money",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		action_text_id = "hud_action_taking_money",
 		blocked_hint = "carry_block",
 		sound_start = "bar_bag_money",
@@ -4670,7 +4670,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_capsule = {
 		text_id = "hud_int_search_capsule",
 		action_text_id = "hud_action_searching_capsule",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_lifeboat_case_open",
@@ -4679,7 +4679,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_cart = {
 		text_id = "hud_int_search_cart",
 		action_text_id = "hud_action_searching_cart",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_cart_open",
@@ -4688,7 +4688,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_open_window = {
 		text_id = "hud_int_open_window",
 		action_text_id = "hud_action_opening_window",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_sliding_window_open",
@@ -4697,7 +4697,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_close_window = {
 		text_id = "hud_int_close_window",
 		action_text_id = "hud_action_closing_window",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_sliding_window_open",
@@ -4706,7 +4706,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_cabinet_a = {
 		text_id = "hud_int_search_cabinet",
 		action_text_id = "hud_action_searching_cabinet",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_restaurant_kitchen_loop",
@@ -4715,7 +4715,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_steel_cabinet = {
 		text_id = "hud_int_search_steel_cabinet",
 		action_text_id = "hud_action_searching_steel_cabinet",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_restaurant_kitchen_loop",
@@ -4726,7 +4726,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_searching_bookshelf",
 		sound_start = "bar_wall_bookshelf",
 		sound_interupt = "bar_wall_bookshelf_cancel",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		axis = "y"
@@ -4734,7 +4734,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_drawer = {
 		text_id = "hud_int_search_drawer",
 		action_text_id = "hud_action_searching_drawer",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_desk_drawer_loop",
@@ -4743,7 +4743,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_drawers = {
 		text_id = "hud_int_search_drawers",
 		action_text_id = "hud_action_searching_drawers",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_desk_drawer_loop",
@@ -4752,7 +4752,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_shower = {
 		text_id = "hud_int_search_shower",
 		action_text_id = "hud_action_searching_shower",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_main_bath_shower_open",
@@ -4763,14 +4763,14 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_searching_luggage",
 		sound_start = "bar_luggage_set_open",
 		sound_interupt = "bar_luggage_set_open_cancel",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
 	self.hold_search_flightcase = {
 		text_id = "hud_int_search_case",
 		action_text_id = "hud_action_searching_case",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_backstage_flightcase_open",
@@ -4779,7 +4779,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_fridge = {
 		text_id = "hud_int_search_fridge",
 		action_text_id = "hud_action_searching_fridge",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_restaurant_kitchen_loop",
@@ -4788,7 +4788,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_display_case = {
 		text_id = "hud_int_search_display_case",
 		action_text_id = "hud_action_searching_display_case",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_humidor_start",
@@ -4797,7 +4797,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_washer = {
 		text_id = "hud_int_search_washer",
 		action_text_id = "hud_action_searching_washer",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_restaurant_kitchen_loop",
@@ -4806,7 +4806,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_type_in_password = {
 		text_id = "hud_int_type_in_password",
 		action_text_id = "hud_action_typing_in_password",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_keyboard",
@@ -4819,7 +4819,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_turn_off = {
 		text_id = "hud_int_turn_off",
 		action_text_id = "hud_action_turning_off",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_turn_off_cooling_system_start",
@@ -4833,7 +4833,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_move_car",
 		action_text_id = "hud_action_moving_car",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 220,
 		sound_start = "bar_cop_car",
 		sound_interupt = "bar_cop_car_cancel",
@@ -4845,7 +4845,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_prying_open_elevator_door",
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_elevator_crowbar_open",
 		sound_interupt = "bar_elevator_crowbar_cancel"
@@ -4853,12 +4853,12 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_signal_mr_blonde = {
 		text_id = "hud_int_hold_signal_mr_blonde",
 		action_text_id = "hud_int_hold_action_signaling_mr_blonde",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_take_diamond_briefcase = {
 		text_id = "hud_int_hold_take_diamond_briefcase",
 		action_text_id = "hud_int_hold_action_take_diamond_breifcase",
-		timer = 0
+		timer = 0.01
 	}
 	self.press_hand_over_diamond_briefcase = {
 		text_id = "hud_int_press_hand_over_breifcase",
@@ -4884,7 +4884,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "hud_equipment_liquid_nitrogen",
 		special_equipment = "liquid_nitrogen",
 		equipment_consume = true,
-		timer = 0,
+		timer = 0.01,
 		sound_done = "bar_liquid_nitrogen_attach_finished",
 		sound_start = "bar_liquid_nitrogen_attach",
 		sound_interupt = "bar_liquid_nitrogen_attach_cancel"
@@ -4892,12 +4892,12 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_remove_liquid_nitrogen = {
 		text_id = "hud_int_hold_remove_liquid_nitrogen",
 		action_text_id = "hud_int_hold_action_removing_liquid_nitrogen",
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_cut_wires = {
 		text_id = "hud_int_hold_cut_wires",
 		action_text_id = "hud_int_hold_action_cutting_wires",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y",
 		sound_start = "bar_wire_cut",
@@ -4907,7 +4907,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_rvd_open_vault = {
 		text_id = "hud_int_hold_open_vault",
 		action_text_id = "hud_action_opening_vault",
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.invisible_interaction_open_axis_rvd = deep_clone(self.invisible_interaction_open)
@@ -4924,7 +4924,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_old_wine",
 		action_text_id = "hud_action_old_wine",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150
 	}
 	self.take_jfr_briefcase = {
@@ -4932,12 +4932,12 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_briefcase",
 		special_equipment_block = "briefcase",
 		start_active = true,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_take_missing_animal_poster = {
 		text_id = "hud_int_take_missing_animal_poster",
 		action_text_id = "hud_action_taking_missing_animal_poster",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_done = "pick_up_poster"
@@ -4946,21 +4946,21 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_pick_up_turtle",
 		action_text_id = "hud_action_picking_up_turtle",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 90
 	}
 	self.hold_help_turtle = {
 		text_id = "hud_int_hold_to_help_turtle",
 		action_text_id = "hud_action_helping_turtle",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150
 	}
 	self.hold_generator_start = {
 		text_id = "hud_generator_start",
 		action_text_id = "hud_action_generator_start",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		sound_start = "bar_water_pump",
 		sound_cancel = "bar_water_pump_cancel",
@@ -4970,7 +4970,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_remove_rope",
 		action_text_id = "hud_action_remove_rope",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		sound_start = "bar_remove_rope_start",
 		sound_cancel = "bar_remove_rope_cancel",
@@ -4980,12 +4980,12 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_move_gangplank",
 		action_text_id = "hud_action_moving_gangplank",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300
 	}
 	self.hold_wwh_untie = {
 		text_id = "hud_int_hold_born_untie",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_untie_hostage_start_02",
@@ -4997,7 +4997,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_connect_hose",
 		action_text_id = "hud_action_connect_hose",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_start = "bar_hose_drag_out",
 		sound_interupt = "bar_hose_drag_out_cancel",
@@ -5008,7 +5008,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_connect_hose",
 		action_text_id = "hud_action_connect_hose",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_start = "bar_hose_attach_to_ship",
 		sound_interupt = "bar_hose_attach_to_ship_cancel",
@@ -5019,7 +5019,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_connect_hose",
 		action_text_id = "hud_action_connect_hose",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_start = "bar_hose_attach_to_water_pump",
 		sound_interupt = "bar_hose_attach_to_water_pump_cancel",
@@ -5030,7 +5030,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_detach_hose",
 		action_text_id = "hud_action_detach_hose",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_start = "bar_hose_ground_connect",
 		sound_interupt = "bar_hose_ground_connect_cancel",
@@ -5044,7 +5044,7 @@ function InteractionTweakData:init(tweak_data)
 	self.take_confidential_folder_icc = {
 		text_id = "hud_int_take_confidential_folder_icc",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 100
 	}
 	self.hack_dah_jammed_x = deep_clone(self.hack_suburbia_jammed)
@@ -5055,7 +5055,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_diamond",
 		sound_event = "money_grab",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		requires_mask_off_upgrade = {
 			upgrade = "mask_off_pickup",
 			category = "player"
@@ -5067,7 +5067,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_diamonds_dah",
 		sound_event = "money_grab",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		requires_mask_off_upgrade = {
 			upgrade = "mask_off_pickup",
@@ -5080,7 +5080,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_diamonds_dah",
 		sound_event = "money_grab",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		requires_mask_off_upgrade = {
 			upgrade = "mask_off_pickup",
 			category = "player"
@@ -5092,7 +5092,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_red_diamond",
 		sound_event = "money_grab",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "x",
 		requires_mask_off_upgrade = {
 			upgrade = "mask_off_pickup",
@@ -5105,7 +5105,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_red_diamond",
 		sound_event = "money_grab",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		requires_mask_off_upgrade = {
 			upgrade = "mask_off_pickup",
 			category = "player"
@@ -5118,7 +5118,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment = "bank_manager_key",
 		equipment_consume = true,
 		start_active = true,
-		timer = 0
+		timer = 0.01
 	}
 	self.diamond_pickup_axis = {
 		icon = "interaction_diamond",
@@ -5136,27 +5136,27 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_choosing_mask",
 		axis = "y",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150
 	}
 	self.hold_take_mask_axis = {
 		text_id = "hud_int_hold_take_mask",
 		action_text_id = "hud_action_taking_mask",
-		timer = 0,
+		timer = 0.01,
 		axis = "z",
 		interact_distance = 200
 	}
 	self.hold_search_toilet = {
 		text_id = "hud_int_hold_search_toilet",
 		action_text_id = "hud_action_searching_toilet",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
 	self.hold_search_dumpster = {
 		text_id = "hud_int_hold_search_dumpster",
 		action_text_id = "hud_action_searching_dumpster",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -5166,7 +5166,7 @@ function InteractionTweakData:init(tweak_data)
 		sound_start = "bar_cut_tarp_loop",
 		sound_interupt = "bar_cut_tarp_cancel",
 		sound_done = "bar_cut_tarp_finish",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = true
 	}
@@ -5174,7 +5174,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_start_new_hack",
 		action_text_id = "hud_action_starting_new_hack",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -5182,7 +5182,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_take_medallion = {
 		text_id = "hud_int_hold_take_medallion",
 		action_text_id = "hud_action_taking_medallion",
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		special_equipment_block = "medallion",
 		sound_done = "liquid_nitrogen_pick_up"
@@ -5225,7 +5225,7 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment_block = "blood_sample",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_take_sample_valid = {
 		text_id = "hud_int_hold_take_blood_valid_sample",
@@ -5239,7 +5239,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_stashing_vial",
 		equipment_text_id = "hint_no_blood_sample",
 		special_equipment = "blood_sample_verified",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		equipment_consume = true
@@ -5252,7 +5252,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_check_file = {
 		text_id = "hud_int_hold_check_file",
 		action_text_id = "hud_action_checking_file",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_shuffle_papers",
@@ -5265,7 +5265,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_text_id = "debug_interact_equipment_crowbar",
 		special_equipment = "crowbar",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_pry_open_elevator_door",
 		sound_interupt = "bar_pry_open_elevator_door_cancel",
 		sound_done = "bar_pry_open_elevator_door_finished"
@@ -5273,14 +5273,14 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_place_sentry = {
 		text_id = "hud_int_set_up_sentry",
 		action_text_id = "hud_action_set_up_sentry",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
 	self.tag_laptop = {
 		text_id = "hud_int_hack_laptop",
 		action_text_id = "hud_action_hack_laptop",
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
@@ -5290,7 +5290,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_start_new_hack",
 		action_text_id = "hud_action_starting_new_hack",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "y",
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
@@ -5299,7 +5299,7 @@ function InteractionTweakData:init(tweak_data)
 	self.tag_take_unknown = {
 		text_id = "hud_int_hold_take_box",
 		action_text_id = "hud_action_taking_box",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -5320,7 +5320,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hacking_barrier = {
 		text_id = "hud_int_hold_hack_barrier",
 		action_text_id = "hud_action_hack_barrier",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false,
 		sound_start = "bar_pick_lock",
@@ -5331,28 +5331,28 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_disable_alarm",
 		action_text_id = "hud_action_disabling_alarm",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_open_the_safe = {
 		text_id = "hud_int_hold_open_safe",
 		action_text_id = "hud_action_opening_safe",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_turn_off_light = {
 		text_id = "hud_int_hold_turn_off_light",
 		action_text_id = "hud_action_turning_off_light",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_relay_locke = {
 		text_id = "hud_int_hold_relay_locke",
 		action_text_id = "hud_action_relaying_locke",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		axis = "y"
 	}
@@ -5387,7 +5387,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_charge_gun = {
 		icon = "equipment_hack_ipad",
 		text_id = "hold_interact_charge_gun",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished",
@@ -5398,7 +5398,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_mixing_concoction",
 		special_equipment_block = "concoction",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_start = "bar_mix_compounds_start",
 		sound_interupt = "bar_mix_compounds_cancel",
@@ -5409,7 +5409,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_concoction",
 		special_equipment_block = "concoction",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false,
 		sound_done = "liquid_nitrogen_pick_up"
 	}
@@ -5421,7 +5421,7 @@ function InteractionTweakData:init(tweak_data)
 		equipment_consume = true,
 		start_active = false,
 		contour = "interactable_icon",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_thermal_lance_fix",
 		sound_interupt = "bar_thermal_lance_fix_cancel",
 		sound_done = "bar_thermal_lance_fix_finished"
@@ -5438,7 +5438,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_move_crane = {
 		text_id = "hud_int_hold_move_crane",
 		action_text_id = "hud_action_moving_crane",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_crane_control_panel",
 		sound_interupt = "bar_crane_control_panel_cancel",
 		sound_done = "bar_crane_control_panel_finished"
@@ -5446,7 +5446,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_search_documents = {
 		text_id = "hud_int_hold_search_documents",
 		action_text_id = "hud_int_hold_action_searching_documents",
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_shuffle_papers",
 		sound_interupt = "bar_shuffle_papers_cancel",
 		sound_done = "bar_shuffle_papers_finished"
@@ -5454,7 +5454,7 @@ function InteractionTweakData:init(tweak_data)
 	self.des_take_unknown = {
 		text_id = "hud_int_hold_take_box",
 		action_text_id = "hud_action_taking_box",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -5463,7 +5463,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_adding_compound",
 		equipment_text_id = "hint_no_compound_a",
 		special_equipment = "compound_a",
-		timer = 0,
+		timer = 0.01,
 		equipment_consume = true,
 		interact_distance = 150,
 		start_active = false,
@@ -5476,7 +5476,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_adding_compound",
 		equipment_text_id = "hint_no_compound_b",
 		special_equipment = "compound_b",
-		timer = 0,
+		timer = 0.01,
 		equipment_consume = true,
 		interact_distance = 150,
 		start_active = false,
@@ -5489,7 +5489,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_adding_compound",
 		equipment_text_id = "hint_no_compound_c",
 		special_equipment = "compound_c",
-		timer = 0,
+		timer = 0.01,
 		equipment_consume = true,
 		interact_distance = 150,
 		start_active = false,
@@ -5502,7 +5502,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_adding_compound",
 		equipment_text_id = "hint_no_compound_d",
 		special_equipment = "compound_d",
-		timer = 0,
+		timer = 0.01,
 		equipment_consume = true,
 		interact_distance = 150,
 		start_active = false,
@@ -5542,7 +5542,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_take_battery",
 		action_text_id = "hud_int_hold_action_taking_battery",
 		interact_distance = 210,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_remove_battery = {
@@ -5555,7 +5555,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_aim_laser",
 		action_text_id = "hud_int_hold_action_aiming_laser",
 		interact_distance = 150,
-		timer = 0,
+		timer = 0.01,
 		start_active = false
 	}
 	self.hold_fire_laser = {
@@ -5573,7 +5573,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_to_place_device",
 		action_text_id = "hud_action_placing_device",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		sound_start = "bar_plant_breaching_detonator",
 		sound_interupt = "bar_plant_breaching_detonator_cancel",
@@ -5583,14 +5583,14 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_to_take_tablet",
 		action_text_id = "hud_action_taking_tablet",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150
 	}
 	self.hold_take_wrench = {
 		text_id = "hud_int_hold_take_wrench",
 		action_text_id = "hud_action_taking_wrench",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150
 	}
 	self.invisible_interaction_open_axis_sah = deep_clone(self.invisible_interaction_open)
@@ -5598,7 +5598,7 @@ function InteractionTweakData:init(tweak_data)
 	self.invisible_interaction_open_axis_sah.sound_start = "bar_train_panel_hacking"
 	self.invisible_interaction_open_axis_sah.sound_interupt = "bar_train_panel_hacking_cancel"
 	self.invisible_interaction_open_axis_sah.sound_done = "bar_train_panel_hacking_finished"
-	self.invisible_interaction_open_axis_sah.timer = 0
+	self.invisible_interaction_open_axis_sah.timer = 0.01
 	self.hold_extend_bridge = {
 		axis = "y",
 		text_id = "hud_int_press_extend_bridge",
@@ -5608,7 +5608,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_pull_switch_distance = {
 		text_id = "hud_int_hold_pull_switch",
 		action_text_id = "hud_action_pulling_switch",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 90,
 		start_active = false
 	}
@@ -5617,7 +5617,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_taking_pardons",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		axis = "y"
 	}
 	self.vit_take_usb_key = {
@@ -5625,22 +5625,22 @@ function InteractionTweakData:init(tweak_data)
 		special_equipment_block = "cas_usb_key",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.vit_search = {
 		text_id = "hud_int_hold_search_books",
 		action_text_id = "hud_action_search_books",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.vit_search_clues = {
 		text_id = "hud_int_hold_search_clues",
 		action_text_id = "hud_action_searching_clues",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0,
-		timer = 0,
+		timer = 0.01,
+		timer = 0.01,
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
@@ -5650,7 +5650,7 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_removing_painting",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		sound_start = "bar_steal_painting",
 		sound_interupt = "bar_steal_painting_cancel",
 		sound_done = "bar_steal_painting_finished"
@@ -5663,10 +5663,10 @@ function InteractionTweakData:init(tweak_data)
 		equipment_consume = true,
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.gen_pku_thermite_timer_3sec = deep_clone(self.gen_pku_thermite)
-	self.gen_pku_thermite_timer_3sec.timer = 0
+	self.gen_pku_thermite_timer_3sec.timer = 0.01
 	self.gen_pku_thermite_timer_3sec.start_active = false
 	self.vit_keycard_use = {
 		text_id = "hud_int_equipment_keycard",
@@ -5681,28 +5681,28 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_starting_hack",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.postpone_update = {
 		text_id = "hud_int_hold_postpone_update",
 		action_text_id = "hud_action_postponing_update",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.reboot_computer = {
 		text_id = "hud_int_hold_reboot",
 		action_text_id = "hud_action_reboot",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.bypass_the_firewall = {
 		text_id = "hud_int_hold_bypass_firewall",
 		action_text_id = "hud_action_bypassing_the_firewall",
 		interact_distance = 150,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.uno_use_device = {
 		text_id = "hud_int_use_device",
@@ -5712,7 +5712,7 @@ function InteractionTweakData:init(tweak_data)
 	self.uno_assemble_device = {
 		text_id = "hud_int_assemble_device",
 		action_text_id = "hud_action_assemble_device",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -5721,20 +5721,20 @@ function InteractionTweakData:init(tweak_data)
 		action_text_id = "hud_action_pulling_lever",
 		interact_distance = 200,
 		start_active = false,
-		timer = 0
+		timer = 0.01
 	}
 	self.uno_open_door = {
 		text_id = "hud_int_hold_open_door",
 		action_text_id = "hud_action_opening_door",
 		interact_distance = 200,
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		can_interact_only_in_civilian = true
 	}
 	self.uno_hold_pku_gold = {
 		text_id = "hud_int_hold_pku_uno_gold",
 		action_text_id = "hud_action_taking_uno_gold",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false
 	}
@@ -5742,12 +5742,12 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_take_mayan_gold_bar"
 	}
 	self.uno_hold_pku_gold.action_text_id = "hud_action_taking_mayan_gold_bar"
-	self.uno_hold_pku_gold_bar.timer = 0
+	self.uno_hold_pku_gold_bar.timer = 0.01
 	self.uno_hold_pku_gold_bar.interact_distance = 200
 	self.uno_hold_pku_gold_bar.start_active = false
 	self.uno_press_activate = {
 		text_id = "hud_int_press_activate",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		start_active = false
 	}
@@ -5763,7 +5763,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_remove_parts",
 		action_text_id = "hud_action_remove_parts",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 150,
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel"
@@ -5779,21 +5779,21 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_choose_hand_left = {
 		text_id = "hud_int_hold_choose_hand_left",
 		action_text_id = "hud_int_hold_action_choose_hand_left",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_done = "pick_up_poster"
 	}
 	self.hold_choose_hand_right = {
 		text_id = "hud_int_hold_choose_hand_right",
 		action_text_id = "hud_int_hold_action_choose_hand_right",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_done = "pick_up_poster"
 	}
 	self.hold_search_fridge_des = {
 		text_id = "hud_int_search_fridge",
 		action_text_id = "hud_action_searching_fridge",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_restaurant_kitchen_loop",
@@ -5802,7 +5802,7 @@ function InteractionTweakData:init(tweak_data)
 	self.hold_remove_tarp = {
 		text_id = "hud_int_remove_tarp",
 		action_text_id = "hud_action_removing_tarp",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		start_active = false,
 		sound_start = "bar_cut_tarp",
@@ -5813,7 +5813,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_unlock_gate",
 		action_text_id = "hud_action_unlock_gate",
 		axis = "y",
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 250,
 		start_active = false,
 		sound_start = "bar_keyboard",
@@ -5823,13 +5823,13 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_grab_the_bag",
 		action_text_id = "hud_action_grabbing_bag",
 		start_active = true,
-		timer = 0
+		timer = 0.01
 	}
 	self.hold_generator_start_directional = {
 		text_id = "hud_generator_start",
 		action_text_id = "hud_action_generator_start",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 300,
 		sound_start = "bar_water_pump",
 		sound_cancel = "bar_water_pump_cancel",
@@ -5866,7 +5866,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_mex_pickup_murky_uniforms",
 		action_text_id = "hud_action_mex_pickup_murky_uniforms",
 		start_active = true,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 250,
 		start_active = false,
 		sound_start = "play_bag_generic_pickup"
@@ -5894,7 +5894,7 @@ function InteractionTweakData:init(tweak_data)
 		text_id = "hud_int_hold_connect_hose",
 		action_text_id = "hud_action_connect_hose",
 		start_active = false,
-		timer = 0,
+		timer = 0.01,
 		interact_distance = 200,
 		sound_start = "bar_hose_drag_out",
 		sound_interupt = "bar_hose_drag_out_cancel",

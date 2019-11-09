@@ -478,6 +478,8 @@ function VehicleTweakData:_init_data_blackhawk_1()
 		driver_camera_offset = Vector3(0, 0, 0),
 		fov = 75
 	}
+	self.blackhawk_2 = deep_clone(self.blackhawk_1)
+	self.blackhawk_2.name = nil
 end
 
 -- Lines: 793 to 858

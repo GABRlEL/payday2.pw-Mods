@@ -420,38 +420,8 @@ function StoryMissionsTweakData:_init_missions(tweak_data)
 		self:_mission("sm_49", {
 			reward_id = "menu_sm_default_reward",
 			voice_line = "Play_loc_stq_03",
-			objectives = {{self:_progress("story_chill_level", 1, {name_id = "menu_sm_chill_level"})}},
+			objectives = {{self:_level_progress("story_very_hard_henrys_rock", 1, {name_id = "menu_sm_very_hard_henrys_rock"})}},
 			rewards = self:_default_reward()
-		}),
-		self:_mission("sm_50", {
-			reward_id = "menu_sm_default_reward",
-			voice_line = "Play_loc_stq_04",
-			objectives = {{self:_progress("story_chill_level", 1, {name_id = "menu_sm_chill_level"})}},
-			rewards = self:_default_reward()
-		}),
-		self:_mission("sm_51", {
-			reward_id = "menu_sm_default_reward",
-			voice_line = "Play_loc_stq_05",
-			objectives = {{self:_progress("story_chill_level", 1, {name_id = "menu_sm_chill_level"})}},
-			rewards = self:_default_reward()
-		}),
-		self:_mission("sm_52", {
-			reward_id = "menu_sm_default_reward",
-			voice_line = "Play_loc_stq_06",
-			objectives = {{self:_progress("story_chill_level", 1, {name_id = "menu_sm_chill_level"})}},
-			rewards = self:_default_reward()
-		}),
-		self:_mission("sm_53", {
-			reward_id = "menu_sm_default_reward",
-			voice_line = "Play_loc_stq_07",
-			objectives = {{self:_progress("story_chill_level", 1, {name_id = "menu_sm_chill_level"})}},
-			rewards = self:_default_reward()
-		}),
-		self:_mission("sm_end", {
-			rewarded = true,
-			completed = true,
-			last_mission = true,
-			objectives = {}
 		})
 	}
 end

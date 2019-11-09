@@ -36,7 +36,7 @@ function MoneyTweakData:init(tweak_data)
 	self.preplaning_asset_cost_bag_shortcut = 0
 	self.preplaning_asset_cost_bag_zipline = 0
 	self.preplaning_asset_cost_loot_drop_off = 0
-	self.preplaning_asset_cost_thermal_paste = ß
+	self.preplaning_asset_cost_thermal_paste = 0
 	self.preplaning_asset_cost_branchbank_vault_key = 0
 	self.preplaning_mia_cost_sniper = 0
 	self.preplaning_mia_cost_delayed_police = 0
@@ -51,4 +51,8 @@ function MoneyTweakData:init(tweak_data)
 	self.preplaning_thebomb_cost_escape_mid = 0
 	self.preplaning_thebomb_cost_escape_close = 0
 	self.preplaning_thebomb_cost_demolition = 0
+	self.preplaning_asset_cost_mex_keys = 0
+	self.preplaning_asset_cost_roof_access = 0
+	self.preplaning_asset_cost_upper_floor_access = 0
+	self.preplaning_asset_cost_crowbar_single = 0
 end

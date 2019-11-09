@@ -119,11 +119,39 @@ function CrimeSpreeTweakData:init_missions(tweak_data)
 		},
 		{
 			{
+				stage_id = "wwh",
+				add = 10000,
+				id = "wwh",
+				icon = "csm_wwh",
+				level = tweak_data.narrative.stages.wwh
+			},
+			{
+				stage_id = "rvd1",
+				add = 10000,
+				id = "rvd1",
+				icon = "csm_rvd_1",
+				level = tweak_data.narrative.stages.rvd_1
+			},
+			{
+				stage_id = "rvd2",
+				add = 10000,
+				id = "rvd2",
+				icon = "csm_rvd_2",
+				level = tweak_data.narrative.stages.rvd_2
+			},
+			{
+				stage_id = "brb",
+				add = 10000,
+				id = "brb",
+				icon = "csm_brb",
+				level = tweak_data.narrative.stages.brb
+			},
+			{
+				stage_id = "arm_cro",
 				id = "arm_cro",
-				add = debug_short_add,
 				icon = "csm_crossroads",
-				level = tweak_data.narrative.stages.arm_cro,
-				stage_id = "arm_cro"
+				add = debug_short_add,
+				level = tweak_data.narrative.stages.arm_cro
 			},
 			{
 				id = "help",
