@@ -8,7 +8,7 @@ function MoneyManager:on_buy_casino_fee(secured_cards, increase_infamous, prefer
 end
 
 function MoneyManager:get_cost_of_casino_fee(secured_cards, increase_infamous, preferred_card)
-	local fee = self:get_cost_of_casino_entrance()
+	local fee = 0
 
 	for i = 1, secured_cards, 1 do
 		fee = 0
