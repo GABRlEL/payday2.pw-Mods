@@ -1,6 +1,6 @@
 {
-	"name" : "Free Offshore PAYDAY - Gab",
-	"description" : "Makes offshore PAYDAY free",
+	"name" : "Free Mission Assets - Gab",
+	"description" : "Makes all mission assets free of cost",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

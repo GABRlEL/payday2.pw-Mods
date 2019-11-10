@@ -1,6 +1,6 @@
 {
-	"name" : "Free Offshore PAYDAY - Gab",
-	"description" : "Makes offshore PAYDAY free",
+	"name" : "Get Offshore money on weapon sell - Gab",
+	"description" : "Get spending and offshore cash when selling a weapon",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
