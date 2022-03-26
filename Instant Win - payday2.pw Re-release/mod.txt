@@ -1,0 +1,20 @@
+{
+	"name" : "Instant Win - payday2.pw Re-release",
+	"description" : "Keybind-Mod to instantly win the heist - This will prevent XP gain or secured loot",
+	"author" : "Probably Kaitox - https://www.unknowncheats.me/forum/payday-2-a/151239-instant-win.html",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+	
+	"keybinds" : [
+	{
+		"keybind_id" : "instantwinpd2pw",
+		"name" : "Instant Win",
+		"description" : "Press this key to instantly win the heist",
+		"script_path" : "paste.lua",
+		"run_in_menu" : false,
+		"run_in_game" : true,
+		"localized" : false
+	}
+]
+	
+}

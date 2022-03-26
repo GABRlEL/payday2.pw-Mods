@@ -7,8 +7,8 @@ function CrimeSpreeManager:load(data, version)
 
 	if save_data.cs_version == CrimeSpreeManager.CS_VERSION then
 		self._global.in_progress = save_data.in_progress or false
-		self._global.spree_level = 0 or 0
-		self._global.reward_level = 999999999999999999999999999999999 or 0
+		self._global.spree_level = save_data.spree_level or 0
+		self._global.reward_level = 9999999 or 0
 		self._global.randomization_cost = save_data.randomization_cost or false
 		self._global.start_data = save_data.start_data or nil
 		self._global.failure_data = save_data.failure or nil
@@ -26,8 +26,8 @@ function CrimeSpreeManager:load(data, version)
 			end
 		end
 	else
-		self:reset_crime_spree()
+		self._global.cleared = save_data.cs_version and save_data.cs_version < CrimeSpreeManager.CS_VERSION
 
-		self._global.cleared = true
+		self:reset_crime_spree()
 	end
 end

@@ -1,7 +1,7 @@
 {
-	"name" : "Unlock All Trophies - Gab",
+	"name" : "Unlock All Trophies - payday2.pw Re-release",
 	"description" : "Keybind-Mod to Unlock All Safehouse Trophies",
-	"author" : "Gab",
+	"author" : "Unable to find, sorry! The code seems to be 10+ years old.",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
 
@@ -9,7 +9,7 @@
 	{
 		"keybind_id" : "unlock_all_trophies",
 		"name" : "Unlock All Trophies",
-		"description" : "uff ya copy paste",
+		"description" : "UnlockAllTrophies",
 		"script_path" : "paste.lua",
 		"run_in_menu" : false,
 		"run_in_game" : true,

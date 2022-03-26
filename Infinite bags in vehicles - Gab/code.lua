@@ -1,7 +1,7 @@
-VehicleTweakData = VehicleTweakData or class()
+local old_vtd2022_01_init = VehicleTweakData.init
 
--- Lines: 7 to 47
 function VehicleTweakData:init(tweak_data)
+old_vtd2022_01_init(self, tweak_data)
 	self:_init_data_falcogini()
 	self:_init_data_muscle()
 	self:_init_data_forklift()
@@ -12,12 +12,16 @@ function VehicleTweakData:init(tweak_data)
 	self:_init_data_blackhawk_1()
 	self:_init_data_bike_1()
 	self:_init_data_bike_2()
+	self:_init_data_wanker()
 end
 
--- Lines: 57 to 115
+
+local old_vtd2022_02_init = VehicleTweakData._init_data_falcogini
+
 function VehicleTweakData:_init_data_falcogini()
+old_vtd2022_02_init(self, tweak_data)
 	self.falcogini = {
-		name = "Falcogini",
+		name_id = "vhl_falcogini_name",
 		hud_label_offset = 140,
 		animations = {
 			passenger_front = "drive_falcogini_passanger",
@@ -56,8 +60,14 @@ function VehicleTweakData:_init_data_falcogini()
 				shooting_pos = Vector3(50, -20, 50)
 			}
 		},
-		loot_points = {loot = {name = "loot"}},
-		damage = {max_health = 100000},
+		loot_points = {
+			loot = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 100000
+		},
 		max_speed = 200,
 		max_rpm = 9000,
 		loot_drop_point = "v_repair_engine",
@@ -68,10 +78,13 @@ function VehicleTweakData:_init_data_falcogini()
 	}
 end
 
--- Lines: 118 to 180
+
+local old_vtd2022_03_init = VehicleTweakData._init_data_muscle
+
 function VehicleTweakData:_init_data_muscle()
+old_vtd2022_03_init(self, tweak_data)
 	self.muscle = {
-		name = "Longfellow",
+		name_id = "vhl_longfellow_name",
 		hud_label_offset = 150,
 		animations = {
 			passenger_back_right = "drive_muscle_back_right",
@@ -122,12 +135,20 @@ function VehicleTweakData:_init_data_muscle()
 			}
 		},
 		loot_points = {
-			loot_left = {name = "loot_left"},
-			loot_right = {name = "loot_right"},
-			loot = {name = "loot"}
+			loot_left = {
+				name = "loot_left"
+			},
+			loot_right = {
+				name = "loot_right"
+			},
+			loot = {
+				name = "loot"
+			}
 		},
 		trunk_point = "trunk",
-		damage = {max_health = 9000000},
+		damage = {
+			max_health = 9000000
+		},
 		max_speed = 160,
 		max_rpm = 8000,
 		loot_drop_point = "v_repair_engine",
@@ -138,10 +159,13 @@ function VehicleTweakData:_init_data_muscle()
 	}
 end
 
--- Lines: 183 to 240
+
+local old_vtd2022_04_init = VehicleTweakData._init_data_forklift
+
 function VehicleTweakData:_init_data_forklift()
+old_vtd2022_04_init(self, tweak_data)
 	self.forklift = {
-		name = "Forklift",
+		name_id = "vhl_forklift_name",
 		hud_label_offset = 220,
 		animations = {
 			passenger_front = "drive_forklift_passanger",
@@ -178,8 +202,14 @@ function VehicleTweakData:_init_data_forklift()
 				driving = false
 			}
 		},
-		loot_points = {loot_left = {name = "loot"}},
-		damage = {max_health = 9000000},
+		loot_points = {
+			loot_left = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 9000000
+		},
 		max_speed = 20,
 		max_rpm = 1600,
 		loot_drop_point = "v_repair_engine",
@@ -188,12 +218,17 @@ function VehicleTweakData:_init_data_forklift()
 		driver_camera_offset = Vector3(0, 0, 7.5),
 		fov = 70
 	}
+	self.forklift_3 = deep_clone(self.forklift)
+	self.forklift_3.max_loot_bags = 9999
 end
 
--- Lines: 243 to 300
+
+local old_vtd2022_05_init = VehicleTweakData._init_data_forklift_2
+
 function VehicleTweakData:_init_data_forklift_2()
+old_vtd2022_05_init(self, tweak_data)
 	self.forklift_2 = {
-		name = "Forklift",
+		name_id = "vhl_forklift_name",
 		hud_label_offset = 220,
 		animations = {
 			driver = "drive_forklift_driver",
@@ -217,26 +252,37 @@ function VehicleTweakData:_init_data_forklift_2()
 			going_reverse = "forklift_reverse_warning",
 			hit = "car_hit_gen_01"
 		},
-		seats = {driver = {
-			driving = true,
-			name = "driver"
-		}},
-		loot_points = {loot_left = {name = "loot"}},
-		damage = {max_health = 100000},
+		seats = {
+			driver = {
+				driving = true,
+				name = "driver"
+			}
+		},
+		loot_points = {
+			loot_left = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 100000
+		},
 		max_speed = 20,
 		max_rpm = 1600,
 		loot_drop_point = "v_repair_engine",
-		max_loot_bags = 0,
+		max_loot_bags = 9999,
 		interact_distance = 350,
 		driver_camera_offset = Vector3(0, 0, 7.5),
 		fov = 70
 	}
 end
 
--- Lines: 303 to 364
+
+local old_vtd2022_06_init = VehicleTweakData._init_data_box_truck_1
+
 function VehicleTweakData:_init_data_box_truck_1()
+old_vtd2022_06_init(self, tweak_data)
 	self.box_truck_1 = {
-		name = "Truck",
+		name_id = "vhl_truck_name",
 		hud_label_offset = 325,
 		animations = {
 			passenger_back_right = "drive_truck_back_right",
@@ -287,10 +333,16 @@ function VehicleTweakData:_init_data_box_truck_1()
 			}
 		},
 		loot_points = {
-			loot_left = {name = "loot_left"},
-			loot_right = {name = "loot_right"}
+			loot_left = {
+				name = "loot_left"
+			},
+			loot_right = {
+				name = "loot_right"
+			}
 		},
-		damage = {max_health = 900000},
+		damage = {
+			max_health = 900000
+		},
 		max_speed = 160,
 		max_rpm = 8000,
 		loot_drop_point = "v_repair_engine",
@@ -301,10 +353,13 @@ function VehicleTweakData:_init_data_box_truck_1()
 	}
 end
 
--- Lines: 553 to 609
+
+local old_vtd2022_07_init = VehicleTweakData._init_data_mower_1
+
 function VehicleTweakData:_init_data_mower_1()
+old_vtd2022_07_init(self, tweak_data)
 	self.mower_1 = {
-		name = "Lawn Mower",
+		name_id = "vhl_lawn_mower_name",
 		hud_label_offset = 80,
 		animations = {
 			driver = "drive_mower_1_driver",
@@ -328,12 +383,20 @@ function VehicleTweakData:_init_data_mower_1()
 			going_reverse = "forklift_reverse_warning",
 			hit = "car_hit_gen_01"
 		},
-		seats = {driver = {
-			driving = true,
-			name = "driver"
-		}},
-		loot_points = {loot_left = {name = "loot"}},
-		damage = {max_health = 9000000},
+		seats = {
+			driver = {
+				driving = true,
+				name = "driver"
+			}
+		},
+		loot_points = {
+			loot_left = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 9000000
+		},
 		max_speed = 20,
 		max_rpm = 1600,
 		loot_drop_point = "v_repair_engine",
@@ -344,10 +407,13 @@ function VehicleTweakData:_init_data_mower_1()
 	}
 end
 
--- Lines: 615 to 697
+
+local old_vtd2022_08_init = VehicleTweakData._init_data_boat_rib_1
+
 function VehicleTweakData:_init_data_boat_rib_1()
+old_vtd2022_08_init(self, tweak_data)
 	self.boat_rib_1 = {
-		name = "Rib Boat",
+		name_id = "vhl_rib_boat_name",
 		hud_label_offset = 1,
 		animations = {
 			passenger_back_right = "drive_boat_rib_1_back_right",
@@ -398,8 +464,14 @@ function VehicleTweakData:_init_data_boat_rib_1()
 				driving = false
 			}
 		},
-		loot_points = {loot_left = {name = "loot"}},
-		damage = {max_health = 9000000},
+		loot_points = {
+			loot_left = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 9000000
+		},
 		max_speed = 20,
 		max_rpm = 1600,
 		loot_drop_point = "v_repair_engine",
@@ -410,10 +482,13 @@ function VehicleTweakData:_init_data_boat_rib_1()
 	}
 end
 
--- Lines: 703 to 788
+
+local old_vtd2022_09_init = VehicleTweakData._init_data_blackhawk_1
+
 function VehicleTweakData:_init_data_blackhawk_1()
+old_vtd2022_09_init(self, tweak_data)
 	self.blackhawk_1 = {
-		name = "Blackhawk",
+		name_id = "vhl_blackhawk_name",
 		hud_label_offset = 150,
 		animations = {
 			passenger_back_right = "drive_blackhawk_1_back_right",
@@ -466,10 +541,16 @@ function VehicleTweakData:_init_data_blackhawk_1()
 			}
 		},
 		loot_points = {
-			loot_left = {name = "loot_left"},
-			loot_right = {name = "loot_right"}
+			loot_left = {
+				name = "loot_left"
+			},
+			loot_right = {
+				name = "loot_right"
+			}
 		},
-		damage = {max_health = 9e+27},
+		damage = {
+			max_health = 9e+27
+		},
 		max_speed = 160,
 		max_rpm = 8000,
 		loot_drop_point = "v_repair_engine",
@@ -479,13 +560,16 @@ function VehicleTweakData:_init_data_blackhawk_1()
 		fov = 75
 	}
 	self.blackhawk_2 = deep_clone(self.blackhawk_1)
-	self.blackhawk_2.name = nil
+	self.blackhawk_2.name_id = nil
 end
 
--- Lines: 793 to 858
+
+local old_vtd2022_10_init = VehicleTweakData._init_data_bike_1
+
 function VehicleTweakData:_init_data_bike_1()
+old_vtd2022_10_init(self, tweak_data)	
 	self.bike_1 = {
-		name = "Bike",
+		name_id = "vhl_bike_name",
 		hud_label_offset = 220,
 		animations = {
 			driver = "drive_bike_1_driver",
@@ -506,30 +590,43 @@ function VehicleTweakData:_init_data_bike_1()
 			engine_sound_event = "mc_harley",
 			hit = "mc_hit_gen_01"
 		},
-		seats = {driver = {
-			driving = true,
-			name = "driver"
-		}},
-		loot_points = {loot_left = {name = "loot"}},
-		damage = {max_health = 18000000},
+		seats = {
+			driver = {
+				driving = true,
+				name = "driver"
+			}
+		},
+		loot_points = {
+			loot_left = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 18000000
+		},
 		max_speed = 180,
 		max_rpm = 3000,
 		loot_drop_point = "v_repair_engine",
-		max_loot_bags = 0,
+		max_loot_bags = 9999,
 		interact_distance = 250,
 		driver_camera_offset = Vector3(0, -4, 5),
 		fov = 75,
-		camera_limits = {driver = {
-			pitch = 30,
-			yaw = 30
-		}}
+		camera_limits = {
+			driver = {
+				pitch = 30,
+				yaw = 30
+			}
+		}
 	}
 end
 
--- Lines: 860 to 925
+
+local old_vtd2022_11_init = VehicleTweakData._init_data_bike_2
+
 function VehicleTweakData:_init_data_bike_2()
+old_vtd2022_11_init(self, tweak_data)
 	self.bike_2 = {
-		name = "Rust's bike",
+		name_id = "vhl_rust_bike_name",
 		hud_label_offset = 220,
 		animations = {
 			driver = "drive_bike_1_driver",
@@ -550,22 +647,110 @@ function VehicleTweakData:_init_data_bike_2()
 			engine_sound_event = "mc_harley",
 			hit = "mc_hit_gen_01"
 		},
-		seats = {driver = {
-			driving = true,
-			name = "driver"
-		}},
-		loot_points = {loot_left = {name = "loot"}},
-		damage = {max_health = 18000000},
+		seats = {
+			driver = {
+				driving = true,
+				name = "driver"
+			}
+		},
+		loot_points = {
+			loot_left = {
+				name = "loot"
+			}
+		},
+		damage = {
+			max_health = 18000000
+		},
 		max_speed = 180,
 		max_rpm = 3000,
 		loot_drop_point = "v_repair_engine",
-		max_loot_bags = 0,
+		max_loot_bags = 9999,
 		interact_distance = 250,
 		driver_camera_offset = Vector3(0, -4, 5),
 		fov = 75,
-		camera_limits = {driver = {
-			pitch = 30,
-			yaw = 30
-		}}
+		camera_limits = {
+			driver = {
+				pitch = 30,
+				yaw = 30
+			}
+		}
+	}
+end
+
+
+local old_vtd2022_12_init = VehicleTweakData._init_data_wanker
+
+function VehicleTweakData:_init_data_wanker()
+old_vtd2022_12_init(self, tweak_data)
+	self.wanker = {
+		hud_label_offset = 150,
+		animations = {
+			passenger_back_right = "drive_wanker_back_right",
+			vehicle_id = "wanker",
+			passenger_back_left = "drive_wanker_back_left",
+			passenger_front = "drive_wanker_passanger",
+			driver = "drive_wanker_driver"
+		},
+		sound = {
+			broken_engine = "heli_silence",
+			bump = "heli_silence",
+			lateral_slip_treshold = 0.35,
+			bump_rtpc = "heli_silence",
+			bump_treshold = 8,
+			slip_stop = "heli_silence",
+			slip = "heli_silence",
+			hit_rtpc = "heli_silence",
+			engine_start = "heli_silence",
+			engine_rpm_rtpc = "heli_silence",
+			longitudal_slip_treshold = 0.8,
+			engine_speed_rtpc = "heli_silence",
+			door_close = "heli_silence",
+			engine_sound_event = "heli_silence",
+			hit = "heli_silence"
+		},
+		seats = {
+			driver = {
+				allow_shooting = false,
+				name = "driver",
+				has_shooting_mode = false,
+				driving = false
+			},
+			passenger_front = {
+				allow_shooting = false,
+				name = "passenger_front",
+				has_shooting_mode = false,
+				driving = false
+			},
+			passenger_back_left = {
+				allow_shooting = false,
+				name = "passenger_back_left",
+				has_shooting_mode = false,
+				driving = false
+			},
+			passenger_back_right = {
+				allow_shooting = false,
+				name = "passenger_back_right",
+				has_shooting_mode = false,
+				driving = false
+			}
+		},
+		loot_points = {
+			loot_left = {
+				name = "loot_left"
+			},
+			loot_right = {
+				name = "loot_right"
+			}
+		},
+		damage = {
+			max_health = 9e+27
+		},
+		max_speed = 160,
+		max_rpm = 8000,
+		loot_drop_point = "v_repair_engine",
+		max_loot_bags = 9999,
+		interact_distance = 350,
+		driver_camera_offset = Vector3(0, 0, 0),
+		fov = 75
 	}
 end

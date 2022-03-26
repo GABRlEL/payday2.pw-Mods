@@ -1,5 +1,5 @@
 {
-	"name" : "Unlock All Raid Jobs - PBC",
+	"name" : "Unlock All Raid Jobs - Gab",
 	"description" : "Unlocks all raid side jobs for free",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

@@ -1,7 +1,7 @@
-local old_NAD_init = UpgradesTweakData._init_pd2_values
+local old_NAD111111_init = UpgradesTweakData._init_pd2_values
  
 function UpgradesTweakData:_init_pd2_values(tweak_data)
-    old_NAD_init(self, tweak_data)
+    old_NAD111111_init(self, tweak_data)
 	self.values.player.body_armor = {
 		armor = {
 			10000,

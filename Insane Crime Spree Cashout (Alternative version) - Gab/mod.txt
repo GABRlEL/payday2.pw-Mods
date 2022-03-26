@@ -1,5 +1,5 @@
 {
-	"name" : "OP Crime Spree Rewards - Gab",
+	"name" : "Insane Crime Spree Cashout (Alternative version) - Gab",
 	"description" : "Makes your rewards absurdly high",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

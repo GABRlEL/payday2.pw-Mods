@@ -1,7 +1,8 @@
-InputTweakData = InputTweakData or class()
+local old_ITDBAAFC_init = InputTweakData.init
 
 -- Lines: 8 to 86
 function InputTweakData:init(tweak_data)
+	old_ITDBAAFC_init(self, tweak_data)
 	self.gamepad = {
 		aim_assist_move_speed = 9e+27,
 		aim_assist_move_th_min = 9e+27,

@@ -1,13 +1,16 @@
-TimeSpeedEffectTweakData = TimeSpeedEffectTweakData or class()
+local old_tsetd_m_init = TimeSpeedEffectTweakData.init
 
--- Lines: 3 to 6
 function TimeSpeedEffectTweakData:init()
+old_tsetd_m_init(self, tweak_data)
 	self:_init_base_effects()
 	self:_init_mission_effects()
 end
 
--- Lines: 10 to 51
+
+local old_tsetd_b_init = TimeSpeedEffectTweakData._init_base_effects
+
 function TimeSpeedEffectTweakData:_init_base_effects()
+old_tsetd_b_init(self, tweak_data)
 	self.mask_on = {
 		sustain = 0,
 		timer = "pausable",
@@ -42,8 +45,11 @@ function TimeSpeedEffectTweakData:_init_base_effects()
 	}
 end
 
--- Lines: 55 to 79
+
+local old_tsetd_mm_init = TimeSpeedEffectTweakData._init_mission_effects
+
 function TimeSpeedEffectTweakData:_init_mission_effects()
+old_tsetd_mm_init(self, tweak_data)
 	self.mission_effects = {quickdraw = {
 		sustain = 0,
 		timer = "pausable",

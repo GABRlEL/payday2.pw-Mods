@@ -1,7 +1,7 @@
 {
-	"name" : "Set Crime Spree Level - Gab",
+	"name" : "Set Crime Spree Level - payday2.pw Re-release",
 	"description" : "Adds the Crime Spree Level 1k, 10k and 100k",
-	"author" : "Gab",
+	"author" : "KurtCobain47 - https://www.unknowncheats.me/forum/members/1014265.html",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
 

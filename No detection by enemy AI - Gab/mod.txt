@@ -1,6 +1,6 @@
 {
 	"name" : "No detection by enemy AI - Gab",
-	"description" : "No enemy will detected you",
+	"description" : "No enemy will detect you",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

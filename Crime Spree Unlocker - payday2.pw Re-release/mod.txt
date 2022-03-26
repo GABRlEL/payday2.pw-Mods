@@ -1,7 +1,7 @@
 {
-	"name" : "Crime Spree Unlocker - Gab",
+	"name" : "Crime Spree Unlocker - payday2.pw Re-release",
 	"description" : "Unlocks Crime Spree for all levels",
-	"author" : "Gab",
+	"author" : "Unable to find, sorry! Contact me, if you see this OG author.",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
 

@@ -1,6 +1,6 @@
 {
 	"name" : "No Special Enemies - Gab",
-	"description" : "No Special Enemies and enemies don't climb anymore",
+	"description" : "No Special Enemies spawn naturally anymore",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

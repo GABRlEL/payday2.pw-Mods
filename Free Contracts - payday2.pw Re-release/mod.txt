@@ -1,7 +1,7 @@
 {
-	"name" : "Free contracts - Gab",
+	"name" : "Free contracts - payday2.pw Re-release",
 	"description" : "Makes every contract free",
-	"author" : "Gab",
+	"author" : "tyo445 - https://www.unknowncheats.me/forum/members/1489841.html",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
 

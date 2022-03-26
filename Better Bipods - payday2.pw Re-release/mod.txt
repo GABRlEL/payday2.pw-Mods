@@ -1,7 +1,7 @@
 {
-	"name" : "Better Bipods - Gab",
+	"name" : "Better Bipods - payday2.pw Re-release",
 	"description" : "Allows you to freely look around and instantly use bipods",
-	"author" : "Gab",
+	"author" : "Subsimple - https://www.unknowncheats.me/forum/members/572599.html",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
 
