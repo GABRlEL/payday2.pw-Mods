@@ -1,5 +1,5 @@
 {
-	"name" : "Free Safehouse Room Upgrades - Gab",
+	"name" : "Free safehouse upgrades - Gab",
 	"description" : "Makes every safehouse room upgrade free",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

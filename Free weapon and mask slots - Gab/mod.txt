@@ -1,0 +1,15 @@
+{
+	"name" : "Free weapon and mask slots - Gab",
+	"description" : "Weapon and mask slots no longer cost anything",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

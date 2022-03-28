@@ -1,0 +1,15 @@
+{
+	"name" : "Increase stealth XP bonus - Gab",
+	"description" : "Increases the stealth XP bonus for the next mission",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/levelstweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

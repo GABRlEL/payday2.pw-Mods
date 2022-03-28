@@ -1,0 +1,19 @@
+{
+	"name" : "Wipe money + Offshore - Gab",
+	"description" : "Sell a weapon or mask to wipe your full cash",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	},
+	{ 	
+		"hook_id" : "lib/managers/moneymanager",
+		"script_path" : "code2.lua"
+	}
+]
+	
+}

@@ -1,5 +1,5 @@
 {
-	"name" : "Infinite Stamina - Gab",
+	"name" : "Infinite stamina - Gab",
 	"description" : "Gives you infinite stamina",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

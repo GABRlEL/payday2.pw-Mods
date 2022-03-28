@@ -1,6 +1,6 @@
 {
-	"name" : "God Mode Mutator - Gab",
-	"description" : "God Mode Mutator - Replaces Enemy Damage Mutator",
+	"name" : "God Mode mutator - Gab",
+	"description" : "God Mode mutator - Replaces Enemy Damage mutator",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

@@ -1,0 +1,26 @@
+{
+    "name" : "Multilingual meth helper (Spammy) - payday2.pw release",
+    "description" : "Teilt mit, welche Meth-Zutaten hinzugefügt werden müssen und wann das Meth fertig ist",
+    "author" : "Cloaker Magnet & Gab",
+    "contact" : "Cloaker Magnet auf Steam: steamcommunity.com/profiles/76561198003292937 | Gab: www.payday2.pw",
+    "version" : "1.0",
+	"blt_version" : 2,
+    "hooks" : [
+   
+	{
+		"hook_id" : "lib/managers/DialogManager"
+		"script_path" : "ingredients.lua"
+	}
+    ],
+	"keybinds" : [
+		{
+			"keybind_id" : "MH-GUI_keybind",
+			"name" : "Meth Helper aktivieren/deaktivieren",
+			"description" : "Aktiviert/deaktiviert den Meth Helper",
+			"script_path" : "toggle.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}

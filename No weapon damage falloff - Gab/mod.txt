@@ -1,0 +1,15 @@
+{
+	"name" : "No weapon damage falloff - Gab",
+	"description" : "Removes weapon damage falloff - Doesnt display in HUD",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/weaponfallofftweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

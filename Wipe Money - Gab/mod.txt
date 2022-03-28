@@ -1,6 +1,6 @@
 {
-	"name" : "Wipe Money - Gab",
-	"description" : "Sell a weapon to wipe your cash",
+	"name" : "Wipe money - Gab",
+	"description" : "Sell a weapon or mask to wipe your cash",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

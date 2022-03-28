@@ -1,5 +1,5 @@
 {
-	"name" : "No Drill Timers (Compatibility version) - Gab",
+	"name" : "No drill timers (Compatibility version) - Gab",
 	"description" : "Removes drill timers - Compatibility Version, might cause or fix problems",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

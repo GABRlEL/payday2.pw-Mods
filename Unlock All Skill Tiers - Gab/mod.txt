@@ -1,6 +1,6 @@
 {
-	"name" : "Unlock All Skill Tiers - Gab",
-	"description" : "Unlocks all Skill Tiers",
+	"name" : "Unlock all skill tiers - Gab",
+	"description" : "Unlocks all skill tiers",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

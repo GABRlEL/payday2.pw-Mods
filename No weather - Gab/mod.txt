@@ -1,0 +1,15 @@
+{
+	"name" : "No weather - Gab",
+	"description" : "Disables weather",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/enveffecttweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

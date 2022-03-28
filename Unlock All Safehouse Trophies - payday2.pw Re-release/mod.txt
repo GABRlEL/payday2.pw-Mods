@@ -1,6 +1,6 @@
 {
-	"name" : "Unlock All Trophies - payday2.pw Re-release",
-	"description" : "Keybind-Mod to Unlock All Safehouse Trophies",
+	"name" : "Unlock all safehouse trophies - payday2.pw Re-release",
+	"description" : "Keybind-Mod to Unlock all safehouse trophies",
 	"author" : "Unable to find, sorry! The code seems to be 10+ years old.",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

@@ -1,0 +1,15 @@
+{
+	"name" : "Crime Spree score multiplier in other lobbies - Gab",
+	"description" : "Enables Catchup bonus at all times in other lobbies and increases it by a lot",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

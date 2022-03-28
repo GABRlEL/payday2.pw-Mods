@@ -1,5 +1,5 @@
 {
-	"name" : "Free Mission Assets - Gab",
+	"name" : "Free mission assets - Gab",
 	"description" : "Makes all mission assets free of cost",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

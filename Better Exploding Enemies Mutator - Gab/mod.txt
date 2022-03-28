@@ -1,5 +1,5 @@
 {
-	"name" : "Better Exploding Enemies Mutator - Gab",
+	"name" : "Better Exploding Enemies mutator - Gab",
 	"description" : "Allows the higher explosion radius and removes penalty",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

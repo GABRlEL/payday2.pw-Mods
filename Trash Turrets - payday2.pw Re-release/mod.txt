@@ -1,5 +1,5 @@
 {
-	"name" : "Trash Turrets - Gab",
+	"name" : "Trash turrets - Gab",
 	"description" : "Makes all turrets trash",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

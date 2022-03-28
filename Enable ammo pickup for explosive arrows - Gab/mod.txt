@@ -1,0 +1,15 @@
+{
+	"name" : "Enable ammo pickup for explosive arrows - Gab",
+	"description" : "Enable ammo pickup for explosive arrows",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/tweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,5 +1,5 @@
 {
-	"name" : "Instant Win - payday2.pw Re-release",
+	"name" : "Instant win - payday2.pw Re-release",
 	"description" : "Keybind-Mod to instantly win the heist - This will prevent XP gain or secured loot",
 	"author" : "Probably Kaitox - https://www.unknowncheats.me/forum/payday-2-a/151239-instant-win.html",
 	"contact" : "www.payday2.pw",

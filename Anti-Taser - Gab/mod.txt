@@ -1,0 +1,15 @@
+{
+	"name" : "Anti-Taser - Gab",
+	"description" : "Reduces tased time & recovery time",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/playertweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

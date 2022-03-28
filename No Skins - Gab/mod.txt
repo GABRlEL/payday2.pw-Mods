@@ -1,5 +1,5 @@
 {
-	"name" : "No Skins - Gab",
+	"name" : "No skins - Gab",
 	"description" : "Doesnt display skins - Ideal for ugly Stat-Boost skins",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

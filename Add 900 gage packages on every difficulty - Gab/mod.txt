@@ -1,6 +1,6 @@
 {
 	"name" : "Add 900 gage packages on every difficulty - Gab",
-	"description" : "Adds 900 gage packages on every difficulty - MIGHT CRASH",
+	"description" : "Adds 900 gage packages on every difficulty (Packages stack)",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

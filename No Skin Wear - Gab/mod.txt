@@ -1,5 +1,5 @@
 {
-	"name" : "No Skin Wear - Gab",
+	"name" : "No skin wear - Gab",
 	"description" : "Makes every skin look like mint",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

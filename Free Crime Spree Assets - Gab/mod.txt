@@ -1,5 +1,5 @@
 {
-	"name" : "Free Crime Spree Assets - Gab",
+	"name" : "Free Crime Spree assets - Gab",
 	"description" : "Makes all Crime Spree Assets free",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

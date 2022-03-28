@@ -1,0 +1,15 @@
+{
+	"name" : "Enemies no longer steal loot - Gab",
+	"description" : "All enemies don't steal loot anymore",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/charactertweakdata.lua",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

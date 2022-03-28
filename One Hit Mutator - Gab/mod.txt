@@ -1,6 +1,6 @@
 {
-	"name" : "One Hit Mutator - Gab",
-	"description" : "One Hit Mutator - Replaces Enemy Health Mutator",
+	"name" : "One Hit mutator - Gab",
+	"description" : "One Hit mutator - Replaces Enemy Health mutator",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

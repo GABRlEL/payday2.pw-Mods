@@ -1,5 +1,5 @@
 {
-    "name" : "German Meth Helper (Spammy) - payday2.pw German release",
+    "name" : "German meth helper (Spammy) - payday2.pw German release",
     "description" : "Teilt mit, welche Meth-Zutaten hinzugefügt werden müssen und wann das Meth fertig ist",
     "author" : "Cloaker Magnet & Gab",
     "contact" : "Cloaker Magnet auf Steam: steamcommunity.com/profiles/76561198003292937 | Gab: www.payday2.pw",

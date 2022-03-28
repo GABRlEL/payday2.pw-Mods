@@ -1,6 +1,6 @@
 {
-	"name" : "OP ECM Jammer - Gab",
-	"description" : "Buffs all ECM Jammer stats drastically",
+	"name" : "OP ECM jammer - Gab",
+	"description" : "Buffs all ECM jammer stats drastically",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

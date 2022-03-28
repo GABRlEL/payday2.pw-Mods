@@ -1,0 +1,15 @@
+{
+	"name" : "Loot drop increaser (On infamy) - Gab",
+	"description" : "Increases loot drops on atleast 1 infamy level",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/infamynewtweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

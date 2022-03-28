@@ -1,0 +1,15 @@
+{
+	"name" : "XP increaser (On gage package pickup) - Gab",
+	"description" : "Increase XP drastically on gage package pickup and increases gage package numbers to 900",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/gageassignmenttweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

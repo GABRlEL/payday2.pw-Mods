@@ -1,6 +1,6 @@
 {
-	"name" : "ECM Jammer Rebalance for Loud - Gab",
-	"description" : "Makes ECM Jammer and their feedback useful in loud. The Jack of all trades skill is recommended.",
+	"name" : "ECM jammer rebalance for Loud - Gab",
+	"description" : "Makes ECM jammers and their feedback useful in Loud. The Jack of all trades skill is recommended.",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

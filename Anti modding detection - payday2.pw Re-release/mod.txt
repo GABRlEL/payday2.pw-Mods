@@ -1,0 +1,15 @@
+{
+	"name" : "Anti modding detection - payday2.pw Re-release",
+	"description" : "Spoofs you not having mods installed",
+	"author" : "Dr_Newbie - https://modworkshop.net/user/7573",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/menumanager",
+		"script_path" : "paste.lua"
+	}
+]
+	
+}

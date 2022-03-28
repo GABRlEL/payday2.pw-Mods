@@ -1,5 +1,5 @@
 {
-	"name" : "Free Crime Spree Reroll - Gab",
+	"name" : "Free Crime Spree reroll - Gab",
 	"description" : "Reroll your crime spree heists for free",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

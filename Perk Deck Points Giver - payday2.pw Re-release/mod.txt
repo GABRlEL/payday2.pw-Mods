@@ -1,6 +1,6 @@
 {
-	"name" : "Perk Deck Points Giver - payday2.pw Re-release",
-	"description" : "Gives you enough Perk Deck Points for all decks",
+	"name" : "Perk deck points giver - payday2.pw Re-release",
+	"description" : "Gives you enough perk deck points for all decks",
 	"author" : "spenz - https://www.unknowncheats.me/forum/members/413372.html",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

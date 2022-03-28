@@ -1,0 +1,15 @@
+{
+	"name" : "Drills no longer jam - Gab",
+	"description" : "Drills no longer jam",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/missiondoortweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

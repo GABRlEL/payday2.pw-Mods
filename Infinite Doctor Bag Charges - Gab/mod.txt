@@ -1,5 +1,5 @@
 {
-	"name" : "Infinite Doctor Bag Charges - Gab",
+	"name" : "Infinite Doctor Bag charges - Gab",
 	"description" : "Adds infinite doctor bag charges",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

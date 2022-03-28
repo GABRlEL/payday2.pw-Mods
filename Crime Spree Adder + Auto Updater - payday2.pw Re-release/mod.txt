@@ -1,5 +1,5 @@
 {
-	"name" : "Crime Spree Adder + AU - payday2.pw Re-release",
+	"name" : "Crime Spree adder + Auto updater - payday2.pw Re-release",
 	"description" : "Adds 10k per won Crime Spree heist - This version includes automatic updates",
 	"author" : "satan69 - https://www.unknowncheats.me/forum/members/240387.html and SentinelMKX - https://www.unknowncheats.me/forum/members/1877848.html",
 	"contact" : "www.payday2.pw",

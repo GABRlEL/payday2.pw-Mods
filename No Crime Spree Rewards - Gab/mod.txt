@@ -1,5 +1,5 @@
 {
-	"name" : "No Crime Spree Rewards - Gab",
+	"name" : "No Crime Spree rewards - Gab",
 	"description" : "In case you have a high crime spree but dont want any rewards",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

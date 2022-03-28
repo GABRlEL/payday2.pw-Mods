@@ -1,6 +1,6 @@
 {
-	"name" : "Dont lose Crime Spree on Crash - Gab",
-	"description" : "Dont lose Crime Spree on Crash",
+	"name" : "Dont lose Crime Spree on crash - Gab",
+	"description" : "Dont lose Crime Spree on crash",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

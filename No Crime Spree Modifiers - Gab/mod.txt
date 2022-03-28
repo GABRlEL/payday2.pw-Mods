@@ -1,5 +1,5 @@
 {
-	"name" : "No Crime Spree Modifiers - Gab",
+	"name" : "No Crime Spree modifiers - Gab",
 	"description" : "Makes you not get any modifiers in Crime Spree anymore",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

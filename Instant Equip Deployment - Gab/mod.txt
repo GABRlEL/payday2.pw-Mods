@@ -1,5 +1,5 @@
 {
-	"name" : "Instant Equip Deployment - Gab",
+	"name" : "Instant equip deployment - Gab",
 	"description" : "Makes you instantly deploy every equipment",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

@@ -1,5 +1,5 @@
 {
-	"name" : "Infinite Messiah Charges - Gab",
+	"name" : "Infinite Messiah charges - Gab",
 	"description" : "Adds infinite messiah charges",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

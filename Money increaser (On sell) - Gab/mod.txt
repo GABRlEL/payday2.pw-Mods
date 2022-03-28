@@ -1,0 +1,15 @@
+{
+	"name" : "Money increaser (On weapon sell) - Gab",
+	"description" : "Sell a weapon or mask to get a lot of cash - Dont use with free weapons/masks",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

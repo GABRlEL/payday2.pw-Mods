@@ -1,5 +1,5 @@
 {
-	"name" : "No Drill Timers - Gab",
+	"name" : "No drill timers - Gab",
 	"description" : "Removes drill timers",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

@@ -1,6 +1,6 @@
 {
-	"name" : "Better Aim Assist for Controller - Gab",
-	"description" : "Improves the Aim Assist for Controller Players",
+	"name" : "Better Aim Assist for controller - Gab",
+	"description" : "Improves the Aim Assist for controller players",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

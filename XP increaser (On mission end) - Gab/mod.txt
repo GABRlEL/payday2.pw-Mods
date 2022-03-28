@@ -1,0 +1,14 @@
+{
+	"name" : "XP increaser (On mission end) - Gab",
+	"description" : "Increase mission completion XP",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/experiencemanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

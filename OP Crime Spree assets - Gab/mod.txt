@@ -1,0 +1,15 @@
+{
+	"name" : "OP Crime Spree assets - Gab",
+	"description" : "Improves the effect on Crime Spree Assets drastically and makes them free",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/crimespreetweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

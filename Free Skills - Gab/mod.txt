@@ -1,5 +1,5 @@
 {
-	"name" : "Free Skills - Gab",
+	"name" : "Free skills - Gab",
 	"description" : "Makes all skills free",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

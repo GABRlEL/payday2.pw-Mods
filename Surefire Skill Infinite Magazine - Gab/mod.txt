@@ -1,5 +1,5 @@
 {
-	"name" : "Surefire Skill Infinite Magazine - Gab",
+	"name" : "Surefire Skill infinite magazine - Gab",
 	"description" : "Makes your magazine huge if you use the surefire skill paired with SMGs, LMGs and ARs",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

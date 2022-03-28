@@ -1,5 +1,5 @@
 {
-	"name" : "Bag Speed - Gab",
+	"name" : "Bag speed - Gab",
 	"description" : "Makes the game think that all bags are light coke",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

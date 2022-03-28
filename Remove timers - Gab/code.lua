@@ -3,22 +3,6 @@ local old_rtnm_init = InteractionTweakData.init
 function InteractionTweakData:init(tweak_data)
 old_rtnm_init(self, tweak_data)
 
-	self.CULLING_DISTANCE = 2000
-	self.INTERACT_DISTANCE = 200
-	self.MAX_INTERACT_DISTANCE = 0
-	self.copy_machine_smuggle = {
-		icon = "equipment_thermite",
-		text_id = "debug_interact_copy_machine",
-		interact_distance = 305
-	}
-	self.safety_deposit = {
-		icon = "develop",
-		text_id = "debug_interact_safety_deposit"
-	}
-	self.paper_pickup = {
-		icon = "develop",
-		text_id = "debug_interact_paper_pickup"
-	}
 	self.thermite = {
 		icon = "equipment_thermite",
 		text_id = "debug_interact_thermite",
@@ -27,16 +11,6 @@ old_rtnm_init(self, tweak_data)
 		equipment_consume = true,
 		interact_distance = 300,
 		timer = 0
-	}
-	self.thermite_not_consume = deep_clone(self.thermite)
-	self.thermite_not_consume.equipment_consume = false
-	self.gasoline = {
-		icon = "equipment_thermite",
-		text_id = "debug_interact_gas",
-		equipment_text_id = "debug_interact_equipment_gas",
-		special_equipment = "gas",
-		equipment_consume = true,
-		interact_distance = 300
 	}
 	self.gasoline_engine = {
 		icon = "equipment_thermite",
@@ -48,30 +22,6 @@ old_rtnm_init(self, tweak_data)
 		equipment_text_id = "debug_interact_equipment_gas",
 		equipment_consume = true,
 		dont_need_equipment = true
-	}
-	self.train_car = {
-		icon = "develop",
-		text_id = "debug_interact_train_car",
-		equipment_text_id = "debug_interact_equipment_gas",
-		special_equipment = "gas",
-		equipment_consume = true,
-		interact_distance = 400
-	}
-	self.walkout_van = {
-		icon = "develop",
-		text_id = "debug_interact_walkout_van",
-		equipment_text_id = "debug_interact_equipment_gold",
-		special_equipment = "gold",
-		equipment_consume = true,
-		interact_distance = 400
-	}
-	self.alaska_plane = {
-		icon = "develop",
-		text_id = "debug_interact_alaska_plane",
-		equipment_text_id = "debug_interact_equipment_organs",
-		special_equipment = "organs",
-		equipment_consume = true,
-		interact_distance = 400
 	}
 	self.suburbia_door_crowbar = {
 		icon = "equipment_crowbar",
@@ -151,14 +101,7 @@ old_rtnm_init(self, tweak_data)
 			category = "ecm_jammer"
 		}
 	}
-	self.requires_ecm_jammer = deep_clone(self.requires_ecm_jammer_double)
-	self.requires_ecm_jammer.axis = "y"
-	self.requires_ecm_jammer_atm = deep_clone(self.requires_ecm_jammer)
 	self.requires_ecm_jammer_atm.timer = 0
-	self.requires_ecm_jammer_atm.requires_upgrade = {
-		upgrade = "affects_cameras",
-		category = "ecm_jammer"
-	}
 	self.weapon_cache_drop_zone = {
 		icon = "equipment_vial",
 		text_id = "debug_interact_hospital_veil_container",
@@ -188,24 +131,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_crowbar_open_metal",
 		sound_interupt = "bar_crowbar_open_metal_cancel",
 		sound_done = "bar_crowbar_open_metal_finished"
-	}
-	self.apartment_key = {
-		icon = "equipment_chavez_key",
-		text_id = "debug_interact_apartment_key",
-		equipment_text_id = "debug_interact_equiptment_apartment_key",
-		special_equipment = "chavez_key",
-		equipment_consume = true,
-		interact_distance = 150
-	}
-	self.hospital_sample_validation_machine = {
-		icon = "equipment_vial",
-		text_id = "debug_interact_sample_validation",
-		equipment_text_id = "debug_interact_equiptment_sample_validation",
-		special_equipment = "blood_sample",
-		equipment_consume = true,
-		start_active = false,
-		interact_distance = 150,
-		axis = "y"
 	}
 	self.methlab_bubbling = {
 		icon = "develop",
@@ -259,76 +184,11 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "liquid_pour_stop",
 		sound_done = "liquid_pour_stop"
 	}
-	self.muriatic_acid = {
-		icon = "develop",
-		text_id = "hud_int_take_acid",
-		start_active = false,
-		interact_distance = 225,
-		special_equipment_block = "acid"
-	}
-	self.caustic_soda = {
-		icon = "develop",
-		text_id = "hud_int_take_caustic_soda",
-		start_active = false,
-		interact_distance = 225,
-		special_equipment_block = "caustic_soda"
-	}
-	self.hydrogen_chloride = {
-		icon = "develop",
-		text_id = "hud_int_take_hydrogen_chloride",
-		start_active = false,
-		interact_distance = 225,
-		special_equipment_block = "hydrogen_chloride"
-	}
-	self.elevator_button = {
-		icon = "interaction_elevator",
-		text_id = "debug_interact_elevator_door",
-		start_active = false
-	}
 	self.use_computer = {
 		icon = "interaction_elevator",
 		text_id = "hud_int_use_computer",
 		start_active = false,
 		timer = 0
-	}
-	self.elevator_button_roof = {
-		icon = "interaction_elevator",
-		text_id = "debug_interact_elevator_door_roof",
-		start_active = false
-	}
-	self.key_double = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_equipment_keycard",
-		equipment_text_id = "hud_int_equipment_no_keycard",
-		special_equipment = "bank_manager_key",
-		equipment_consume = true,
-		interact_distance = 100
-	}
-	self.key = deep_clone(self.key_double)
-	self.key.axis = "x"
-	self.numpad = {
-		icon = "equipment_bank_manager_key",
-		text_id = "debug_interact_numpad",
-		start_active = false,
-		axis = "z"
-	}
-	self.numpad_keycard = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_numpad_keycard",
-		equipment_text_id = "hud_int_numpad_no_keycard",
-		special_equipment = "bank_manager_key",
-		equipment_consume = true,
-		start_active = false,
-		axis = "z"
-	}
-	self.timelock_panel = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_timelock_panel",
-		equipment_text_id = "hud_int_equipment_no_keycard",
-		special_equipment = "bank_manager_key",
-		equipment_consume = true,
-		start_active = false,
-		axis = "y"
 	}
 	self.take_weapons = {
 		icon = "develop",
@@ -346,8 +206,6 @@ old_rtnm_init(self, tweak_data)
 		axis = "z",
 		interact_distance = 150
 	}
-	self.take_weapons_not_active = deep_clone(self.take_weapons)
-	self.take_weapons_not_active.start_active = false
 	self.pick_lock_easy = {
 		contour = "interactable_icon",
 		icon = "equipment_bank_manager_key",
@@ -437,11 +295,7 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_pick_lock_finished",
 		is_lockpicking = true
 	}
-	self.pick_lock_deposit_transport = deep_clone(self.pick_lock_hard_no_skill)
 	self.pick_lock_deposit_transport.timer = 0
-	self.pick_lock_deposit_transport.axis = "y"
-	self.pick_lock_deposit_transport.interact_distance = 80
-	self.pick_lock_deposit_transport.is_lockpicking = true
 	self.open_door_with_keys = {
 		contour = "interactable_icon",
 		icon = "equipment_bank_manager_key",
@@ -457,15 +311,6 @@ old_rtnm_init(self, tweak_data)
 		equipment_text_id = "hud_action_try_keys_no_key",
 		is_lockpicking = true
 	}
-	self.cant_pick_lock = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_pick_lock",
-		start_active = false,
-		interact_distance = 80
-	}
-	self.lockpick_int_off = deep_clone(self.cant_pick_lock)
-	self.no_interact = deep_clone(self.cant_pick_lock)
-	self.no_interact.interact_distance = 0
 	self.hospital_veil_container = {
 		icon = "equipment_vialOK",
 		text_id = "debug_interact_hospital_veil_container",
@@ -475,11 +320,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		timer = 0,
 		axis = "y"
-	}
-	self.hospital_phone = {
-		icon = "interaction_answerphone",
-		text_id = "debug_interact_hospital_phone",
-		start_active = false
 	}
 	self.hospital_security_cable = {
 		text_id = "debug_interact_hospital_security_cable",
@@ -521,11 +361,6 @@ old_rtnm_init(self, tweak_data)
 		text_id = "debug_interact_hospital_veil_hold",
 		start_active = false,
 		timer = 0
-	}
-	self.hospital_veil_take = {
-		icon = "equipment_vial",
-		text_id = "debug_interact_hospital_veil_take",
-		start_active = false
 	}
 	self.hospital_sentry = {
 		icon = "interaction_sentrygun",
@@ -646,7 +481,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_drill_apply_finished",
 		axis = "x"
 	}
-	self.hack_ipad_bp1 = deep_clone(self.hack_ipad)
 	self.hack_ipad_bp1.timer = 0
 	self.hack_ipad_jammed = {
 		icon = "equipment_hack_ipad",
@@ -683,12 +517,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
 	}
-	self.hack_suburbia_jammed_y = deep_clone(self.hack_suburbia_jammed)
-	self.hack_suburbia_jammed_y.axis = "y"
-	self.hack_suburbia_jammed_axis = deep_clone(self.hack_suburbia_jammed)
-	self.hack_suburbia_jammed_axis.axis = "y"
-	self.hack_suburbia_axis = deep_clone(self.hack_suburbia)
-	self.hack_suburbia_axis.axis = "y"
 	self.security_station = {
 		icon = "equipment_hack_ipad",
 		text_id = "debug_interact_security_station",
@@ -929,12 +757,6 @@ old_rtnm_init(self, tweak_data)
 		contour_preset = "teammate_downed",
 		contour_preset_selected = "teammate_downed_selected"
 	}
-	self.dead = {
-		icon = "interaction_help",
-		text_id = "debug_interact_revive",
-		start_active = false,
-		interact_distance = 300
-	}
 	self.free = {
 		icon = "interaction_free",
 		text_id = "debug_interact_free",
@@ -984,14 +806,6 @@ old_rtnm_init(self, tweak_data)
 		no_contour = true,
 		interaction_obj = Idstring("Spine2")
 	}
-	self.trip_mine = {
-		icon = "equipment_trip_mine",
-		requires_upgrade = {
-			upgrade = "can_switch_on_off",
-			category = "trip_mine"
-		},
-		no_contour = true
-	}
 	self.sentry_gun_refill = {
 		icon = "equipment_ammo_bag",
 		requires_upgrade = {
@@ -1030,23 +844,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_generic_finished",
 		action_text_id = "hud_action_pickup_sentry_gun",
 		interact_distance = 200,
-		no_contour = true,
-		verify_owner = true
-	}
-	self.sentry_gun_fire_mode = {
-		icon = "equipment_ammo_bag",
-		requires_upgrade = {
-			upgrade = "ap_bullets",
-			category = "sentry_gun"
-		},
-		text_id = "hud_interact_sentry_gun_switch_fire_mode",
-		blocked_hint = "hint_reload_sentry",
-		sound_start = "bar_bag_generic",
-		sound_interupt = "bar_bag_generic_cancel",
-		sound_done = "bar_bag_generic_finished",
-		action_text_id = "hud_action_sentry_gun_switch_fire_mode",
-		interact_distance = 800,
-		max_interact_distance = 200,
 		no_contour = true,
 		verify_owner = true
 	}
@@ -1141,36 +938,12 @@ old_rtnm_init(self, tweak_data)
 		axis = "z",
 		interact_distance = 100
 	}
-	self.money_bag = {
-		icon = "equipment_money_bag",
-		text_id = "debug_interact_money_bag",
-		equipment_text_id = "debug_interact_equipment_money_bag",
-		special_equipment = "money_bag",
-		equipment_consume = false,
-		sound_event = "ammo_bag_drop"
-	}
 	self.apartment_helicopter = {
 		icon = "develop",
 		text_id = "debug_interact_apartment_helicopter",
 		sound_event = "ammo_bag_drop",
 		timer = 0,
 		interact_distance = 350
-	}
-	self.test_interactive_door = {
-		icon = "develop",
-		text_id = "debug_interact_temp_interact_box",
-		sound_event = "ammo_bag_drop"
-	}
-	self.press_to_interact = {
-		icon = "develop",
-		text_id = "hud_press_to_interact",
-		sound_event = "ammo_bag_drop"
-	}
-	self.test_interactive_door_one_direction = {
-		icon = "develop",
-		text_id = "debug_interact_temp_interact_box",
-		sound_event = "ammo_bag_drop",
-		axis = "y"
 	}
 	self.temp_interact_box = {
 		icon = "develop",
@@ -1195,26 +968,6 @@ old_rtnm_init(self, tweak_data)
 			category = "cable_tie"
 		}
 	}
-	self.temp_interact_box_no_timer = {
-		icon = "develop",
-		text_id = "debug_interact_temp_interact_box"
-	}
-	self.access_camera = {
-		icon = "develop",
-		text_id = "hud_int_access_camera",
-		interact_distance = 125
-	}
-	self.access_camera_x_axis = {
-		icon = "develop",
-		text_id = "hud_int_access_camera",
-		interact_distance = 125,
-		axis = "x"
-	}
-	self.driving_console = {
-		icon = "develop",
-		text_id = "hud_int_driving_console",
-		interact_distance = 500
-	}
 	self.driving_drive = {
 		icon = "develop",
 		text_id = "hud_int_driving_drive",
@@ -1233,32 +986,6 @@ old_rtnm_init(self, tweak_data)
 		text_id = "hud_int_invisible_interaction_open",
 		timer = 0
 	}
-	self.invisible_interaction_open_axis = deep_clone(self.invisible_interaction_open)
-	self.invisible_interaction_open_axis.axis = "y"
-	self.fork_lift_sound = deep_clone(self.invisible_interaction_open)
-	self.fork_lift_sound.text_id = "hud_int_fork_lift_sound"
-	self.money_briefcase = deep_clone(self.invisible_interaction_open)
-	self.money_briefcase.axis = "x"
-	self.grenade_briefcase = deep_clone(self.invisible_interaction_open)
-	self.grenade_briefcase.contour = "deployable"
-	self.cash_register = deep_clone(self.invisible_interaction_open)
-	self.cash_register.axis = "x"
-	self.cash_register.interact_distance = 110
-	self.atm_interaction = deep_clone(self.invisible_interaction_open)
-	self.atm_interaction.start_active = false
-	self.atm_interaction.contour = "interactable_icon"
-	self.bank_open_interaction = deep_clone(self.atm_interaction)
-	self.bank_open_interaction.interact_distance = 90
-	self.weapon_case = deep_clone(self.invisible_interaction_open)
-	self.weapon_case.axis = "x"
-	self.weapon_case.interact_distance = 110
-	self.weapon_case_axis_z = deep_clone(self.invisible_interaction_open)
-	self.weapon_case_axis_z.axis = "z"
-	self.weapon_case_axis_z.interact_distance = 120
-	self.weapon_case_close = deep_clone(self.weapon_case)
-	self.weapon_case_close.text_id = "hud_int_invisible_interaction_close"
-	self.invisible_interaction_close = deep_clone(self.invisible_interaction_open)
-	self.invisible_interaction_close.text_id = "hud_int_invisible_interaction_close"
 	self.interact_gen_pku_loot_take = {
 		icon = "develop",
 		text_id = "debug_interact_gen_pku_loot_take",
@@ -1287,23 +1014,7 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		equipment_text_id = "debug_interact_equipment_crowbar"
 	}
-	self.circuit_breaker = {
-		icon = "interaction_powerbox",
-		text_id = "debug_interact_circuit_breaker",
-		start_active = false,
-		axis = "z"
-	}
-	self.circuit_breaker_off = {
-		icon = "interaction_powerbox",
-		text_id = "hud_int_hold_turn_off_power",
-		start_active = false,
-		axis = "z"
-	}
-	self.hold_circuit_breaker = deep_clone(self.circuit_breaker)
 	self.hold_circuit_breaker.timer = 0
-	self.hold_circuit_breaker.text_id = "hud_int_hold_turn_on_power"
-	self.hold_circuit_breaker.action_text_id = "hud_action_turning_on_power"
-	self.hold_circuit_breaker.axis = "y"
 	self.transformer_box = {
 		icon = "interaction_powerbox",
 		text_id = "debug_interact_transformer_box",
@@ -1313,12 +1024,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_power_box_loop",
 		sound_interupt = "bar_power_box_cancel",
 		sound_done = "bar_power_box_finished"
-	}
-	self.stash_server_cord = {
-		icon = "interaction_powercord",
-		text_id = "debug_interact_stash_server_cord",
-		start_active = false,
-		axis = "z"
 	}
 	self.stash_planks = {
 		icon = "equipment_planks",
@@ -1372,40 +1077,10 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		timer = 0
 	}
-	self.tear_painting = {
-		icon = "develop",
-		text_id = "debug_interact_tear_painting",
-		start_active = false,
-		axis = "y"
-	}
 	self.ejection_seat_interact = {
 		icon = "equipment_ejection_seat",
 		text_id = "debug_interact_temp_interact_box",
 		timer = 0
-	}
-	self.diamond_pickup = {
-		icon = "interaction_diamond",
-		text_id = "hud_int_take_jewelry",
-		sound_event = "money_grab",
-		start_active = false,
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		}
-	}
-	self.diamond_pickup_pal = deep_clone(self.diamond_pickup)
-	self.diamond_pickup_pal.interact_distance = 100
-	self.safe_loot_pickup = deep_clone(self.diamond_pickup)
-	self.safe_loot_pickup.start_active = true
-	self.safe_loot_pickup.text_id = "hud_int_take"
-	self.mus_pku_artifact = deep_clone(self.diamond_pickup)
-	self.mus_pku_artifact.start_active = true
-	self.mus_pku_artifact.text_id = "hud_int_take_artifact"
-	self.tiara_pickup = {
-		icon = "develop",
-		text_id = "hud_int_pickup_tiara",
-		sound_event = "money_grab",
-		start_active = false
 	}
 	self.patientpaper_pickup = {
 		icon = "interaction_patientfile",
@@ -1413,42 +1088,11 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.diamond_case = {
-		icon = "interaction_diamond",
-		text_id = "debug_interact_diamond_case",
-		start_active = false,
-		axis = "x",
-		interact_distance = 150
-	}
-	self.diamond_single_pickup = {
-		icon = "interaction_diamond",
-		text_id = "debug_interact_temp_interact_box_press",
-		sound_event = "ammo_bag_drop",
-		start_active = false
-	}
-	self.diamond_single_pickup_axis = {
-		icon = "interaction_diamond",
-		text_id = "debug_interact_temp_interact_box_press",
-		sound_event = "ammo_bag_drop",
-		axis = "x",
-		start_active = false
-	}
-	self.suburbia_necklace_pickup = {
-		icon = "interaction_diamond",
-		text_id = "debug_interact_temp_interact_box_press",
-		sound_event = "ammo_bag_drop",
-		start_active = false,
-		interact_distance = 100
-	}
 	self.temp_interact_box2 = {
 		icon = "develop",
 		text_id = "debug_interact_temp_interact_box",
 		sound_event = "ammo_bag_drop",
 		timer = 0
-	}
-	self.printing_plates = {
-		icon = "develop",
-		text_id = "hud_int_printing_plates"
 	}
 	self.c4 = {
 		icon = "equipment_c4",
@@ -1459,10 +1103,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_c4_apply_finished",
 		action_text_id = "hud_action_placing_c4"
 	}
-	self.c4_mission_door = deep_clone(self.c4)
-	self.c4_mission_door.special_equipment = "c4"
-	self.c4_mission_door.equipment_text_id = "debug_interact_equipment_c4"
-	self.c4_mission_door.equipment_consume = true
 	self.c4_diffusible = {
 		icon = "equipment_c4",
 		text_id = "debug_c4_diffusible",
@@ -1480,11 +1120,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = true,
 		axis = "x"
-	}
-	self.open_door = {
-		icon = "interaction_open_door",
-		text_id = "debug_interact_open_door",
-		interact_distance = 200
 	}
 	self.embassy_door = {
 		start_active = false,
@@ -1537,30 +1172,12 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_money_finished",
 		axis = "y"
 	}
-	self.weapon_case_axis_x = deep_clone(self.money_wrap)
-	self.weapon_case_axis_x.axis = "x"
 	self.suburbia_money_wrap = {
 		icon = "interaction_money_wrap",
 		text_id = "debug_interact_money_printed_take_money",
 		start_active = false,
 		timer = 0,
 		action_text_id = "hud_action_taking_money"
-	}
-	self.money_wrap_single_bundle = {
-		icon = "interaction_money_wrap",
-		text_id = "debug_interact_money_wrap_single_bundle_take_money",
-		start_active = false,
-		interact_distance = 110,
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		}
-	}
-	self.christmas_present = {
-		icon = "interaction_christmas_present",
-		text_id = "debug_interact_take_christmas_present",
-		start_active = true,
-		interact_distance = 125
 	}
 	self.gold_pile = {
 		icon = "interaction_gold",
@@ -1570,8 +1187,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_action_taking_gold",
 		blocked_hint = "carry_block"
 	}
-	self.gold_pile_axis_x = deep_clone(self.gold_pile)
-	self.gold_pile_axis_x.axis = "x"
 	self.gold_bag = {
 		icon = "interaction_gold",
 		text_id = "debug_interact_gold_bag",
@@ -1617,15 +1232,6 @@ old_rtnm_init(self, tweak_data)
 		no_contour = true,
 		timer = 0,
 		action_text_id = "hud_action_cable_tying"
-	}
-	self.intimidate_with_contour = deep_clone(self.intimidate)
-	self.intimidate_with_contour.no_contour = false
-	self.intimidate_and_search_with_contour = deep_clone(self.intimidate_and_search)
-	self.intimidate_and_search_with_contour.no_contour = false
-	self.computer_test = {
-		icon = "develop",
-		text_id = "debug_interact_computer_test",
-		start_active = false
 	}
 	self.carry_drop = {
 		icon = "develop",
@@ -1691,8 +1297,6 @@ old_rtnm_init(self, tweak_data)
 		slot = 2,
 		blocked_hint = ""
 	}
-	self.shaped_charge_single = deep_clone(self.shaped_sharge)
-	self.shaped_charge_single.axis = "z"
 	self.hostage_convert = {
 		icon = "develop",
 		text_id = "hud_int_hostage_convert",
@@ -1709,11 +1313,6 @@ old_rtnm_init(self, tweak_data)
 		},
 		action_text_id = "hud_action_converting_hostage",
 		no_contour = true
-	}
-	self.break_open = {
-		icon = "develop",
-		text_id = "hud_int_break_open",
-		start_active = false
 	}
 	self.cut_fence = {
 		text_id = "hud_int_hold_cut_fence",
@@ -1743,23 +1342,12 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_steal_painting_finished",
 		blocked_hint = "carry_block"
 	}
-	self.barricade_fence = deep_clone(self.stash_planks)
-	self.barricade_fence.contour = "interactable_icon"
-	self.barricade_fence.sound_start = "bar_barricade_fence"
-	self.barricade_fence.sound_interupt = "bar_barricade_fence_cancel"
-	self.barricade_fence.sound_done = "bar_barricade_fence_finished"
 	self.hack_numpad = {
 		text_id = "hud_int_hold_hack_numpad",
 		action_text_id = "hud_action_hacking_numpad",
 		start_active = false,
 		timer = 0
 	}
-	self.pickup_phone = {
-		text_id = "hud_int_pickup_phone",
-		start_active = false
-	}
-	self.pickup_tablet = deep_clone(self.pickup_phone)
-	self.pickup_tablet.text_id = "hud_int_pickup_tablet"
 	self.hold_take_server = {
 		text_id = "hud_int_hold_take_server",
 		action_text_id = "hud_action_taking_server",
@@ -1768,8 +1356,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_steal_circuit_cancel",
 		sound_done = "bar_steal_circuit_finished"
 	}
-	self.hold_take_server_axis = deep_clone(self.hold_take_server)
-	self.hold_take_server_axis.axis = "y"
 	self.hold_take_blueprints = {
 		text_id = "hud_int_hold_take_blueprints",
 		action_text_id = "hud_action_taking_blueprints",
@@ -1778,10 +1364,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_steal_painting",
 		sound_interupt = "bar_steal_painting_cancel",
 		sound_done = "bar_steal_painting_finished"
-	}
-	self.take_confidential_folder = {
-		text_id = "hud_int_take_confidential_folder",
-		start_active = false
 	}
 	self.take_confidential_folder_event = {
 		text_id = "hud_int_take_confidential_folder_event",
@@ -1795,9 +1377,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		special_equipment_block = "gas"
 	}
-	self.gen_ladyjustice_statue = {
-		text_id = "hud_int_ladyjustice_statue"
-	}
 	self.hold_place_gps_tracker = {
 		text_id = "hud_int_hold_place_gps_tracker",
 		action_text_id = "hud_action_placing_gps_tracker",
@@ -1806,18 +1385,10 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		interact_distance = 200
 	}
-	self.keyboard_no_time = deep_clone(self.security_station_keyboard)
 	self.keyboard_no_time.timer = 0
-	self.keyboard_eday_1 = deep_clone(self.security_station_keyboard)
 	self.keyboard_eday_1.timer = 0
-	self.keyboard_eday_1.text_id = "hud_int_keyboard_eday_1"
-	self.keyboard_eday_2 = deep_clone(self.security_station_keyboard)
 	self.keyboard_eday_2.timer = 0
-	self.keyboard_eday_2.text_id = "hud_int_keyboard_eday_2"
-	self.keyboard_hox_1 = deep_clone(self.security_station_keyboard)
 	self.keyboard_hox_1.timer = 0
-	self.keyboard_hox_1.text_id = "hud_int_keyboard_hox_1"
-	self.keyboard_hox_1.action_text_id = "hud_action_keyboard_hox_1"
 	self.hold_use_computer = {
 		start_active = false,
 		text_id = "hud_int_hold_use_computer",
@@ -1832,28 +1403,11 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.iphone_answer = {
-		text_id = "hud_int_answer_phone",
-		start_active = false
-	}
-	self.use_flare = {
-		text_id = "hud_int_use_flare",
-		start_active = false
-	}
 	self.steal_methbag = {
 		text_id = "hud_int_hold_steal_meth",
 		action_text_id = "hud_action_stealing_meth",
 		start_active = true,
 		timer = 0
-	}
-	self.pickup_keycard = {
-		text_id = "hud_int_pickup_keycard",
-		sound_done = "pick_up_key_card",
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		},
-		blocked_hint = "full_keycard"
 	}
 	self.open_from_inside = {
 		text_id = "hud_int_invisible_interaction_open",
@@ -1868,34 +1422,11 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 100,
 		timer = 0
 	}
-	self.money_luggage = deep_clone(self.money_wrap)
-	self.money_luggage.start_active = true
-	self.money_luggage.axis = "x"
 	self.hold_pickup_lance = {
 		text_id = "hud_int_hold_pickup_lance",
 		action_text_id = "hud_action_grabbing_lance",
 		sound_event = "ammo_bag_drop",
 		timer = 0
-	}
-	self.barrier_numpad = {
-		text_id = "hud_int_barrier_numpad",
-		start_active = false,
-		axis = "z"
-	}
-	self.timelock_numpad = {
-		text_id = "hud_int_timelock_numpad",
-		start_active = false,
-		axis = "z"
-	}
-	self.pickup_asset = {
-		text_id = "hud_int_pickup_asset",
-		sound_event = "ammo_bag_drop"
-	}
-	self.open_slash_close = {
-		text_id = "hud_int_press_interaction_open",
-		start_active = false,
-		axis = "y",
-		interact_distance = 200
 	}
 	self.open_slash_close_act = {
 		text_id = "hud_int_open_slash_close",
@@ -1903,8 +1434,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = true
 	}
-	self.just_close = deep_clone(self.open_slash_close)
-	self.just_close.text_id = "hud_int_press_interaction_close"
 	self.raise_balloon = {
 		text_id = "hud_int_hold_raise_balloon",
 		action_text_id = "hud_action_raise_balloon",
@@ -1913,14 +1442,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_winch_box_start",
 		sound_interupt = "bar_winch_box_cancel",
 		sound_done = "bar_winch_box_finish"
-	}
-	self.stn_int_place_camera = {
-		text_id = "hud_int_place_camera",
-		start_active = true
-	}
-	self.stn_int_take_camera = {
-		text_id = "hud_int_take_camera",
-		start_active = true
 	}
 	self.exit_to_crimenet = {
 		text_id = "hud_int_exit_to_crimenet",
@@ -1965,16 +1486,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_money_finished",
 		blocked_hint = "carry_block"
 	}
-	self.gen_pku_artifact = deep_clone(self.gen_pku_artifact_statue)
-	self.gen_pku_artifact.start_active = true
-	self.gen_pku_artifact.sound_start = "bar_bag_armor"
-	self.gen_pku_artifact.sound_interupt = "bar_bag_armor_cancel"
-	self.gen_pku_artifact.sound_done = "bar_bag_armor_finished"
-	self.gen_pku_artifact_painting = deep_clone(self.gen_pku_artifact_statue)
-	self.gen_pku_artifact_painting.start_active = true
-	self.gen_pku_artifact_painting.sound_start = "bar_steal_painting"
-	self.gen_pku_artifact_painting.sound_interupt = "bar_steal_painting_cancel"
-	self.gen_pku_artifact_painting.sound_done = "bar_steal_painting_finished"
 	self.gen_pku_jewelry = {
 		text_id = "hud_int_hold_take_jewelry",
 		action_text_id = "hud_action_taking_jewelry",
@@ -1993,44 +1504,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_money_finished",
 		blocked_hint = "carry_block"
 	}
-	self.gen_pku_crowbar = {
-		text_id = "hud_int_take_crowbar",
-		special_equipment_block = "crowbar",
-		sound_done = "pick_up_crowbar",
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		}
-	}
-	self.gen_pku_crowbar_stack = {
-		text_id = "hud_int_take_crowbar",
-		special_equipment_block = "crowbar_stack",
-		sound_done = "pick_up_crowbar",
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		}
-	}
-	self.gen_pku_thermite = {
-		text_id = "hud_int_take_thermite_paste",
-		special_equipment_block = "thermite"
-	}
-	self.gen_pku_thermite_paste = {
-		text_id = "hud_int_take_thermite_paste",
-		special_equipment_block = "thermite_paste",
-		contour = "deployable",
-		sound_done = "pick_up_thermite"
-	}
-	self.gen_pku_thermite_paste_not_deployable = {
-		text_id = "hud_int_take_thermite_paste",
-		special_equipment_block = "thermite_paste",
-		sound_done = "pick_up_thermite"
-	}
-	self.button_infopad = {
-		text_id = "hud_int_press_for_info",
-		start_active = false,
-		axis = "z"
-	}
 	self.crate_loot = {
 		text_id = "hud_int_hold_crack_crate",
 		action_text_id = "hud_action_cracking_crate",
@@ -2040,22 +1513,7 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_open_crate_cancel",
 		sound_done = "bar_open_crate_finished"
 	}
-	self.crate_loot_crowbar = deep_clone(self.crate_loot)
-	self.crate_loot_crowbar.equipment_text_id = "debug_interact_equipment_crowbar"
-	self.crate_loot_crowbar.special_equipment = "crowbar"
-	self.crate_loot_crowbar.sound_start = "bar_crowbar"
-	self.crate_loot_crowbar.sound_interupt = "bar_crowbar_cancel"
-	self.crate_loot_crowbar.sound_done = "bar_crowbar_end"
-	self.weapon_case_not_active = deep_clone(self.weapon_case)
-	self.weapon_case_not_active.start_active = false
-	self.crate_weapon_crowbar = deep_clone(self.weapon_case)
-	self.crate_weapon_crowbar.equipment_text_id = "debug_interact_equipment_crowbar"
 	self.crate_weapon_crowbar.timer = 0
-	self.crate_weapon_crowbar.start_active = false
-	self.crate_weapon_crowbar.special_equipment = "crowbar"
-	self.crate_weapon_crowbar.sound_start = "bar_crowbar_plastic"
-	self.crate_weapon_crowbar.sound_interupt = "bar_crowbar_plastic_cancel"
-	self.crate_weapon_crowbar.sound_done = "bar_crowbar_plastic_finished"
 	self.crate_loot_close = {
 		text_id = "hud_int_hold_close_crate",
 		action_text_id = "hud_action_closing_crate",
@@ -2064,9 +1522,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_close_crate",
 		sound_interupt = "bar_close_crate_cancel",
 		sound_done = "bar_close_crate_finished"
-	}
-	self.halloween_trick = {
-		text_id = "hud_int_trick_treat"
 	}
 	self.disassemble_turret = {
 		text_id = "hud_int_hold_disassemble_turret",
@@ -2162,14 +1617,6 @@ old_rtnm_init(self, tweak_data)
 			category = "player"
 		}
 	}
-	self.money_scanner = deep_clone(self.invisible_interaction_open)
-	self.money_scanner.axis = "y"
-	self.money_small = deep_clone(self.money_wrap)
-	self.money_small.sound_start = "bar_bag_pour_money"
-	self.money_small.sound_interupt = "bar_bag_pour_money_cancel"
-	self.money_small.sound_done = "bar_bag_pour_money_finished"
-	self.money_small_take = deep_clone(self.money_small)
-	self.money_small_take.text_id = "debug_interact_money_printed_take_money"
 	self.shape_charge_plantable = {
 		text_id = "debug_interact_c4",
 		action_text_id = "hud_action_placing_c4",
@@ -2181,12 +1628,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_c4_apply",
 		sound_interupt = "bar_c4_apply_cancel",
 		sound_done = "bar_c4_apply_finished"
-	}
-	self.player_zipline = {
-		text_id = "hud_int_use_zipline"
-	}
-	self.bag_zipline = {
-		text_id = "hud_int_bag_zipline"
 	}
 	self.huge_lance = {
 		text_id = "hud_int_equipment_huge_lance",
@@ -2207,27 +1648,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_huge_lance_fix",
 		sound_interupt = "bar_huge_lance_fix_cancel",
 		sound_done = "bar_huge_lance_fix_finished"
-	}
-	self.gen_pku_lance_part = {
-		text_id = "hud_int_take_lance_part",
-		special_equipment_block = "lance_part",
-		sound_done = "drill_fix_end"
-	}
-	self.crane_joystick_left = {
-		text_id = "hud_int_crane_left",
-		start_active = false
-	}
-	self.crane_joystick_lift = {
-		text_id = "hud_int_crane_lift",
-		start_active = false
-	}
-	self.crane_joystick_right = {
-		text_id = "hud_int_crane_right",
-		start_active = false
-	}
-	self.crane_joystick_release = {
-		text_id = "hud_int_crane_release",
-		start_active = false
 	}
 	self.gen_int_thermite_rig = {
 		text_id = "hud_int_hold_assemble_thermite",
@@ -2293,10 +1713,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_bag_armor_cancel",
 		sound_done = "bar_bag_armor_finished"
 	}
-	self.fingerprint_scanner = {
-		text_id = "hud_int_use_scanner",
-		start_active = false
-	}
 	self.enter_code = {
 		text_id = "hud_int_enter_code",
 		action_text_id = "hud_action_enter_code",
@@ -2305,17 +1721,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
-	}
-	self.take_keys = {
-		text_id = "hud_int_take_keys"
-	}
-	self.push_button = {
-		text_id = "hud_int_push_button",
-		axis = "z"
-	}
-	self.use_chute = {
-		text_id = "hud_int_use_chute",
-		axis = "z"
 	}
 	self.breach_door = {
 		text_id = "debug_interact_crowbar",
@@ -2326,10 +1731,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_pry_open_elevator_door_cancel",
 		sound_done = "bar_pry_open_elevator_door_finished"
 	}
-	self.bus_wall_phone = {
-		text_id = "hud_int_use_phone_signal_bus",
-		start_active = false
-	}
 	self.zipline_mount = {
 		text_id = "hud_int_setup_zipline",
 		action_text_id = "hud_action_setting_zipline",
@@ -2339,17 +1740,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_drill_apply_cancel",
 		sound_done = "bar_drill_apply_finished"
 	}
-	self.rewire_timelock = deep_clone(self.security_station)
-	self.rewire_timelock.text_id = "hud_int_rewire_timelock"
-	self.rewire_timelock.action_text_id = "hud_action_rewiring_timelock"
-	self.rewire_timelock.axis = "x"
-	self.rewire_timelock.sound_start = "bar_wire_cut"
-	self.rewire_timelock.sound_interupt = "bar_wire_cut_cancel"
-	self.rewire_timelock.sound_done = "bar_wire_cut_finished"
-	self.pick_lock_x_axis = deep_clone(self.pick_lock_hard_no_skill)
-	self.pick_lock_x_axis.axis = "x"
-	self.money_wrap_single_bundle_active = deep_clone(self.money_wrap_single_bundle)
-	self.money_wrap_single_bundle_active.start_active = true
 	self.pku_barcode_downtown = {
 		text_id = "hud_int_hold_barcode",
 		action_text_id = "hud_action_barcode",
@@ -2361,38 +1751,6 @@ old_rtnm_init(self, tweak_data)
 			"barcode_opa_locka"
 		},
 		timer = 0
-	}
-	self.pku_barcode_brickell = deep_clone(self.pku_barcode_downtown)
-	self.pku_barcode_brickell.special_equipment_block = {
-		"barcode_downtown",
-		"barcode_brickell",
-		"barcode_edgewater",
-		"barcode_isles_beach",
-		"barcode_opa_locka"
-	}
-	self.pku_barcode_edgewater = deep_clone(self.pku_barcode_downtown)
-	self.pku_barcode_edgewater.special_equipment_block = {
-		"barcode_downtown",
-		"barcode_brickell",
-		"barcode_edgewater",
-		"barcode_isles_beach",
-		"barcode_opa_locka"
-	}
-	self.pku_barcode_isles_beach = deep_clone(self.pku_barcode_downtown)
-	self.pku_barcode_isles_beach.special_equipment_block = {
-		"barcode_downtown",
-		"barcode_brickell",
-		"barcode_edgewater",
-		"barcode_isles_beach",
-		"barcode_opa_locka"
-	}
-	self.pku_barcode_opa_locka = deep_clone(self.pku_barcode_downtown)
-	self.pku_barcode_opa_locka.special_equipment_block = {
-		"barcode_downtown",
-		"barcode_brickell",
-		"barcode_edgewater",
-		"barcode_isles_beach",
-		"barcode_opa_locka"
 	}
 	self.read_barcode_downtown = {
 		text_id = "hud_int_hold_read_barcode",
@@ -2530,10 +1888,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_disarm_c4_loop_cancel",
 		sound_done = "bar_disarm_c4_loop_finished"
 	}
-	self.pku_take_mask = {
-		text_id = "hud_int_take_mask",
-		start_active = true
-	}
 	self.hold_activate_sprinklers = {
 		text_id = "hud_int_hold_activate_sprinklers",
 		action_text_id = "hud_action_activating_sprinklers",
@@ -2564,8 +1918,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_cut_fence_cancel",
 		sound_done = "bar_cut_fence_finished"
 	}
-	self.firstaid_box = deep_clone(self.doctor_bag)
-	self.firstaid_box.start_active = false
 	self.first_aid_kit = {
 		icon = "equipment_first_aid_kit",
 		text_id = "debug_interact_doctor_bag_heal",
@@ -2800,9 +2152,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_steal_circuit_cancel",
 		sound_done = "bar_steal_circuit_finished"
 	}
-	self.gen_pku_cocaine_pure = deep_clone(self.gen_pku_cocaine)
-	self.gen_pku_cocaine_pure.text_id = "hud_int_hold_take_pure_cocaine"
-	self.gen_pku_cocaine_pure.action_text_id = "hud_action_taking_pure_cocaine"
 	self.gen_pku_sandwich = {
 		text_id = "hud_int_hold_take_sandwich",
 		action_text_id = "hud_action_taking_sandwich",
@@ -2811,14 +2160,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_bag_money_cancel",
 		sound_done = "bar_bag_money_finished",
 		blocked_hint = "carry_block"
-	}
-	self.place_flare = {
-		text_id = "hud_int_place_flare",
-		start_active = false
-	}
-	self.ignite_flare = {
-		text_id = "hud_int_ignite_flare",
-		start_active = false
 	}
 	self.hold_open_xmas_present = {
 		text_id = "hud_int_hold_open_xmas_present",
@@ -2829,13 +2170,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_gift_box_open_cancel",
 		sound_done = "bar_gift_box_open_finished"
 	}
-	self.c4_bag_dynamic = deep_clone(self.c4_bag)
-	self.c4_bag_dynamic.force_update_position = true
-	self.shape_charge_plantable_c4_1 = deep_clone(self.shape_charge_plantable)
-	self.shape_charge_plantable_c4_1.special_equipment = "c4_1"
-	self.shape_charge_plantable_c4_x1 = deep_clone(self.shape_charge_plantable)
-	self.shape_charge_plantable_c4_x1.special_equipment = "c4_x1"
-	self.shape_charge_plantable_c4_x1.interact_distance = 500
 	self.hold_call_captain = {
 		text_id = "hud_int_hold_call_captain",
 		action_text_id = "hud_action_calling_captain",
@@ -2889,12 +2223,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 120,
 		axis = "x"
 	}
-	self.press_c4_pku = {
-		text_id = "hud_int_take_c4",
-		contour = "interactable",
-		start_active = false,
-		interact_distance = 150
-	}
 	self.open_train_cargo_door = {
 		text_id = "hud_int_open_cargo_door",
 		start_active = false,
@@ -2906,11 +2234,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		interact_distance = 150,
 		timer = 0
-	}
-	self.take_chainsaw = {
-		text_id = "hud_int_take_chainsaw",
-		icon = "equipment_chainsaw",
-		special_equipment_block = "chainsaw"
 	}
 	self.use_chainsaw = {
 		text_id = "hud_int_hold_cut_tree",
@@ -2947,14 +2270,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
 	}
-	self.pku_manifest = {
-		text_id = "hud_pku_manifest",
-		icon = "equipment_manifest",
-		special_equipment_block = "manifest",
-		start_active = false,
-		interact_distance = 150,
-		equipment_consume = false
-	}
 	self.c4_x1_bag = {
 		text_id = "debug_interact_c4_bag",
 		timer = 0,
@@ -2979,9 +2294,6 @@ old_rtnm_init(self, tweak_data)
 		text_id = "hud_int_hold_open_display",
 		action_text_id = "hud_action_open_display",
 		timer = 0
-	}
-	self.mus_take_diamond = {
-		text_id = "debug_interact_diamond"
 	}
 	self.rewire_electric_box = {
 		text_id = "hud_int_rewire_box",
@@ -3021,8 +2333,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_money_finished",
 		blocked_hint = "carry_block"
 	}
-	self.gen_pku_evidence_bag_axis = deep_clone(self.gen_pku_evidence_bag)
-	self.gen_pku_evidence_bag_axis.axis = "z"
 	self.mcm_fbi_case = {
 		text_id = "hud_int_hold_open_case",
 		action_text_id = "hud_action_opening_case",
@@ -3066,14 +2376,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = true,
 		axis = "y",
 		timer = 0
-	}
-	self.mcm_panicroom_keycard_2 = {
-		text_id = "hud_int_equipment_keycard",
-		equipment_text_id = "hud_int_equipment_no_keycard",
-		special_equipment = "bank_manager_key",
-		equipment_consume = true,
-		start_active = true,
-		axis = "y"
 	}
 	self.gen_prop_container_a_vault_seq = {
 		text_id = "hud_int_hold_jam_vent",
@@ -3125,7 +2427,7 @@ old_rtnm_init(self, tweak_data)
 	}
 	self.circle_cutter_jammed = {
 		text_id = "debug_interact_cutter_jammed",
-		timer = 00,
+		timer = 0,
 		sound_start = "bar_drill_fix",
 		sound_interupt = "bar_drill_fix_cancel",
 		sound_done = "bar_drill_fix_finished"
@@ -3173,27 +2475,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_gift_box_open_cancel",
 		sound_done = "bar_gift_box_open_finished"
 	}
-	self.c4_x10 = deep_clone(self.c4_mission_door)
-	self.c4_x10.special_equipment = "c4_x10"
-	self.c4_x10.axis = "z"
-	self.pick_lock_hard_no_skill_deactivated = deep_clone(self.pick_lock_hard_no_skill)
-	self.pick_lock_hard_no_skill_deactivated.start_active = false
-	self.are_turn_on_tv = {
-		text_id = "hud_int_are_turn_on_tv",
-		start_active = false,
-		interact_distance = 100,
-		axis = "y"
-	}
-	self.money_wrap_updating = deep_clone(self.money_wrap)
-	self.money_wrap_updating.force_update_position = true
-	self.panic_room_key = {
-		icon = "equipment_chavez_key",
-		text_id = "hud_int_take_chavez_keys",
-		equipment_text_id = "hud_int_take_chavez_keys",
-		special_equipment = "chavez_key",
-		equipment_consume = true,
-		interact_distance = 150
-	}
 	self.hack_skylight_barrier = {
 		text_id = "hud_hack_skylight_barrier",
 		action_text_id = "hud_action_hack_skylight_barrier",
@@ -3210,12 +2491,6 @@ old_rtnm_init(self, tweak_data)
 		icon = "equipment_bottle",
 		special_equipment_block = "bottle",
 		timer = 0
-	}
-	self.pour_spiked_drink = {
-		text_id = "hud_int_pour_drink",
-		equipment_text_id = "hint_no_bottle",
-		special_equipment = "bottle",
-		equipment_consume = true
 	}
 	self.computer_blueprints = {
 		text_id = "hud_int_search_blueprints",
@@ -3241,9 +2516,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_scan_documents_cancel",
 		sound_done = "bar_scan_documents_finished"
 	}
-	self.send_blueprints = {
-		text_id = "hud_int_send_blueprints"
-	}
 	self.cas_customer_database = {
 		text_id = "hud_check_customer_database",
 		action_text_id = "hud_action_cas_checking_customer_database",
@@ -3266,31 +2538,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
 	}
-	self.pickup_hotel_room_keycard = {
-		text_id = "hud_int_take_hotel_keycard",
-		special_equipment_block = "hotel_room_key",
-		start_active = true
-	}
-	self.use_hotel_room_key = {
-		text_id = "hud_insert_hotel_room_key",
-		equipment_text_id = "hint_no_hotel_room_key",
-		special_equipment = "hotel_room_key",
-		equipment_consume = true,
-		interact_distance = 150
-	}
-	self.use_hotel_room_key_no_access = {
-		text_id = "hud_insert_hotel_room_key",
-		equipment_text_id = "hint_no_hotel_room_key",
-		special_equipment = "hotel_room_key",
-		equipment_consume = false,
-		interact_distance = 150
-	}
-	self.lift_choose_floor = {
-		text_id = "hud_int_lift_choose_floor",
-		action_text_id = "hud_action_lift_choose_floor",
-		start_active = false,
-		interact_distance = 200
-	}
 	self.cas_open_briefcase = {
 		text_id = "hud_open_cas_briefcase",
 		action_text_id = "hud_opening_cas_briefcase",
@@ -3304,16 +2551,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		interact_distance = 80,
 		axis = "x"
-	}
-	self.cas_elevator_door_open = {
-		text_id = "hud_open_cas_elevator",
-		start_active = true,
-		interact_distance = 100
-	}
-	self.cas_elevator_door_close = {
-		text_id = "hud_close_cas_elevator",
-		start_active = false,
-		interact_distance = 100
 	}
 	self.lockpick_locker = {
 		contour = "interactable_icon",
@@ -3337,33 +2574,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_pick_lock_cancel",
 		sound_done = "bar_pick_lock_finished",
 		is_lockpicking = true
-	}
-	self.cas_copy_usb = {
-		text_id = "hud_int_copy_data_usb",
-		equipment_text_id = "hint_no_usb_key",
-		interact_distance = 100,
-		special_equipment = "cas_usb_key",
-		start_active = false,
-		equipment_consume = true
-	}
-	self.cas_use_usb = {
-		text_id = "hud_insert_usb",
-		equipment_text_id = "hint_no_data_usb_key",
-		special_equipment = "cas_data_usb_key",
-		equipment_consume = true,
-		interact_distance = 150
-	}
-	self.cas_take_usb_key = {
-		text_id = "hud_take_usb_key",
-		interact_distance = 200,
-		special_equipment_block = "cas_usb_key",
-		start_active = false
-	}
-	self.cas_take_usb_key_data = {
-		text_id = "hud_take_usb_key_data",
-		interact_distance = 200,
-		special_equipment_block = "cas_data_usb_key",
-		start_active = false
 	}
 	self.cas_screw_down = {
 		text_id = "hud_screw_down",
@@ -3457,16 +2667,6 @@ old_rtnm_init(self, tweak_data)
 		},
 		can_interact_in_civilian = true
 	}
-	self.cas_chips_pile = {
-		text_id = "hud_take_casino_chips",
-		start_active = false,
-		interact_distance = 110,
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		},
-		can_interact_in_civilian = true
-	}
 	self.cas_connect_winch_hook = {
 		text_id = "hud_connect_which_hook",
 		action_text_id = "hud_action_connecting_which_hook",
@@ -3504,17 +2704,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_light_fireworks_cancel",
 		sound_done = "bar_light_fireworks_finished"
 	}
-	self.cas_open_compartment = {
-		text_id = "hud_cas_open_compartment",
-		start_active = false,
-		interact_distance = 150
-	}
-	self.cas_bfd_drill_toolbox = {
-		text_id = "hud_take_bfd_tool",
-		interact_distance = 200,
-		special_equipment_block = "cas_bfd_tool",
-		start_active = false
-	}
 	self.cas_fix_bfd_drill = {
 		text_id = "hud_fix_bfd_drill",
 		action_text_id = "hud_action_fixing_bfd_drill",
@@ -3528,32 +2717,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_huge_lance_fix_cancel",
 		sound_done = "bar_huge_lance_fix_finished"
 	}
-	self.cas_elevator_key = {
-		text_id = "hud_take_elevator_key",
-		interact_distance = 200,
-		special_equipment_block = "cas_elevator_key",
-		start_active = false
-	}
-	self.cas_use_elevator_key = {
-		text_id = "hud_use_elevator_key",
-		interact_distance = 150,
-		equipment_text_id = "hint_no_elevator_key",
-		special_equipment = "cas_elevator_key",
-		start_active = false,
-		equipment_consume = false
-	}
-	self.cas_open_door = {
-		text_id = "hud_cas_open_door",
-		start_active = true,
-		interact_distance = 150,
-		can_interact_in_civilian = true
-	}
-	self.cas_close_door = {
-		text_id = "hud_cas_close_door",
-		start_active = false,
-		interact_distance = 150,
-		can_interact_in_civilian = true
-	}
 	self.cas_slot_machine = {
 		text_id = "hud_int_hold_play_slots",
 		action_text_id = "hud_action_playing_slots",
@@ -3564,71 +2727,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_slot_machine_pull_lever_finished",
 		sound_interupt = "bar_slot_machine_pull_lever_cancel",
 		sound_start = "bar_slot_machine_pull_lever"
-	}
-	self.cas_button_01 = {
-		text_id = "hud_int_press_01",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_02 = {
-		text_id = "hud_int_press_02",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_03 = {
-		text_id = "hud_int_press_03",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_04 = {
-		text_id = "hud_int_press_04",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_05 = {
-		text_id = "hud_int_press_05",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_06 = {
-		text_id = "hud_int_press_06",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_07 = {
-		text_id = "hud_int_press_07",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_08 = {
-		text_id = "hud_int_press_08",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_09 = {
-		text_id = "hud_int_press_09",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_0 = {
-		text_id = "hud_int_press_0",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_clear = {
-		text_id = "hud_int_press_clear",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_button_enter = {
-		text_id = "hud_int_press_enter",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.cas_skylight_panel = {
-		text_id = "hud_hack_skylight_panel",
-		start_active = false,
-		interact_distance = 50
 	}
 	self.cas_take_unknown = {
 		text_id = "hud_take_???",
@@ -3686,12 +2784,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_pick_lock_finished",
 		is_lockpicking = true
 	}
-	self.winning_slip = {
-		text_id = "hud_int_take_win_slip",
-		start_active = false,
-		interact_distance = 110,
-		can_interact_in_civilian = true
-	}
 	self.pku_safe = {
 		text_id = "hud_int_hold_take_safe",
 		action_text_id = "hud_action_taking_safe",
@@ -3706,13 +2798,6 @@ old_rtnm_init(self, tweak_data)
 		special_equipment_block = "saw",
 		sound_done = "pick_up_crowbar"
 	}
-	self.gen_pku_saw_axis = deep_clone(self.gen_pku_saw)
-	self.gen_pku_saw_axis.axis = "y"
-	self.gen_int_saw = deep_clone(self.apartment_saw)
-	self.gen_int_saw.equipment_text_id = "debug_interact_equipment_saw"
-	self.gen_int_saw.special_equipment = "saw"
-	self.gen_int_saw.equipment_consume = true
-	self.gen_int_saw_jammed = deep_clone(self.apartment_saw_jammed)
 	self.gen_int_saw_jammed.timer = 0
 	self.gen_int_saw_upgrade = {
 		contour = "upgradable",
@@ -3738,12 +2823,7 @@ old_rtnm_init(self, tweak_data)
 		start_active = true,
 		timer = 0
 	}
-	self.c4_consume = deep_clone(self.c4_special)
-	self.c4_consume.special_equipment = "c4"
-	self.c4_consume.equipment_consume = true
-	self.gen_pku_thermite_timer = deep_clone(self.gen_pku_thermite)
 	self.gen_pku_thermite_timer.timer = 0
-	self.gen_pku_thermite_timer.start_active = false
 	self.red_no_key = {
 		interact_distance = 100,
 		timer = 0,
@@ -3756,31 +2836,12 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		contour = "interactable_look_at"
 	}
-	self.red_open_shutters = {
-		text_id = "hud_int_hold_open_shutters",
-		axis = "y"
-	}
-	self.red_close_shutters = {
-		text_id = "hud_int_hold_close_shutters",
-		axis = "y"
-	}
-	self.pd1_drill = deep_clone(self.drill)
-	self.pd1_drill.contour = "interactable"
 	self.hold_open_vent = {
 		text_id = "hud_int_hold_open_vent",
 		action_text_id = "hud_action_opening_vent",
 		timer = 0,
 		axis = "y",
 		start_active = false
-	}
-	self.press_open_truck = {
-		text_id = "hud_int_press_open_truck",
-		start_active = false
-	}
-	self.red_take_envelope = {
-		text_id = "hud_int_take_envelope",
-		start_active = false,
-		axis = "z"
 	}
 	self.din_crane_control = {
 		text_id = "hud_int_hold_start_crane",
@@ -3824,8 +2885,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_money_finished",
 		blocked_hint = "carry_block"
 	}
-	self.bry_control_jammed = deep_clone(self.hack_suburbia_jammed)
-	self.bry_control_jammed.start_active = false
 	self.hold_plant_breaching_charge = {
 		text_id = "hud_int_hold_plant_breaching_charge",
 		action_text_id = "hud_action_planting_breaching_charge",
@@ -3851,16 +2910,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_vault_touchscreen_cancel",
 		sound_done = "bar_vault_touchscreen_finished"
 	}
-	self.hold_unlock_display_chronos = deep_clone(self.hold_unlock_display_ares)
-	self.hold_unlock_display_chronos.text_id = "hud_int_hold_unlock_display_chronos"
-	self.hold_unlock_display_demeter = deep_clone(self.hold_unlock_display_ares)
-	self.hold_unlock_display_demeter.text_id = "hud_int_hold_unlock_display_demeter"
-	self.hold_unlock_display_hades = deep_clone(self.hold_unlock_display_ares)
-	self.hold_unlock_display_hades.text_id = "hud_int_hold_unlock_display_hades"
-	self.hold_unlock_display_poseidon = deep_clone(self.hold_unlock_display_ares)
-	self.hold_unlock_display_poseidon.text_id = "hud_int_hold_unlock_display_poseidon"
-	self.hold_unlock_display_zeus = deep_clone(self.hold_unlock_display_ares)
-	self.hold_unlock_display_zeus.text_id = "hud_int_hold_unlock_display_zeus"
 	self.gen_pku_blow_torch = {
 		text_id = "hud_int_hold_take_blow_torch",
 		action_text_id = "hud_action_taking_blow_torch",
@@ -3904,9 +2953,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_bag_money_finished",
 		blocked_hint = "carry_block"
 	}
-	self.parachute_carry_drop = deep_clone(self.carry_drop)
-	self.parachute_carry_drop.text_id = "hud_int_hold_grab_parachute"
-	self.parachute_carry_drop.action_text_id = "hud_action_grabbing_parachute"
 	self.hold_take_parachute = {
 		text_id = "hud_int_hold_grab_parachute",
 		action_text_id = "hud_action_grabbing_parachute",
@@ -3961,16 +3007,6 @@ old_rtnm_init(self, tweak_data)
 		equipment_consume = true,
 		sound_start = "bar_insert_printer_ink",
 		sound_interupt = "bar_insert_printer_ink_cancel"
-	}
-	self.press_printer_ink = {
-		text_id = "hud_int_take_printer_ink",
-		start_active = false,
-		special_equipment_block = "printer_ink"
-	}
-	self.press_printer_paper = {
-		text_id = "hud_int_take_paper_roll",
-		start_active = false,
-		special_equipment_block = "paper_roll"
 	}
 	self.hold_insert_paper_roll = {
 		text_id = "hud_int_hold_insert_paper_roll",
@@ -4039,8 +3075,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_action_grabbing_goat",
 		blocked_hint = "carry_block"
 	}
-	self.goat_carry_drop = deep_clone(self.hold_grab_goat)
-	self.goat_carry_drop.start_active = true
 	self.hold_remove_debris = {
 		text_id = "hud_int_hold_remove_debris",
 		action_text_id = "hud_action_removing_debris",
@@ -4060,9 +3094,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_pick_lock_finished",
 		is_lockpicking = true
 	}
-	self.stash_server_pickup_server = deep_clone(self.stash_server_pickup)
-	self.stash_server_pickup_server.text_id = "hud_int_grab_server"
-	self.stash_server_pickup_server.action_text_id = "hud_action_grab_server"
 	self.drk_hold_hack_computer = {
 		text_id = "hud_int_big_computer_hackable",
 		action_text_id = "hud_action_hacking_computer",
@@ -4073,28 +3104,7 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_train_panel_hacking_cancel",
 		sound_done = "bar_train_panel_hacking_finished"
 	}
-	self.hold_electric_lock = deep_clone(self.open_train_cargo_door)
-	self.hold_electric_lock.text_id = "hud_hint_requires_panel_access"
 	self.hold_electric_lock.timer = 0
-	self.hold_electric_lock.equipment_text_id = "hud_hint_requires_panel_access"
-	self.hold_electric_lock.special_equipment = "saw_blade"
-	self.hold_pku_drk_bomb_part = deep_clone(self.hold_pku_disassemble_cro_loot)
-	self.hold_pku_drk_bomb_part.start_active = true
-	self.hold_pku_drk_bomb_part.axis = "z"
-	self.drk_pku_blow_torch = deep_clone(self.gen_pku_blow_torch)
-	self.drk_pku_blow_torch.axis = "z"
-	self.access_camera_y_axis = {
-		icon = "develop",
-		text_id = "hud_int_access_camera",
-		interact_distance = 125,
-		axis = "y"
-	}
-	self.money_wrap_single_bundle_dyn = deep_clone(self.money_wrap_single_bundle)
-	self.money_wrap_single_bundle_dyn.start_active = true
-	self.money_wrap_single_bundle_dyn.force_update_position = true
-	self.gen_pku_thermite_paste_z_axis = deep_clone(self.gen_pku_thermite_paste)
-	self.gen_pku_thermite_paste_z_axis.axis = "y"
-	self.gen_pku_thermite_paste_z_axis.contour = "interactable"
 	self.hold_open_vent_dark = {
 		text_id = "hud_int_hold_open_vent",
 		action_text_id = "hud_action_opening_vent",
@@ -4126,15 +3136,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_train_panel_hacking_cancel",
 		sound_done = "bar_train_panel_hacking_finished"
 	}
-	self.hold_start_scan_hand = deep_clone(self.hold_start_scan)
-	self.hold_start_scan_hand.text_id = "hud_hold_scan_hand"
-	self.hold_start_scan_hand.action_text_id = "hud_action_scanning_hand"
-	self.hold_start_scan_hand.equipment_text_id = "hud_equipment_get_hand"
-	self.hold_start_scan_hand.special_equipment = "hand"
-	self.hold_start_scan_hand.equipment_consume = true
-	self.hold_start_scan_hand.sound_start = "bar_scan_hand"
-	self.hold_start_scan_hand.sound_interupt = "bar_scan_hand_cancel"
-	self.hold_start_scan_hand.sound_done = "bar_scan_hand_finished"
 	self.hold_remove_hand = {
 		text_id = "hud_hold_removing_hand",
 		action_text_id = "hud_action_removing_hand",
@@ -4209,8 +3210,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 150,
 		start_active = false
 	}
-	self.hold_born_take_bike_part_y_axis = deep_clone(self.hold_born_take_bike_part)
-	self.hold_born_take_bike_part_y_axis.axis = "y"
 	self.hold_born_ride_the_bike = {
 		text_id = "hud_int_hold_born_ride_the_bike",
 		timer = 0,
@@ -4241,27 +3240,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_int_hold_born_receive_item_blow_torch",
 		sound_done = "bag_light_drop"
 	}
-	self.hold_hand_over_soda = {
-		text_id = "hud_int_hold_hand_over_soda",
-		equipment_text_id = "hud_int_requires_soda",
-		action_text_id = "hud_action_handing_over_soda",
-		special_equipment = "soda",
-		equipment_consume = true
-	}
-	self.hold_hand_over_tool = {
-		text_id = "hud_int_hold_hand_over_tool",
-		equipment_text_id = "hud_int_requires_tool",
-		action_text_id = "hud_action_handing_over_tool",
-		special_equipment = "tool",
-		equipment_consume = true
-	}
-	self.hold_hand_over_chrome_skull = {
-		text_id = "hud_int_hold_hand_over_chrome_skull",
-		equipment_text_id = "hud_int_requires_chrome_skull",
-		action_text_id = "hud_action_handing_over_chrome_skull",
-		special_equipment = "chrome_skull",
-		equipment_consume = true
-	}
 	self.born_plug_in_powercord = {
 		text_id = "hud_born_plug_in_powercord",
 		timer = 0,
@@ -4269,10 +3247,7 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		sound_done = "insert_cable_gen"
 	}
-	self.hold_open_door = deep_clone(self.hold_open)
-	self.hold_open_door.action_text_id = "hud_action_opening"
 	self.hold_open_door.timer = 0
-	self.hold_open_door.interact_distance = 250
 	self.hold_open_door_no_axis = {
 		text_id = "hud_int_invisible_interaction_open",
 		action_text_id = "hud_action_opening",
@@ -4294,16 +3269,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		timer = 0
 	}
-	self.ring_band = deep_clone(self.money_wrap_single_bundle)
-	self.ring_band.text_id = "hud_int_take"
-	self.fbi_usb_insert = {
-		text_id = "hud_int_insert_flash_dive",
-		equipment_text_id = "hint_no_fbi_usb_key",
-		special_equipment = "cas_usb_key",
-		sound_event = "insert_usb_stick",
-		equipment_consume = true,
-		interact_distance = 150
-	}
 	self.hold_release_hatch = {
 		text_id = "hud_int_hold_release_hatch",
 		action_text_id = "hud_action_releasing_hatch",
@@ -4321,81 +3286,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_action_taking_helmet",
 		timer = 0,
 		start_active = true
-	}
-	self.press_pick_up = {
-		text_id = "hud_int_press_pick_up",
-		interact_distance = 100,
-		start_active = false
-	}
-	self.press_new_paintjob = {
-		text_id = "hud_press_new_paintjob",
-		interact_distance = 200
-	}
-	self.press_anwser_machine = {
-		text_id = "hud_press_answering_play",
-		interact_distance = 200
-	}
-	self.press_shoot_puck = {
-		text_id = "hud_int_press_shoot_puck",
-		interact_distance = 350
-	}
-	self.press_play_music = {
-		text_id = "hud_press_play_music",
-		interact_distance = 150
-	}
-	self.press_stop_music = {
-		text_id = "hud_press_stop_music",
-		interact_distance = 150
-	}
-	self.press_spin_wheel = {
-		text_id = "hud_int_spin_wheel",
-		interact_distance = 300
-	}
-	self.press_bet_red = {
-		text_id = "hud_press_bet_red",
-		interact_distance = 150
-	}
-	self.press_bet_black = {
-		text_id = "hud_press_bet_black",
-		interact_distance = 150
-	}
-	self.hold_burn_offshore_money = {
-		text_id = "hud_hold_burn_offshore_money",
-		interact_distance = 150,
-		sound_done = "bar_button_burn_stinger",
-		sound_interupt = "bar_button_burn_cancel",
-		sound_start = "bar_button_burn"
-	}
-	self.press_reset_damage_counter = {
-		text_id = "hud_press_reset_damage_counter",
-		interact_distance = 150
-	}
-	self.play_bank_invaders = {
-		text_id = "hud_chill_access_bankinvader",
-		interact_distance = 200
-	}
-	self.access_fbi_files = {
-		text_id = "hud_chill_access_fbi",
-		interact_distance = 200
-	}
-	self.access_pd2stash = {
-		text_id = "hud_chill_access_pd2stash",
-		interact_distance = 200
-	}
-	self.access_sidejobs = {
-		text_id = "hud_chill_access_sidejobs",
-		interact_distance = 200,
-		axis = "y"
-	}
-	self.access_weapon_primary = {
-		text_id = "hud_chill_access_primary",
-		interact_distance = 200,
-		category = "primaries"
-	}
-	self.access_weapon_secondary = {
-		text_id = "hud_chill_access_secondary",
-		interact_distance = 200,
-		category = "secondaries"
 	}
 	self.chl_slot_machine = {
 		text_id = "hud_hold_bet_slotmachine_chl",
@@ -4417,21 +3307,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_int_talk_dallas",
 		interaction_obj = Idstring("Spine2")
 	}
-
-	for name, data in pairs(tweak_data.safehouse.heisters) do
-		if name ~= "base" then
-			local id = "talk_to_heister_" .. name
-			self[id] = clone(self.talk_to_heister)
-			self[id].text_id = "hud_int_talk_" .. name
-		end
-	end
-
-	self.jiro_no_interaction = clone(self.talk_to_heister)
-	self.jiro_no_interaction.interact_distance = 0
-	self.press_start_weapon_course = {
-		text_id = "hud_press_start_weapon_course",
-		interact_distance = 150
-	}
 	self.pku_scubagear_tank = {
 		text_id = "hud_int_hold_take_scubagear_tank_and_flippers",
 		action_text_id = "hud_action_taking_scubagear_tank_and_flippers",
@@ -4448,12 +3323,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		blocked_hint = "carry_block"
 	}
-	self.glc_open_door = {
-		text_id = "hud_cas_open_door",
-		start_active = true,
-		interact_distance = 300,
-		can_interact_in_civilian = true
-	}
 	self.glc_hold_take_handcuffs = {
 		text_id = "hud_int_hold_take_handcuffs",
 		action_text_id = "hud_int_hold_action_take_handcuffs",
@@ -4468,16 +3337,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		blocked_hint = "carry_block"
 	}
-	self.hold_insert_keycard_hlp = {
-		text_id = "press_insert_keycard",
-		equipment_text_id = "hint_no_keycard",
-		special_equipment = "bank_manager_key",
-		equipment_consume = true,
-		interact_distance = 200
-	}
-	self.c4_consume_x1 = deep_clone(self.c4_special)
-	self.c4_consume_x1.special_equipment = "c4_x1"
-	self.c4_consume_x1.equipment_consume = true
 	self.repair_wheel = {
 		text_id = "hud_int_hold_repair_wheel",
 		action_text_id = "hud_action_repair_wheel",
@@ -4494,8 +3353,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		start_active = false
 	}
-	self.sfm_take_usb_key = deep_clone(self.cas_take_usb_key)
-	self.sfm_take_usb_key.start_active = true
 	self.hold_attach_magnet = {
 		text_id = "hud_int_hold_attach_magnet",
 		action_text_id = "hud_action_attaching_magnet",
@@ -4534,13 +3391,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		interact_distance = 150,
 		start_active = false
-	}
-	self.sfm_laptop = {
-		text_id = "hud_int_insert_flash_dive",
-		equipment_text_id = "hint_usb_stick",
-		special_equipment = "cas_usb_key",
-		equipment_consume = true,
-		interact_distance = 150
 	}
 	self.rewire_friend_fuse_box = {
 		text_id = "hud_int_hold_rewire_fuse_box",
@@ -4673,9 +3523,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_friend_secure_winch_cancel",
 		sound_done = "bar_friend_secure_winch_finished"
 	}
-	self.c4_consume_x3 = deep_clone(self.c4_special)
-	self.c4_consume_x3.special_equipment = "c4_x3"
-	self.c4_consume_x3.equipment_consume = true
 	self.hold_search_cigar_boxes = {
 		text_id = "hud_int_search_cigar_boxes",
 		action_text_id = "hud_action_searching_cigar_boxes",
@@ -4842,9 +3689,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
 	}
-	self.hold_hack_server_room = deep_clone(self.hold_type_in_password)
-	self.hold_hack_server_room.text_id = "hud_int_hack_server_room"
-	self.hold_hack_server_room.action_text_id = "hud_action_hacking_server_room"
 	self.hold_turn_off = {
 		text_id = "hud_int_turn_off",
 		action_text_id = "hud_action_turning_off",
@@ -4853,10 +3697,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		sound_start = "bar_turn_off_cooling_system_start",
 		sound_interupt = "bar_turn_off_cooling_system_cancel"
-	}
-	self.press_play_jacket_sound = {
-		text_id = "hud_press_play_jacket_sound",
-		interact_distance = 200
 	}
 	self.hold_move_car_spa = {
 		text_id = "hud_int_hold_move_car",
@@ -4889,24 +3729,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_int_hold_action_take_diamond_breifcase",
 		timer = 0
 	}
-	self.press_hand_over_diamond_briefcase = {
-		text_id = "hud_int_press_hand_over_breifcase",
-		equipment_text_id = "hud_hint_no_briefcase",
-		special_equipment = "briefcase_diamond",
-		equipment_consume = true
-	}
-	self.press_pour_liquid_nitrogen = {
-		text_id = "hud_int_press_pour_liquid_nitrogen",
-		equipment_text_id = "hud_hint_no_liquid_nitrogen",
-		special_equipment = "hydrogen_chloride",
-		equipment_consume = true
-	}
-	self.press_take_liquid_nitrogen = {
-		text_id = "hud_int_take_liquid_nitrogen",
-		start_active = false,
-		special_equipment_block = "liquid_nitrogen",
-		sound_done = "liquid_nitrogen_pick_up"
-	}
 	self.hold_place_liquid_nitrogen = {
 		text_id = "hud_int_hold_place_liquid_nitrogen",
 		action_text_id = "hud_action_placing_liquid_nitrogen",
@@ -4938,16 +3760,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_action_opening_vault",
 		timer = 0,
 		start_active = false
-	}
-	self.invisible_interaction_open_axis_rvd = deep_clone(self.invisible_interaction_open)
-	self.invisible_interaction_open_axis_rvd.axis = "y"
-	self.invisible_interaction_open_axis_rvd.sound_start = "bar_train_panel_hacking"
-	self.invisible_interaction_open_axis_rvd.sound_interupt = "bar_train_panel_hacking_cancel"
-	self.invisible_interaction_open_axis_rvd.sound_done = "bar_train_panel_hacking_finished"
-	self.press_take_folder = {
-		text_id = "hud_int_german_folder",
-		interact_distance = 200,
-		start_active = true
 	}
 	self.hold_take_old_wine = {
 		text_id = "hud_int_old_wine",
@@ -5065,19 +3877,12 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_hose_ground_connect_cancel",
 		sound_done = "bar_hose_ground_connect_finished"
 	}
-	self.open_lid_wwh = {
-		text_id = "hud_int_invisible_interaction_open",
-		start_active = true,
-		interact_distance = 150
-	}
 	self.take_confidential_folder_icc = {
 		text_id = "hud_int_take_confidential_folder_icc",
 		start_active = false,
 		timer = 0,
 		interact_distance = 100
 	}
-	self.hack_dah_jammed_x = deep_clone(self.hack_suburbia_jammed)
-	self.hack_dah_jammed_x.axis = "x"
 	self.diamond_pickup_3sec = {
 		icon = "interaction_diamond",
 		text_id = "hud_int_take_diamond",
@@ -5149,17 +3954,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = true,
 		timer = 0
 	}
-	self.diamond_pickup_axis = {
-		icon = "interaction_diamond",
-		text_id = "hud_int_take_jewelry",
-		sound_event = "money_grab",
-		axis = "y",
-		start_active = false,
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		}
-	}
 	self.hold_to_choose_mask = {
 		text_id = "hud_int_hold_to_choose_mask",
 		action_text_id = "hud_action_choosing_mask",
@@ -5216,9 +4010,6 @@ old_rtnm_init(self, tweak_data)
 		special_equipment_block = "medallion",
 		sound_done = "liquid_nitrogen_pick_up"
 	}
-	self.apply_thermite_paste_no_consume = deep_clone(self.apply_thermite_paste)
-	self.apply_thermite_paste_no_consume.equipment_consume = false
-	self.apply_thermite_paste_no_consume.special_equipment = "thermite"
 	self.brb_connect_winch_hook = {
 		text_id = "hud_connect_which_hook_brb",
 		action_text_id = "hud_action_connecting_which_hook_brb",
@@ -5229,25 +4020,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		equipment_consume = true
 	}
-	self.press_insert_sample = {
-		text_id = "hud_int_insert_blood_sample",
-		equipment_text_id = "hint_no_blood_sample",
-		special_equipment = "blood_sample",
-		interact_distance = 150,
-		start_active = false,
-		equipment_consume = true
-	}
-	self.press_take_sample = {
-		text_id = "hud_int_take_blood_sample",
-		special_equipment_block = "blood_sample",
-		interact_distance = 150,
-		start_active = false
-	}
-	self.press_touch_book = {
-		text_id = "hud_int_touch_book",
-		interact_distance = 150,
-		start_active = false
-	}
 	self.hold_take_sample = {
 		text_id = "hud_int_hold_take_blood_sample",
 		action_text_id = "hud_action_taking_blood_sample",
@@ -5255,13 +4027,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 150,
 		start_active = false,
 		timer = 0
-	}
-	self.hold_take_sample_valid = {
-		text_id = "hud_int_hold_take_blood_valid_sample",
-		action_text_id = "hud_action_taking_blood_valid_sample",
-		special_equipment_block = "blood_sample_verified",
-		interact_distance = 150,
-		start_active = false
 	}
 	self.hold_stash_vial = {
 		text_id = "hud_int_hold_stash_vial",
@@ -5272,11 +4037,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 150,
 		start_active = false,
 		equipment_consume = true
-	}
-	self.press_call_elevator = {
-		text_id = "hud_int_call_elevator",
-		interact_distance = 150,
-		start_active = false
 	}
 	self.hold_check_file = {
 		text_id = "hud_int_hold_check_file",
@@ -5332,20 +4092,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		start_active = false
 	}
-	self.press_take_chimichanga = {
-		text_id = "hud_int_press_take_chimichanga",
-		interact_distance = 150,
-		special_equipment_block = "chimichanga",
-		start_active = false
-	}
-	self.press_place_chimichanga = {
-		text_id = "hud_int_press_place_chimichanga",
-		special_equipment = "chimichanga",
-		equipment_text_id = "hud_int_need_chimichanga",
-		equipment_consume = true,
-		interact_distance = 150,
-		start_active = false
-	}
 	self.hacking_barrier = {
 		text_id = "hud_int_hold_hack_barrier",
 		action_text_id = "hud_action_hack_barrier",
@@ -5384,34 +4130,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false,
 		axis = "y"
-	}
-	self.press_knock_on_door = {
-		text_id = "hud_int_press_knock_on_door",
-		interact_distance = 150,
-		start_active = false
-	}
-	self.press_take_elevator = {
-		text_id = "hud_int_press_take_elevator",
-		interact_distance = 150,
-		start_active = false
-	}
-	self.tag_take_stapler = {
-		text_id = "hud_take_stapler",
-		interact_distance = 100,
-		start_active = true
-	}
-	self.press_place_stapler = {
-		text_id = "hud_int_press_place_stapler",
-		equipment_text_id = "hud_hint_no_stapler",
-		special_equipment = "stapler",
-		equipment_consume = true,
-		interact_distance = 150,
-		start_active = false
-	}
-	self.push_button_secret = {
-		text_id = "hud_int_push_button",
-		interact_distance = 90,
-		axis = "z"
 	}
 	self.hold_charge_gun = {
 		icon = "equipment_hack_ipad",
@@ -5454,15 +4172,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_thermal_lance_fix",
 		sound_interupt = "bar_thermal_lance_fix_cancel",
 		sound_done = "bar_thermal_lance_fix_finished"
-	}
-	self.push_button_des = {
-		text_id = "hud_int_push_button",
-		axis = "z"
-	}
-	self.hold_push_button = {
-		text_id = "hud_int_push_button",
-		action_text_id = "hud_action_pushing_button",
-		axis = "z"
 	}
 	self.hold_move_crane = {
 		text_id = "hud_int_hold_move_crane",
@@ -5539,34 +4248,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "liquid_pour_stop",
 		sound_done = "liquid_pour_stop"
 	}
-	self.hold_take_compound_a = {
-		text_id = "hud_int_hold_take_compound_a",
-		special_equipment_block = "compound_a",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "liquid_nitrogen_pick_up"
-	}
-	self.hold_take_compound_b = {
-		text_id = "hud_int_hold_take_compound_b",
-		special_equipment_block = "compound_b",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "liquid_nitrogen_pick_up"
-	}
-	self.hold_take_compound_c = {
-		text_id = "hud_int_hold_take_compound_c",
-		special_equipment_block = "compound_c",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "liquid_nitrogen_pick_up"
-	}
-	self.hold_take_compound_d = {
-		text_id = "hud_int_hold_take_compound_d",
-		special_equipment_block = "compound_d",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "liquid_nitrogen_pick_up"
-	}
 	self.hold_take_battery = {
 		text_id = "hud_int_hold_take_battery",
 		action_text_id = "hud_int_hold_action_taking_battery",
@@ -5574,28 +4255,11 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.hold_remove_battery = {
-		text_id = "hud_int_hold_remove_battery",
-		action_text_id = "hud_int_hold_action_removing_battery",
-		interact_distance = 200,
-		start_active = false
-	}
 	self.hold_aim_laser = {
 		text_id = "hud_int_hold_aim_laser",
 		action_text_id = "hud_int_hold_action_aiming_laser",
 		interact_distance = 150,
 		timer = 0,
-		start_active = false
-	}
-	self.hold_fire_laser = {
-		text_id = "hud_int_press_fire_laser",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "bar_laser_weapon_button_push_finished"
-	}
-	self.press_pay_respects = {
-		text_id = "hud_int_press_pay_respects",
-		interact_distance = 150,
 		start_active = false
 	}
 	self.hold_place_device = {
@@ -5622,18 +4286,7 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		interact_distance = 150
 	}
-	self.invisible_interaction_open_axis_sah = deep_clone(self.invisible_interaction_open)
-	self.invisible_interaction_open_axis_sah.axis = "y"
-	self.invisible_interaction_open_axis_sah.sound_start = "bar_train_panel_hacking"
-	self.invisible_interaction_open_axis_sah.sound_interupt = "bar_train_panel_hacking_cancel"
-	self.invisible_interaction_open_axis_sah.sound_done = "bar_train_panel_hacking_finished"
 	self.invisible_interaction_open_axis_sah.timer = 0
-	self.hold_extend_bridge = {
-		axis = "y",
-		text_id = "hud_int_press_extend_bridge",
-		interact_distance = 150,
-		start_active = false
-	}
 	self.hold_pull_switch_distance = {
 		text_id = "hud_int_hold_pull_switch",
 		action_text_id = "hud_action_pulling_switch",
@@ -5694,17 +4347,7 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		timer = 0
 	}
-	self.gen_pku_thermite_timer_3sec = deep_clone(self.gen_pku_thermite)
 	self.gen_pku_thermite_timer_3sec.timer = 0
-	self.gen_pku_thermite_timer_3sec.start_active = false
-	self.vit_keycard_use = {
-		text_id = "hud_int_equipment_keycard",
-		equipment_text_id = "hud_int_equipment_no_keycard",
-		special_equipment = "president_key",
-		equipment_consume = true,
-		start_active = true,
-		axis = "y"
-	}
 	self.start_hacking = {
 		text_id = "hud_int_hold_start_hack",
 		action_text_id = "hud_action_starting_hack",
@@ -5712,8 +4355,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		timer = 0
 	}
-	self.start_hacking_axis = deep_clone(self.start_hacking)
-	self.start_hacking_axis.axis = "y"
 	self.postpone_update = {
 		text_id = "hud_int_hold_postpone_update",
 		action_text_id = "hud_action_postponing_update",
@@ -5734,11 +4375,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 150,
 		start_active = false,
 		timer = 0
-	}
-	self.uno_use_device = {
-		text_id = "hud_int_use_device",
-		interact_distance = 150,
-		start_active = false
 	}
 	self.uno_assemble_device = {
 		text_id = "hud_int_assemble_device",
@@ -5769,26 +4405,12 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		start_active = false
 	}
-	self.uno_hold_pku_gold_bar = {
-		text_id = "hud_int_take_mayan_gold_bar"
-	}
-	self.uno_hold_pku_gold.action_text_id = "hud_action_taking_mayan_gold_bar"
 	self.uno_hold_pku_gold_bar.timer = 0
-	self.uno_hold_pku_gold_bar.interact_distance = 200
-	self.uno_hold_pku_gold_bar.start_active = false
 	self.uno_press_activate = {
 		text_id = "hud_int_press_activate",
 		timer = 0,
 		interact_distance = 150,
 		start_active = false
-	}
-	self.uno_mayan_gold_bar = {
-		text_id = "hud_int_place_mayan_gold_bar",
-		action_text_id = "hud_action_placing_mayan_gold_bar",
-		equipment_text_id = "hud_int_equipment_no_mayan_gold",
-		special_equipment = "mayan_gold_bar",
-		equipment_consume = true,
-		start_active = true
 	}
 	self.hold_remove_parts = {
 		text_id = "hud_int_hold_remove_parts",
@@ -5798,14 +4420,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 150,
 		sound_start = "bar_bag_generic",
 		sound_interupt = "bar_bag_generic_cancel"
-	}
-	self.press_use_medallion = {
-		text_id = "hud_int_press_use_medallion",
-		equipment_text_id = "hud_int_hint_medallion",
-		special_equipment = "medallion",
-		equipment_consume = false,
-		start_active = true,
-		interact_distance = 150
 	}
 	self.hold_choose_hand_left = {
 		text_id = "hud_int_hold_choose_hand_left",
@@ -5868,31 +4482,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "bar_water_pump_finish",
 		axis = "y"
 	}
-	self.mex_red_room_key = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_pickup_asset",
-		equipment_text_id = "hud_int_pickup_asset",
-		special_equipment = "keychain",
-		sound_done = "pickup_key",
-		equipment_consume = true,
-		interact_distance = 150
-	}
-	self.mex_red_door = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_cas_open_door",
-		equipment_text_id = "hud_action_try_keys_no_key",
-		special_equipment = "keychain",
-		sound_start = "bar_unlock_grate_door",
-		sound_interupt = "bar_unlock_grate_door_cancel",
-		sound_done = "bar_unlock_grate_door_finished",
-		equipment_consume = true,
-		interact_distance = 150
-	}
-	self.money_wrap_updating_directional = deep_clone(self.money_wrap_updating)
-	self.money_wrap_updating_directional.axis = "y"
-	self.gen_pku_cocaine_directional = deep_clone(self.gen_pku_cocaine)
-	self.gen_pku_cocaine_directional.axis = "y"
-	self.connect_hose_directional = deep_clone(self.connect_hose)
 	self.mex_pickup_murky_uniforms = {
 		text_id = "hud_int_mex_pickup_murky_uniforms",
 		action_text_id = "hud_action_mex_pickup_murky_uniforms",
@@ -5901,24 +4490,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 250,
 		start_active = false,
 		sound_start = "play_bag_generic_pickup"
-	}
-	self.roman_armor = deep_clone(self.samurai_armor)
-	self.roman_armor.text_id = "hud_int_hold_bag_ro_armor"
-	self.roman_armor.action_text_id = "hud_action_bagging_ro_armor"
-	self.hold_take_vault_blueprint = deep_clone(self.hold_take_blueprints)
-	self.hold_take_vault_blueprint.icon = "equipment_blueprint"
-	self.connect_hose_wwh_short_distance = deep_clone(self.connect_hose_wwh)
-	self.connect_hose_wwh_short_distance.interact_distance = 100
-	self.detach_hose_wwh_short_distance = deep_clone(self.detach_hose_wwh)
-	self.detach_hose_wwh_short_distance.interact_distance = 100
-	self.mex_gasoline = {
-		icon = "equipment_thermite",
-		text_id = "debug_interact_gas",
-		equipment_text_id = "debug_interact_equipment_gas",
-		special_equipment = "gas",
-		equipment_consume = true,
-		interact_distance = 300,
-		axis = "y"
 	}
 	self.connect_hose_mex = {
 		icon = "develop",
@@ -5957,8 +4528,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 100,
 		special_equipment_block = "fingerprint"
 	}
-	self.bex_take_cupprint_directional = deep_clone(self.bex_take_cupprint)
-	self.bex_take_cupprint_directional.axis = "x"
 	self.bex_activate_flare = {
 		text_id = "hud_int_activate_flare",
 		action_text_id = "hud_int_activating_flare",
@@ -5980,12 +4549,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		axis = "y"
 	}
-	self.thermite_directional = deep_clone(self.thermite)
-	self.thermite_directional.axis = "y"
-	self.apply_thermite_paste_directional = deep_clone(self.apply_thermite_paste)
-	self.apply_thermite_paste_directional.axis = "y"
-	self.mex_red_room_key_directional = deep_clone(self.mex_red_room_key)
-	self.mex_red_room_key_directional.axis = "y"
 	self.take_tape = {
 		text_id = "hud_int_take_tape",
 		action_text_id = "hud_action_take_tape",
@@ -6056,15 +4619,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_pick_lock_cancel",
 		sound_done = "bar_pick_lock_finished"
 	}
-	self.pex_red_room_key = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_pickup_asset",
-		equipment_text_id = "hud_action_pickup_asset",
-		special_equipment = "keychain",
-		sound_done = "pickup_key",
-		equipment_consume = true,
-		interact_distance = 250
-	}
 	self.pickup_police_uniform = {
 		text_id = "hud_int_hold_take_police_uniform",
 		action_text_id = "hud_action_taking_police_uniform",
@@ -6097,15 +4651,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = true,
 		axis = "y"
 	}
-	self.pickup_wanker_key = {
-		text_id = "hud_int_pickup_asset",
-		sound_done = "pick_up_key_card",
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		},
-		blocked_hint = "full_keycard"
-	}
 	self.pex_pickup_cutter = {
 		text_id = "hud_int_pickup_cutter",
 		action_text_id = "hud_action_pickup_cutter",
@@ -6117,18 +4662,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		axis = "z"
 	}
-	self.pex_destroy_evidence_directional = deep_clone(self.destroy_evidence_pex)
-	self.pex_destroy_evidence_directional.axis = "x"
-	self.pex_destroy_evidence_directional.interact_distance = 150
-	self.pex_destroy_evidence_directional_shredder = deep_clone(self.pex_destroy_evidence_directional)
-	self.pex_destroy_evidence_directional_shredder.sound_start = "bar_put_paper_in_shredder"
-	self.pex_destroy_evidence_directional_shredder.sound_interupt = "bar_put_paper_in_shredder_cancel"
-	self.pex_destroy_evidence_directional_shredder.sound_done = "bar_put_paper_in_shredder_finished"
-	self.pex_place_evidance = deep_clone(self.destroy_evidence_pex)
-	self.pex_place_evidance.text_id = "hud_int_hold_place_evidance"
-	self.pex_place_evidance.action_text_id = "hud_action_place_evidance"
-	self.pex_place_evidance.axis = "z"
-	self.pex_place_evidance.interact_distance = 300
 	self.pex_pour_liquid_on_evidance = {
 		text_id = "hud_int_hold_pour_liquid",
 		action_text_id = "hud_action_find_liquid",
@@ -6218,8 +4751,6 @@ old_rtnm_init(self, tweak_data)
 		text_id = "debug_interact_open_door",
 		interact_distance = 100
 	}
-	self.pex_open_door_one_directional = deep_clone(self.pex_open_door_one)
-	self.pex_open_door_one_directional.axis = "x"
 	self.pex_medal = {
 		text_id = "hud_int_pku_medal",
 		action_text_id = "hud_action_pkuing_medal",
@@ -6236,8 +4767,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 150,
 		axis = "x"
 	}
-	self.ammo_bag_axis = deep_clone(self.ammo_bag)
-	self.ammo_bag_axis.axis = "y"
 	self.pex_get_unloaded_card = {
 		text_id = "hud_hold_take_unloaded_card",
 		action_text_id = "hud_action_taking_unloaded_card",
@@ -6265,13 +4794,6 @@ old_rtnm_init(self, tweak_data)
 		special_equipment = "pex_unloaded_card",
 		equipment_consume = true
 	}
-	self.pex_use_a_tag = deep_clone(self.pex_find_a_tag)
-	self.pex_use_a_tag.equipment_consume = false
-	self.pex_use_a_tag.special_equipment = "pex_loaded_card"
-	self.pex_use_a_tag_lvl_2 = deep_clone(self.pex_use_a_tag)
-	self.pex_use_a_tag_lvl_2.special_equipment = "pex_loaded_card_lvl_2"
-	self.pex_get_loaded_card_lvl_2 = deep_clone(self.pex_get_loaded_card)
-	self.pex_get_loaded_card_lvl_2.special_equipment = "pex_loaded_card"
 	self.pex_set_burnable_liquid = {
 		text_id = "hud_hold_set_burnable_liquid",
 		action_text_id = "hud_action_seting_burnable_liquid",
@@ -6308,19 +4830,6 @@ old_rtnm_init(self, tweak_data)
 		axis = "x",
 		interact_distance = 250
 	}
-	self.pex_give_car_key = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_press_pex_give_keys",
-		action_text_id = "hud_press_pex_giving_keys",
-		equipment_text_id = "hud_equipment_pex_need_keys",
-		special_equipment = "keychain",
-		sound_done = "tango_pick_up_key_mono",
-		equipment_consume = true,
-		interact_distance = 250
-	}
-	self.hold_turn_off_sprinklers = deep_clone(self.hold_activate_sprinklers)
-	self.hold_turn_off_sprinklers.text_id = "hud_int_hold_turn_off_sprinklers"
-	self.hold_turn_off_sprinklers.action_text_id = "hud_action_turn_off_sprinklers"
 	self.fex_take_scythe = {
 		text_id = "hud_int_hold_take_scythe",
 		action_text_id = "hud_action_take_scythe",
@@ -6354,8 +4863,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.fex_take_wire_axis = deep_clone(self.fex_take_wire)
-	self.fex_take_wire_axis.axis = "y"
 	self.fex_take_globe = {
 		text_id = "hud_int_hold_take_globe",
 		action_text_id = "hud_action_take_globe",
@@ -6363,8 +4870,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.fex_take_globe_axis = deep_clone(self.fex_take_globe)
-	self.fex_take_globe_axis.axis = "y"
 	self.fex_take_alarm_clock = {
 		text_id = "hud_int_hold_take_alarm_clock",
 		action_text_id = "hud_action_take_alarm_clock",
@@ -6373,8 +4878,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		interact_distance = 200
 	}
-	self.fex_take_alarm_clock_axis = deep_clone(self.fex_take_alarm_clock)
-	self.fex_take_alarm_clock_axis.axis = "y"
 	self.fex_take_fertilizer = {
 		text_id = "hud_int_hold_take_fertilizer",
 		action_text_id = "hud_action_take_fertilizer",
@@ -6383,8 +4886,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		interact_distance = 200
 	}
-	self.fex_take_fertilizer_axis = deep_clone(self.fex_take_fertilizer)
-	self.fex_take_fertilizer_axis.axis = "y"
 	self.fex_take_diesel = {
 		text_id = "hud_int_hold_take_diesel",
 		action_text_id = "hud_action_take_diesel",
@@ -6392,8 +4893,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		interact_distance = 200
 	}
-	self.fex_take_diesel_axis = deep_clone(self.fex_take_diesel)
-	self.fex_take_diesel_axis.axis = "y"
 	self.fex_place_scythe = {
 		text_id = "hud_int_hold_to_place_scythe",
 		action_text_id = "hud_action_place_scythe",
@@ -6474,11 +4973,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		interact_distance = 200
 	}
-	self.fex_press_frog_symbol = {
-		text_id = "hud_press_frog_button",
-		start_active = false,
-		interact_distance = 200
-	}
 	self.fex_hold_accessing_mask_list = {
 		text_id = "hud_hold_interact_view_mask_list",
 		action_text_id = "hud_action_accessing_mask_list",
@@ -6497,44 +4991,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.fex_press_ant_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_ant_symbol.text_id = "hud_press_ant_button"
-	self.fex_press_bat_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_bat_symbol.text_id = "hud_press_bat_button"
-	self.fex_press_boar_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_boar_symbol.text_id = "hud_press_boar_button"
-	self.fex_press_bunny_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_bunny_symbol.text_id = "hud_press_bunny_button"
-	self.fex_press_butterfly_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_butterfly_symbol.text_id = "hud_press_butterfly_button"
-	self.fex_press_crab_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_crab_symbol.text_id = "hud_press_crab_button"
-	self.fex_press_crocodile_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_crocodile_symbol.text_id = "hud_press_crocodile_button"
-	self.fex_press_dog_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_dog_symbol.text_id = "hud_press_dog_button"
-	self.fex_press_fish_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_fish_symbol.text_id = "hud_press_fish_button"
-	self.fex_press_jaguar_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_jaguar_symbol.text_id = "hud_press_jaguar_button"
-	self.fex_press_lizard_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_lizard_symbol.text_id = "hud_press_lizard_button"
-	self.fex_press_millipede_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_millipede_symbol.text_id = "hud_press_millipede_button"
-	self.fex_press_monkey_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_monkey_symbol.text_id = "hud_press_monkey_button"
-	self.fex_press_owl_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_owl_symbol.text_id = "hud_press_owl_button"
-	self.fex_press_snail_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_snail_symbol.text_id = "hud_press_snail_button"
-	self.fex_press_snake_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_snake_symbol.text_id = "hud_press_snake_button"
-	self.fex_press_spider_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_spider_symbol.text_id = "hud_press_spider_button"
-	self.fex_press_squirrel_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_squirrel_symbol.text_id = "hud_press_squirrel_button"
-	self.fex_press_turtle_symbol = deep_clone(self.fex_press_frog_symbol)
-	self.fex_press_turtle_symbol.text_id = "hud_press_turtle_button"
 	self.hold_interact_inspect_bookshelf = {
 		text_id = "hud_hold_inspect_bookshelf",
 		action_text_id = "hud_action_inspect_bookshelf",
@@ -6599,8 +5055,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		interact_distance = 200
 	}
-	self.pickup_keycard_axis = deep_clone(self.pickup_keycard)
-	self.pickup_keycard_axis.axis = "x"
 	self.chas_search_code = {
 		text_id = "hud_int_hold_search_code",
 		action_text_id = "hud_action_search_code",
@@ -6622,28 +5076,13 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		axis = "y"
 	}
-	self.chas_light_switch_off = {
-		text_id = "hud_int_hold_flip_light_off"
-	}
-	self.chas_light_switch.action_text_id = "hud_action_light_switch_off"
 	self.chas_light_switch_off.timer = 0
-	self.chas_light_switch_off.interact_distance = 200
-	self.chas_light_switch_off.axis = "y"
 	self.chas_prop_hack_box = {
 		text_id = "hud_int_hold_hack_box",
 		action_text_id = "hud_action_open_hack_box",
 		timer = 0,
 		interact_distance = 200,
 		axis = "y"
-	}
-	self.chas_pickup_keychain_forklift = {
-		icon = "equipment_bank_manager_key",
-		text_id = "hud_int_pickup_keychain_forklift",
-		action_text_id = "hud_action_pickup_keychain_forklift",
-		equipment_text_id = "hud_int_pickup_keychain_forklift",
-		special_equipment = "chas_keychain_forklift",
-		equipment_consume = true,
-		interact_distance = 100
 	}
 	self.chas_breach_shutter = {
 		text_id = "hud_int_hold_breach_shutter",
@@ -6666,24 +5105,6 @@ old_rtnm_init(self, tweak_data)
 		action_text_id = "hud_action_take_tea_set",
 		interact_distance = 250,
 		timer = 0
-	}
-	self.c4_stackable = deep_clone(self.c4_mission_door)
-	self.c4_stackable.special_equipment = "c4_stackable"
-	self.c4_stackable.axis = "x"
-	self.chas_tea_set.start_active = false
-	self.chas_tea_set.sound_start = "bar_bag_money"
-	self.chas_tea_set.sound_interupt = "bar_bag_money_cancel"
-	self.chas_tea_set.sound_done = "bar_bag_money_finished"
-	self.chas_tea_set.blocked_hint = "carry_block"
-	self.money_wrap_single_chas = {
-		icon = "interaction_money_wrap",
-		text_id = "hud_int_take_tablets",
-		start_active = false,
-		interact_distance = 110,
-		requires_mask_off_upgrade = {
-			upgrade = "mask_off_pickup",
-			category = "player"
-		}
 	}
 	self.chas_pick_lock_easy_no_skill = {
 		contour = "interactable_icon",
@@ -6716,12 +5137,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		start_active = false,
 		timer = 0
-	}
-	self.sand_take_adrenaline = {
-		text_id = "hud_int_take_adrenaline",
-		action_text_id = "hud_action_taking_adrenaline",
-		start_active = false,
-		interact_distance = 200
 	}
 	self.sand_use_adrenaline = {
 		text_id = "hud_int_use_adrenaline",
@@ -6758,12 +5173,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.sand_take_usb = {
-		text_id = "hud_int_take_usb",
-		action_text_id = "hud_action_taking_usb",
-		axis = "y",
-		interact_distance = 200
-	}
 	self.sand_insert_usb = {
 		text_id = "hud_int_insert_usb",
 		action_text_id = "hud_action_inserting_usb_sand",
@@ -6785,13 +5194,6 @@ old_rtnm_init(self, tweak_data)
 		axis = "y",
 		start_active = false,
 		equipment_consume = true
-	}
-	self.sand_take_laxative = {
-		text_id = "hud_int_take_laxative",
-		action_text_id = "hud_action_taking_laxative",
-		interact_distance = 200,
-		axis = "y",
-		start_active = false
 	}
 	self.sand_spike_cake = {
 		text_id = "hud_int_spike_cake",
@@ -6818,19 +5220,6 @@ old_rtnm_init(self, tweak_data)
 		interact_distance = 200,
 		timer = 0,
 		equipment_consume = true
-	}
-	self.sand_charge_paddles = {
-		text_id = "hud_int_charge_paddles",
-		action_text_id = "hud_action_charging_paddles",
-		equipment_text_id = "hint_no_defibrillator_paddles",
-		special_equipment = "defibrillator_paddles",
-		interact_distance = 200
-	}
-	self.sand_take_paddles = {
-		text_id = "hud_int_take_paddles",
-		action_text_id = "hud_action_taking_paddles",
-		interact_distance = 200,
-		axis = "x"
 	}
 	self.sand_place_paddles = {
 		text_id = "hud_int_place_paddles",
@@ -6864,20 +5253,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		start_active = false
 	}
-	self.sand_take_note = {
-		text_id = "hud_int_take_note",
-		action_text_id = "hud_action_taking_note",
-		interact_distance = 200,
-		axis = "z"
-	}
-	self.sand_place_note = {
-		text_id = "hud_int_place_note",
-		action_text_id = "hud_action_placing_note",
-		equipment_text_id = "hint_no_notepad",
-		special_equipment = "notepad",
-		interact_distance = 200,
-		equipment_consume = true
-	}
 	self.sand_open_handcuffs = {
 		text_id = "hud_int_open_handcuffs",
 		action_text_id = "hud_action_opening_handcuffs",
@@ -6886,22 +5261,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_rescue",
 		sound_interupt = "bar_rescue_cancel",
 		sound_done = "bar_rescue_finished"
-	}
-	self.sand_button_number_sign = {
-		text_id = "hud_int_press_number_sign",
-		start_active = false,
-		interact_distance = 50
-	}
-	self.sand_hit_gong = {
-		text_id = "hud_int_hit_gong",
-		start_active = false,
-		interact_distance = 200,
-		axis = "y"
-	}
-	self.fake_pick_lock_easy_no_skill = {
-		text_id = "hud_int_pick_lock",
-		start_active = true,
-		interact_distance = 100
 	}
 	self.sand_hold_blow_torch = {
 		text_id = "hud_int_hold_cut",
@@ -6913,16 +5272,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_blowtorch_end",
 		sound_done = "bar_blowtorch_end",
 		axis = "y"
-	}
-	self.sand_ring_bell = {
-		text_id = "hud_int_ring_bell",
-		action_text_id = "hud_action_ringing_bell",
-		interact_distance = 200
-	}
-	self.sand_move_cargo = {
-		text_id = "hud_int_move_cargo",
-		action_text_id = "hud_action_move_cargo",
-		interact_distance = 200
 	}
 	self.sand_help_vlad = {
 		text_id = "hud_int_help_vlad",
@@ -6951,11 +5300,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		axis = "y"
 	}
-	self.sand_torture_tape = {
-		text_id = "hud_int_listen_to_tape",
-		interact_distance = 100,
-		axis = "x"
-	}
 	self.sand_pickup_harddrive = {
 		text_id = "hud_int_take_harddrive",
 		action_text_id = "hud_action_take_harddrive",
@@ -6963,15 +5307,6 @@ old_rtnm_init(self, tweak_data)
 		timer = 0,
 		axis = "y"
 	}
-	self.sand_hold_move_truck = deep_clone(self.hold_move_car)
-	self.sand_hold_move_truck.text_id = "hud_int_move_truck"
-	self.sand_hold_move_truck.action_text_id = "hud_action_moving_truck"
-	self.sand_tort_tape = {
-		text_id = "hud_int_play_tort_tape",
-		interact_distance = 100
-	}
-	self.sand_ipad = deep_clone(self.money_wrap_single_chas)
-	self.sand_ipad.interact_distance = 200
 	self.chca_flip_table = {
 		text_id = "hud_int_flip_table",
 		action_text_id = "hud_action_flipping_table",
@@ -7040,11 +5375,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = true,
 		interact_distance = 200,
 		axis = "y"
-	}
-	self.chca_hold_take_business_card = {
-		text_id = "hud_int_take_business_card",
-		start_active = true,
-		interact_distance = 200
 	}
 	self.chca_hold_lower_big_painting = {
 		text_id = "hud_int_lower_painting",
@@ -7123,14 +5453,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		timer = 0,
 		axis = "x"
-	}
-	self.chca_keycard = {
-		text_id = "hud_int_equipment_keycard",
-		equipment_text_id = "hud_int_equipment_no_keycard",
-		special_equipment = "bank_manager_key",
-		equipment_consume = true,
-		start_active = true,
-		axis = "z"
 	}
 	self.hold_take_hand = {
 		text_id = "hud_int_hold_take_hand",
@@ -7253,34 +5575,7 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_PENT_Cable_Repair_Cancel",
 		timer = 0
 	}
-	self.pick_lock_easy_no_skill_pent = deep_clone(self.pick_lock_easy_no_skill)
-	self.pick_lock_easy_no_skill_pent.axis = "x"
-	self.pick_lock_easy.sound_done = "security_box_open"
 	self.pick_lock_easy_no_skill_pent.timer = 0
-	self.pent_pull_lever = deep_clone(self.uno_pull_lever)
-	self.pent_pull_lever.interact_distance = 150
-	self.pent_pull_lever.sound_done = "security_box_lever_pull"
-	self.pent_pull_lever.axis = "x"
-	self.pent_press_take_car_jack = {
-		text_id = "hud_int_press_take_car_jack",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "PENT_Pickup_Jack",
-		axis = "x"
-	}
-	self.pent_press_take_gas_can = {
-		text_id = "hud_int_press_take_gas_can",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "PENT_Pickup_Gas_Can",
-		axis = "x"
-	}
-	self.pent_press_car_platform = {
-		text_id = "hud_int_press_car_platform",
-		interact_distance = 150,
-		start_active = false,
-		axis = "x"
-	}
 	self.pent_hold_lift_car = {
 		text_id = "hud_int_hold_lift_car",
 		action_text_id = "hud_int_action_lift_car",
@@ -7295,13 +5590,6 @@ old_rtnm_init(self, tweak_data)
 		sound_done = "PENT_Car_Jack_Crank",
 		axis = "x"
 	}
-	self.pent_press_release_jack = {
-		text_id = "hud_int_press_release_car_jack",
-		interact_distance = 150,
-		start_active = false,
-		sound_done = "PENT_Release_Jack",
-		axis = "x"
-	}
 	self.pent_reboot_generator = {
 		text_id = "hud_int_hold_boot_generator",
 		action_text_id = "hud_action_booting_generator",
@@ -7312,12 +5600,6 @@ old_rtnm_init(self, tweak_data)
 		sound_start = "bar_keyboard",
 		sound_interupt = "bar_keyboard_cancel",
 		sound_done = "bar_keyboard_finished"
-	}
-	self.pent_take_wire = {
-		text_id = "hud_int_press_take_wire",
-		interact_distance = 150,
-		sound_done = "PENT_Pickup_CargoStrap",
-		start_active = true
 	}
 	self.pent_refuel_car = {
 		icon = "equipment_thermite",
@@ -7348,17 +5630,6 @@ old_rtnm_init(self, tweak_data)
 		sound_interupt = "bar_glasscutter_cancel",
 		sound_done = "bar_glasscutter_finished"
 	}
-	self.pent_gnome_carry = deep_clone(self.money_wrap)
-	self.pent_gnome_carry.text_id = "hud_int_hold_take_gnome"
-	self.pent_gnome_carry.action_text_id = "hud_action_take_gnome"
-	self.pent_open_trunk = {
-		icon = "develop",
-		text_id = "debug_interact_press_open_trunk",
-		action_text_id = "hud_action_opening_trunk",
-		sound_done = "open_car_trunk",
-		interact_distance = 100,
-		start_active = true
-	}
 	self.pent_press_call_elevator = {
 		text_id = "debug_interact_elevator_door",
 		interact_distance = 150,
@@ -7379,12 +5650,6 @@ old_rtnm_init(self, tweak_data)
 		start_active = false,
 		interact_distance = 150,
 		timer = 0
-	}
-	self.pent_kitchen_elevator = {
-		text_id = "hud_int_invisible_interaction_open",
-		start_active = true,
-		interact_distance = 100,
-		sound_done = "kitchen_elevator_button_press"
 	}
 	self.hold_take_mask_pent = {
 		text_id = "hud_int_hold_take_mask",

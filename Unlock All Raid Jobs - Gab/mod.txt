@@ -1,6 +1,6 @@
 {
-	"name" : "Unlock All Raid Jobs - Gab",
-	"description" : "Unlocks all raid side jobs for free",
+	"name" : "Unlock all Raid jobs - Gab",
+	"description" : "Unlocks all Raid side jobs for free",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

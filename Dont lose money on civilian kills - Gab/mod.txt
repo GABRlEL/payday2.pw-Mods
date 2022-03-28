@@ -1,0 +1,15 @@
+{
+	"name" : "Dont lose money on civilian kills - Gab",
+	"description" : "Civilian kills no longer take money",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/tweak_data/moneytweakdata",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

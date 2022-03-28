@@ -1,5 +1,5 @@
 {
-	"name" : "No Mutator Penalty - Gab",
+	"name" : "No mutator penalty - Gab",
 	"description" : "Allows achievements while using mutators and disables all penalties",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

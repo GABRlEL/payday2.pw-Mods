@@ -1,5 +1,5 @@
 {
-	"name" : "Infinite Sentry Ammo - Gab",
+	"name" : "Infinite Sentry ammo - Gab",
 	"description" : "Makes your sentries get infinite ammo",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

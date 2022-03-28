@@ -1,0 +1,14 @@
+{
+	"name" : "Money increaser (Bag value) - Gab",
+	"description" : "Increases bag value",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/lootmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

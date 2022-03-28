@@ -1,5 +1,5 @@
 {
-	"name" : "Invulnerable Sentries - Gab",
+	"name" : "Invulnerable sentries - Gab",
 	"description" : "Makes your sentries invulnerable",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

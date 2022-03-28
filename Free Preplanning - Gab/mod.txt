@@ -1,5 +1,5 @@
 {
-	"name" : "Free Preplanning - Gab",
+	"name" : "Free preplanning - Gab",
 	"description" : "Free and unlimited preplanning",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

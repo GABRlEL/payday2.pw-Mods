@@ -1,5 +1,5 @@
 {
-	"name" : "Infinite Ammo Bag Charges - Gab",
+	"name" : "Infinite Ammo Bag charges - Gab",
 	"description" : "Adds infinite ammo bag charges",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
