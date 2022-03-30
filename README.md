@@ -1,5 +1,6 @@
 # payday2.pw Mods
 **This repository contains the source code of all mods currently released on [payday2.pw](https://payday2.pw).**
+*The GitHub repository is always updated. The website might be a bit outdated, as I can't upload everything at once. Thanks Google Safe Browsing.*
 [PAYDAY 2 SuperBLT](https://superblt.znix.xyz/) is required for these mods to work.
 All mods contain the code in .lua-Files and the mod.txt is used for PAYDAY 2 to detect the mod and to give more information about the mods and their coders.
 
