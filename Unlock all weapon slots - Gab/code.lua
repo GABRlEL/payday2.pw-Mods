@@ -1,0 +1,3 @@
+function BlackMarketManager:is_weapon_slot_unlocked(category, slot)
+	return self._global.unlocked_weapon_slots and self._global.unlocked_weapon_slots[category] and self._global.unlocked_weapon_slots[category][slot] or true
+end

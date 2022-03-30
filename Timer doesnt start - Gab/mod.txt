@@ -1,0 +1,15 @@
+{
+	"name" : "Timer doesnt start - Gab",
+	"description" : "Heist timer doesnt start",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/GamePlayCentralmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

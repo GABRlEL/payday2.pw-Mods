@@ -1,0 +1,15 @@
+{
+	"name" : "Safehouse is always raided - Gab",
+	"description" : "Safehouse is always being raided, safehouse upgrades are therefore always locked and you cant go in the safehouse",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/customsafehousemanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

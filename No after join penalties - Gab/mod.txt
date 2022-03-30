@@ -1,0 +1,15 @@
+{
+	"name" : "No after join penalties - Gab",
+	"description" : "You keep all of your equipment and spawn alive no matter when you join",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/playermanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

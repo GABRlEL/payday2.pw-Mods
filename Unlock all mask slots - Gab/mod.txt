@@ -1,0 +1,15 @@
+{
+	"name" : "Unlock all mask slots - Gab",
+	"description" : "Unlocks all mask slots as long as the mod is installed",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/blackmarketmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

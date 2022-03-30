@@ -1,0 +1,15 @@
+{
+	"name" : "Unlock all achievement and job-based weapons - Gab",
+	"description" : "Unlock all achievement and job-based weapons",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/blackmarketmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

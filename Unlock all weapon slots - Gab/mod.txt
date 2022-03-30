@@ -1,0 +1,15 @@
+{
+	"name" : "Unlock all weapon slots - Gab",
+	"description" : "Unlocks all primary and secondary weapon slots as long as the mod is installed",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/blackmarketmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

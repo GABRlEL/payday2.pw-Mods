@@ -1,0 +1,15 @@
+{
+	"name" : "Mutators in holdout - Gab",
+	"description" : "Allows mutators in holdout",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/MutatorsManager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

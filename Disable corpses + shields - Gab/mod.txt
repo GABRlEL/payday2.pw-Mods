@@ -1,0 +1,15 @@
+{
+	"name" : "Disable corpses + shields - Gab",
+	"description" : "Fully disables corpses and their shields",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/enemymanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

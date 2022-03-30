@@ -1,0 +1,15 @@
+{
+	"name" : "All weapons on AI (READ DESCRIPTION) - Gab",
+	"description" : "Allows every weapon on AI, will cause issues and will crash with Akimbos",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/blackmarketmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -1,13 +1,13 @@
 {
-	"name" : "No pagers - Gab",
-	"description" : "Disables all pagers",
+	"name" : "Disable corpses - Gab",
+	"description" : "Fully disables corpses",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
 
 	"hooks" : [
 	{ 	
-		"hook_id" : "lib/tweak_data/charactertweakdata",
+		"hook_id" : "lib/managers/enemymanager",
 		"script_path" : "code.lua"
 	}
 ]

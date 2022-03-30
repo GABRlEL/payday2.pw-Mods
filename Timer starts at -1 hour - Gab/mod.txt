@@ -1,0 +1,15 @@
+{
+	"name" : "Timer starts at -1 hour - Gab",
+	"description" : "Heist timer automatically starts at -1 hour",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/GamePlayCentralmanager",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

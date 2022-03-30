@@ -1,0 +1,15 @@
+{
+	"name" : "No head bobbing - Gab",
+	"description" : "Removes head bobbing whilst running, walking, crouching etc",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/units/beings/player/states/playerstandard",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

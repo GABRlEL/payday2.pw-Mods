@@ -1,0 +1,15 @@
+{
+	"name" : "God Mode (No hit) - Gab",
+	"description" : "God Mode but without being hit at all",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/units/beings/player/playerdamage",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

@@ -6,7 +6,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill_1",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		},
 		{
@@ -18,7 +18,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill_a",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -26,7 +26,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill_1",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -34,7 +34,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -42,7 +42,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small_jam_once")
 		}
 	}
@@ -50,7 +50,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -58,7 +58,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small_jam_once")
 		}
 	}
@@ -66,7 +66,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -74,7 +74,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -82,7 +82,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -90,7 +90,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -98,7 +98,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -106,7 +106,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -114,7 +114,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -122,7 +122,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -130,7 +130,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -138,7 +138,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -146,7 +146,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -154,7 +154,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -162,7 +162,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -176,7 +176,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_lance_1",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/gen_interactable_drill_large_thermic/gen_interactable_drill_large_thermic")
 		}
 	}
@@ -184,7 +184,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -192,7 +192,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -208,7 +208,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -216,7 +216,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -224,7 +224,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -232,7 +232,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -248,7 +248,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -256,7 +256,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -296,7 +296,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small")
 		}
 	}
@@ -304,7 +304,7 @@ old_ndt007007_init(self, tweak_data)
 		{
 			align = "a_drill",
 			timer = 0,
-			can_jam = true,
+			can_jam = false,
 			unit = Idstring("units/payday2/equipment/item_door_drill_small/item_door_drill_small_jam_once")
 		}
 	}
