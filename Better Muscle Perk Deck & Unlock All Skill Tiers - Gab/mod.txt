@@ -1,6 +1,6 @@
 {
-	"name" : "Better Muscle Perk Deck & Unlock All Skill Tiers - Gab",
-	"description" : "Buffs Assault Rifles using the Muscle Perk Deck & Unlock All Skill Tiers",
+	"name" : "Better Muscle perk deck & Unlock all skill tiers - Gab",
+	"description" : "Buffs Assault Rifles using the Muscle perk deck & Unlock all skill tiers",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,

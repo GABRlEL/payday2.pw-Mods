@@ -1,6 +1,6 @@
 {
-	"name" : "Custom Perk Decks - Gab",
-	"description" : "Adds the Gab and derDude Perk Deck",
+	"name" : "Custom perk decks - Gab",
+	"description" : "Adds the Gab and derDude perk deck",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",
 	"blt_version" : 2,
