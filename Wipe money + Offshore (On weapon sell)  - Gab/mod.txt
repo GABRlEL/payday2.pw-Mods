@@ -1,5 +1,5 @@
 {
-	"name" : "Wipe money + Offshore - Gab",
+	"name" : "Wipe money + Offshore (On weapon sell) - Gab",
 	"description" : "Sell a weapon or mask to wipe your full cash",
 	"author" : "Gab",
 	"contact" : "www.payday2.pw",

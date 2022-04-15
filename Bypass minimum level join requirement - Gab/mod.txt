@@ -1,0 +1,15 @@
+{
+	"name" : "Bypass minimum level join requirement - Gab",
+	"description" : "Join any lobby at any level no matter what the host set as the minimum level",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/network/base/clientnetworksession",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

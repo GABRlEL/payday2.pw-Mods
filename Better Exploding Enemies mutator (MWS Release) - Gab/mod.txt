@@ -1,0 +1,15 @@
+{
+	"name" : "Better Exploding Enemies mutator (MWS Release) - Gab",
+	"description" : "Allows the higher explosion radius, this is the release for MWS - so no cheat functionality is contained",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/mutators/mutatorexplodingenemies",
+		"script_path" : "code.lua"
+	}
+]
+	
+}

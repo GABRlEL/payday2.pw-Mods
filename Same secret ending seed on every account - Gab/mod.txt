@@ -1,0 +1,15 @@
+{
+	"name" : "Same secret ending seed on every account - Gab",
+	"description" : "The secret ending questions & answers are the same on every account as long as this mod is installed.",
+	"author" : "Gab",
+	"contact" : "www.payday2.pw",
+	"blt_version" : 2,
+
+	"hooks" : [
+	{ 	
+		"hook_id" : "lib/managers/custom_safehouse/unoachievementchallenge",
+		"script_path" : "code.lua"
+	}
+]
+	
+}
