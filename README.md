@@ -1,7 +1,7 @@
 # payday2.pw Mods
 
 **This repository contains the source code of all mods currently released on [payday2.pw](https://payday2.pw).**
-*The GitHub repository is always updated. The website might be a bit outdated, as I can't upload everything at once. Thanks Google Safe Browsing. As of 16th April 2022 the website is fully up-to-date though.*
+*The GitHub repository is always updated. The website might be a bit outdated, as I can't upload everything at once. Thanks Google Safe Browsing. As of 1st June 2022 the website is fully up-to-date though.*
 
 [PAYDAY 2 SuperBLT](https://superblt.znix.xyz/) is required for these mods to work.
 
