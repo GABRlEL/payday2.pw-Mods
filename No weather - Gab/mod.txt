@@ -7,7 +7,7 @@
 
 	"hooks" : [
 	{ 	
-		"hook_id" : "lib/tweak_data/enveffecttweakdata",
+		"hook_id" : "lib/managers/environmenteffectsmanager",
 		"script_path" : "code.lua"
 	}
 ]
