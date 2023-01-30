@@ -16,5 +16,5 @@ For more information, visit [payday2.pw](https://payday2.pw).
 The website [payday2.pw](https://payday2.pw) is an [open-source project](https://github.com/p410n3/payday2.pw) by [p410n3](https://github.com/p410n3).
 
 
-2022 - Gab.
-https://opensource.org/licenses/MIT
+2023 - Gab.
+[View license](https://github.com/GABRlEL/payday2.pw-Mods/blob/master/LICENSE)
