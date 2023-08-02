@@ -52,4 +52,8 @@ function CarryTweakData:init(tweak_data)
 		can_run = true,
 		throw_distance_multiplier = 1
 	}
+		self.types.explosives = deep_clone(self.types.medium)
+	self.types.explosives.can_explode = true
+	self.types.cloaker_explosives = deep_clone(self.types.medium)
+	self.types.cloaker_explosives.can_poof = true
 end
